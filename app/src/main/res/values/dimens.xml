@@ -12,7 +12,7 @@
     <!--Margenes del logo-->
     <dimen name="imgLogoMargin">10dp</dimen>
     <dimen name="imgLogoMarginTop">1dp</dimen>
-    <dimen name="imgLogoMarginButton">35dp</dimen>
+    <dimen name="imgLogoMarginButton">1dp</dimen>
     <dimen name="imgLogoMarginLeft">1dp</dimen>
     <dimen name="imgLogoMarginRight">1dp</dimen>
     <dimen name="imgLogoMarginStart">1dp</dimen>
@@ -23,6 +23,22 @@
     <dimen name="imgLogoPaddingButton">1dp</dimen>
     <dimen name="imgLogoPaddingLeft">1dp</dimen>
     <dimen name="imgLogoPaddingRight">1dp</dimen>
+
+    <!--Margenes del logo del SENA-->
+    <dimen name="imgLogoSenaSenaLogoMargin">10dp</dimen>
+    <dimen name="imgLogoSenaMarginTop">1dp</dimen>
+    <dimen name="imgLogoSenaMarginButton">1dp</dimen>
+    <dimen name="imgLogoSenaMarginLeft">1dp</dimen>
+    <dimen name="imgLogoSenaMarginRight">1dp</dimen>
+    <dimen name="imgLogoSenaMarginStart">1dp</dimen>
+    <dimen name="imgLogoSenaMarginEnd">1dp</dimen>
+    <!--Padding del elemento del logo-->
+    <dimen name="imgLogoSenaPadding">1dp</dimen>
+    <dimen name="imgLogoSenaPaddingTop">1dp</dimen>
+    <dimen name="imgLogoSenaPaddingButton">1dp</dimen>
+    <dimen name="imgLogoSenaPaddingLeft">140dp</dimen>
+    <dimen name="imgLogoSenaPaddingRight">1dp</dimen>
+
     <!--Tamaño del EditText Login-->
     <dimen name="edTxtLogInWidth">220dp</dimen>
     <dimen name="edTxtLogInHeight">50dp</dimen>

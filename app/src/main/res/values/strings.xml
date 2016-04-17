@@ -36,4 +36,7 @@
     <string name="txtvwComentarios">Comentarios</string>
     <!--Strings para el logotipo-->
     <string name="imgLogoDescription">Logotipo_Quejapp</string>
+    <string name="imgLogoSenaDescription">Logotipo_Quejapp</string>
+    imgLogoSenaDescription
+    <string name="FontFamilyQuejapp">Verdana</string>
 </resources>

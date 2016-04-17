@@ -9,19 +9,45 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.pqrs.sena.quejapp.MainActivity"
     android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/imgLogoHeight"
+            android:layout_height="@dimen/imgLogoWidth"
+            android:src="@drawable/logoquejapp"
+            android:layout_gravity="left"
+            android:layout_marginBottom="@dimen/imgLogoMarginButton"
+            android:layout_marginLeft="@dimen/imgLogoMarginLeft"
+            android:layout_marginRight="@dimen/imgLogoMarginRight"
+            android:layout_marginStart="@dimen/imgLogoMarginStart"
+            android:layout_marginEnd="@dimen/imgLogoMarginEnd"
+            android:contentDescription="@string/imgLogoDescription"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PQRS"
+            android:textSize="48sp" />
 
-    <ImageView
-        android:layout_width="@dimen/imgLogoHeight"
-        android:layout_height="@dimen/imgLogoWidth"
-        android:src="@drawable/logoquejapp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="@dimen/imgLogoMarginButton"
-        android:layout_marginLeft="@dimen/imgLogoMarginLeft"
-        android:layout_marginRight="@dimen/imgLogoMarginRight"
-        android:layout_marginStart="@dimen/imgLogoMarginStart"
-        android:layout_marginEnd="@dimen/imgLogoMarginEnd"
-        android:contentDescription="@string/imgLogoDescription"
-        />
+        <ImageView
+            android:layout_width="@dimen/imgLogoHeight"
+            android:layout_height="@dimen/imgLogoWidth"
+            android:src="@drawable/logotiposena"
+            android:layout_gravity="center_horizontal|right"
+            android:layout_marginBottom="@dimen/imgLogoSenaMarginButton"
+            android:layout_marginLeft="@dimen/imgLogoSenaMarginLeft"
+            android:layout_marginRight="@dimen/imgLogoSenaMarginRight"
+            android:layout_marginStart="@dimen/imgLogoSenaMarginStart"
+            android:layout_marginEnd="@dimen/imgLogoSenaMarginEnd"
+            android:contentDescription="@string/imgLogoSenaDescription"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
     <TextView
         android:layout_width="@dimen/txtvwTitulosGrandesWidth"
         android:layout_height="@dimen/txtvwTitulosGrandesHeight"
@@ -53,6 +79,7 @@
         android:height="@dimen/edTxtLogInHeight"
         android:layout_marginStart="@dimen/edTxtLogInMarginStart"
         android:inputType="textEmailAddress"/>
+
     <TextView
         android:layout_width="@dimen/txtvwTitulosGrandesWidth"
         android:layout_height="@dimen/txtvwTitulosGrandesHeight"
@@ -80,7 +107,7 @@
         android:paddingStart="@dimen/edTxtLogInPaddingStart"
         android:layout_marginEnd="@dimen/edTxtLogInMarginEnd"
         android:layout_marginStart="@dimen/edTxtLogInMarginStart"
-        />
+        android:backgroundTint="@color/ComplementaryColorQuejapp" />
     <Button
         android:layout_width="@dimen/btnLogInWidth"
         android:layout_height="@dimen/btnLogInHeight"
@@ -92,7 +119,9 @@
         android:paddingEnd="@dimen/btnLogInPaddingEnd"
         android:layout_gravity="center"
         android:gravity="center"
-        />
+        android:text="@string/btnLogin"
+        android:textColor="@color/SecondaryColorQuejapp"
+        android:shadowColor="@color/PrimaryColorDarkQuejapp" />
 
 
 </LinearLayout>
