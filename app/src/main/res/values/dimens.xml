@@ -15,6 +15,8 @@
     <dimen name="imgLogoMarginButton">35dp</dimen>
     <dimen name="imgLogoMarginLeft">1dp</dimen>
     <dimen name="imgLogoMarginRight">1dp</dimen>
+    <dimen name="imgLogoMarginStart">1dp</dimen>
+    <dimen name="imgLogoMarginEnd">1dp</dimen>
     <!--Padding del elemento del logo-->
     <dimen name="imgLogoPadding">1dp</dimen>
     <dimen name="imgLogoPaddingTop">1dp</dimen>
@@ -30,12 +32,16 @@
     <dimen name="edTxtLogInMarginButton">20dp</dimen>
     <dimen name="edTxtLogInMarginLeft">1dp</dimen>
     <dimen name="edTxtLogInMarginRight">1dp</dimen>
+    <dimen name="edTxtLogInMarginStart">1dp</dimen>
+    <dimen name="edTxtLogInMarginEnd">1dp</dimen>
     <!--Padding del EditText Login-->
     <dimen name="edTxtLogInPadding">1dp</dimen>
     <dimen name="edTxtLogInPaddingTop">1dp</dimen>
     <dimen name="edTxtLogInPaddingButton">1dp</dimen>
     <dimen name="edTxtLogInPaddingLeft">1dp</dimen>
     <dimen name="edTxtLogInPaddingRight">1dp</dimen>
+    <dimen name="edTxtLogInPaddingEnd">1dp</dimen>
+    <dimen name="edTxtLogInPaddingStart">1dp</dimen>
     <!--Tamaño del boton Login-->
     <dimen name="btnLogInWidth">220dp</dimen>
     <dimen name="btnLogInHeight">40dp</dimen>

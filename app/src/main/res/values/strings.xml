@@ -34,4 +34,6 @@
     <string name="txtvwAreasEncargadas">Area encargada</string>
     <string name="txtFechaRespuesta">Fecha de respuesta</string>
     <string name="txtvwComentarios">Comentarios</string>
+    <!--Strings para el logotipo-->
+    <string name="imgLogoDescription">Logotipo_Quejapp</string>
 </resources>
