@@ -29,7 +29,38 @@
         android:layout_marginBottom="@dimen/txtvwTitulosGrandesMarginButton"
         android:layout_marginLeft="@dimen/txtvwTitulosGrandesMarginLeft"
         android:layout_marginRight="@dimen/txtvwTitulosGrandesMarginRight"
+        android:paddingBottom="@dimen/txtvwTitulosGrandesPaddingButton"
+        android:paddingRight="@dimen/txtvwTitulosGrandesPaddingRight"
+        android:paddingLeft="@dimen/txtvwTitulosGrandesPaddingLeft"/>
+    <EditText
+        android:layout_width="@dimen/edTxtLogInWidth"
+        android:layout_height="@dimen/edTxtLogInHeight"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/edTxtLogInMarginButton"
+        android:layout_marginLeft="@dimen/edTxtLogInMarginLeft"
+        android:layout_marginRight="@dimen/edTxtLogInMarginRight"
+        android:layout_marginEnd="@dimen/edTxtLogInMarginTop" />
+    <TextView
+        android:layout_width="@dimen/txtvwTitulosGrandesWidth"
+        android:layout_height="@dimen/txtvwTitulosGrandesHeight"
+        android:text="@string/txtvwClaveUsuario"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/txvwTitulosGrandesFontSize"
+        android:layout_marginBottom="@dimen/txtvwTitulosGrandesMarginButton"
+        android:layout_marginLeft="@dimen/txtvwTitulosGrandesMarginLeft"
+        android:layout_marginRight="@dimen/txtvwTitulosGrandesMarginRight"
         />
+    <EditText
+        android:layout_width="@dimen/edTxtLogInWidth"
+        android:layout_height="@dimen/edTxtLogInHeight"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/edTxtLogInMarginButton"
+        android:layout_marginLeft="@dimen/edTxtLogInMarginLeft"
+        android:layout_marginRight="@dimen/edTxtLogInMarginRight"
+        android:layout_marginEnd="@dimen/edTxtLogInMarginTop" />
 
 
 </LinearLayout>
