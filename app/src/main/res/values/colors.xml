@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Colores personalizados para Quejapp -->
+    <color name="PrimaryColorQuejapp">#FC7323</color>
+    <color name="PrimaryColorDarkQuejapp">#e75c0d</color>
+    <color name="SecondaryColorQuejapp">#238276</color>
+    <color name="ComplementaryColorQuejapp">#59B548</color>
+    <color name="TextColorQuejapp">#000000</color>
+
+
+</resources>

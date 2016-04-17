@@ -1,0 +1,234 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="activity_horizontal_margin_toolbar">0dp</dimen>
+    <dimen name="activity_vertical_margin_toolbar">0dp</dimen>
+    <!--Tamaños elemento login-->
+    <dimen name="imgLogoWidth">100dp</dimen>
+    <dimen name="imgLogoHeight">100dp</dimen>
+    <!--Margenes del logo-->
+    <dimen name="imgLogoMargin">10dp</dimen>
+    <dimen name="imgLogoMarginTop">1dp</dimen>
+    <dimen name="imgLogoMarginButton">35dp</dimen>
+    <dimen name="imgLogoMarginLeft">1dp</dimen>
+    <dimen name="imgLogoMarginRight">1dp</dimen>
+    <!--Padding del elemento del logo-->
+    <dimen name="imgLogoPadding">1dp</dimen>
+    <dimen name="imgLogoPaddingTop">1dp</dimen>
+    <dimen name="imgLogoPaddingButton">1dp</dimen>
+    <dimen name="imgLogoPaddingLeft">1dp</dimen>
+    <dimen name="imgLogoPaddingRight">1dp</dimen>
+    <!--Tamaño del EditText Login-->
+    <dimen name="edTxtLogInWidth">220dp</dimen>
+    <dimen name="edTxtLogInHeight">50dp</dimen>
+    <!--Margen del EditText Login-->
+    <dimen name="edTxtLogInMargin">1dp</dimen>
+    <dimen name="edTxtLogInMarginTop">1dp</dimen>
+    <dimen name="edTxtLogInMarginButton">20dp</dimen>
+    <dimen name="edTxtLogInMarginLeft">1dp</dimen>
+    <dimen name="edTxtLogInMarginRight">1dp</dimen>
+    <!--Padding del EditText Login-->
+    <dimen name="edTxtLogInPadding">1dp</dimen>
+    <dimen name="edTxtLogInPaddingTop">1dp</dimen>
+    <dimen name="edTxtLogInPaddingButton">1dp</dimen>
+    <dimen name="edTxtLogInPaddingLeft">1dp</dimen>
+    <dimen name="edTxtLogInPaddingRight">1dp</dimen>
+    <!--Tamaño del boton Login-->
+    <dimen name="btnLogInWidth">220dp</dimen>
+    <dimen name="btnLogInHeight">40dp</dimen>
+    <!--Margen del boton Login-->
+    <dimen name="btnLogInMargin">1dp</dimen>
+    <dimen name="btnLogInMarginTop">25dp</dimen>
+    <dimen name="btnLogInMarginButton">1dp</dimen>
+    <dimen name="btnLogInMarginLeft">1dp</dimen>
+    <dimen name="btnLogInMarginRight">1dp</dimen>
+    <!--Padding del boton Login-->
+    <dimen name="btnLogInPadding">1dp</dimen>
+    <dimen name="btnLogInPaddingTop">1dp</dimen>
+    <dimen name="btnLogInPaddingButton">1dp</dimen>
+    <dimen name="btnLogInPaddingLeft">1dp</dimen>
+    <dimen name="btnLogInPaddingRight">1dp</dimen>
+    <!---dimensiones del layout-->
+    <dimen name="llytRedesSocialesWidth">1dp</dimen>
+    <dimen name="llytRedesSocialesHeight">1dp</dimen>
+    <!--Margenes del layout-->
+    <dimen name="llytRedesSocialesMargin">1dp</dimen>
+    <dimen name="llytRedesSocialesMarginTop">1dp</dimen>
+    <dimen name="llytRedesSocialesMarginButton">1dp</dimen>
+    <dimen name="llytRedesSocialesMarginLeft">1dp</dimen>
+    <dimen name="llytRedesSocialesMarginRight">1dp</dimen>
+    <!--Padding del layout-->
+    <dimen name="llytRedesSocialesPadding">1dp</dimen>
+    <dimen name="llytRedesSocialesPaddingTop">1dp</dimen>
+    <dimen name="llytRedesSocialesPaddingButton">1dp</dimen>
+    <dimen name="llytRedesSocialesPaddingLeft">1dp</dimen>
+    <dimen name="llytRedesSocialesPaddingRight">1dp</dimen>
+    <!--Tamaño botones redes sociales -->
+    <dimen name="imgBtnRedesSocialesWidth">50dp</dimen>
+    <dimen name="imgBtnRedesSocialesHeight">40dp</dimen>
+    <!--Margenes redes sociales-->
+    <dimen name="imgBtnRedesSocialesMargin">1dp</dimen>
+    <dimen name="imgBtnRedesSocialesMarginTop">1dp</dimen>
+    <dimen name="imgBtnRedesSocialesMarginButton">1dp</dimen>
+    <dimen name="imgBtnRedesSocialesMarginLeft">1dp</dimen>
+    <dimen name="imgBtnRedesSocialesMarginRight">1dp</dimen>
+    <!--Padding redes sociales-->
+    <dimen name="imgBtnRedesSocialesPadding">1dp</dimen>
+    <dimen name="imgBtnRedesSocialesPaddingTop">1dp</dimen>
+    <dimen name="imgBtnRedesSocialesPaddingButton">1dp</dimen>
+    <dimen name="imgBtnRedesSocialesPaddingLeft">1dp</dimen>
+    <dimen name="imgBtnRedesSocialesPaddingRight">1dp</dimen>
+
+    <!--Tamaños titulos grandes -->
+    <dimen name="txtvwTitulosGrandesWidth">300dp</dimen>
+    <dimen name="txtvwTitulosGrandesHeight">40dp</dimen>
+    <!--Margen titulos grandes -->
+    <dimen name="txtvwTitulosGrandesMargin">1dp</dimen>
+    <dimen name="txtvwTitulosGrandesMarginTop">1dp</dimen>
+    <dimen name="txtvwTitulosGrandesMarginButton">1dp</dimen>
+    <dimen name="txtvwTitulosGrandesMarginLeft">1dp</dimen>
+    <!--Padding Titulos Grandes-->
+    <dimen name="txtvwTitulosGrandesMarginRight">1dp</dimen>
+    <dimen name="txtvwTitulosGrandesPadding">1dp</dimen>
+    <dimen name="txtvwTitulosGrandesPaddingTop">1dp</dimen>
+    <dimen name="txtvwTitulosGrandesPaddingButton">1dp</dimen>
+    <dimen name="txtvwTitulosGrandesPaddingLeft">1dp</dimen>
+    <dimen name="txtvwTitulosGrandesPaddingRight">1dp</dimen>
+    <!--Tamaños de los titulos Medianos-->
+    <dimen name="txtvwTitulosMedianosWidth">200dp</dimen>
+    <dimen name="txtvwTitulosMedianosHeight">40dp</dimen>
+    <!--Margen de los titulos Medianos-->
+    <dimen name="txtvwMedianosMargin">1dp</dimen>
+    <dimen name="txtvwMedianosMarginTop">10dp</dimen>
+    <dimen name="txtvwMedianosMarginButton">20dp</dimen>
+    <dimen name="txtvwMedianosMarginLeft">1dp</dimen>
+    <dimen name="txtvwMedianosMarginRight">1dp</dimen>
+    <!--Padding de los titulos Medianos-->
+    <dimen name="txtvwMedianosPadding">1dp</dimen>
+    <dimen name="txtvwMedianosPaddingTop">1dp</dimen>
+    <dimen name="txtvwMedianosPaddingButton">1dp</dimen>
+    <dimen name="txtvwMedianosPaddingLeft">1dp</dimen>
+    <dimen name="txtvwMedianosPaddingRight">1dp</dimen>
+
+    <dimen name="edTxtWidth">190dp</dimen>
+    <dimen name="edTxtHeight">35dp</dimen>
+    <dimen name="edTxtMargin">1dp</dimen>
+    <dimen name="edTxtMarginTop">1dp</dimen>
+    <dimen name="edTxtMarginButton">1dp</dimen>
+    <dimen name="edTxtMarginLeft">1dp</dimen>
+    <dimen name="edTxtMarginRight">1dp</dimen>
+    <dimen name="edTxtPadding">1dp</dimen>
+    <dimen name="edTxtPaddingTop">1dp</dimen>
+    <dimen name="edTxtPaddingButton">1dp</dimen>
+    <dimen name="edTxtPaddingLeft">1dp</dimen>
+    <dimen name="edTxtPaddingRight">1dp</dimen>
+
+    <dimen name="spWidthTD">120dp</dimen>
+    <dimen name="spHeightTD">35dp</dimen>
+    <dimen name="spTDMargin">1dp</dimen>
+    <dimen name="spTDMarginTop">1dp</dimen>
+    <dimen name="spTDMarginButton">1dp</dimen>
+    <dimen name="spTDMarginLeft">1dp</dimen>
+    <dimen name="spTDMarginRight">1dp</dimen>
+    <dimen name="spTDPadding">1dp</dimen>
+    <dimen name="spTDPaddingTop">1dp</dimen>
+    <dimen name="spTDPaddingButton">1dp</dimen>
+    <dimen name="spTDPaddingLeft">1dp</dimen>
+    <dimen name="spTDPaddingRight">1dp</dimen>
+
+    <dimen name="spWidth">320dp</dimen>
+    <dimen name="spHeight">40dp</dimen>
+    <dimen name="spMargin">1dp</dimen>
+    <dimen name="spMarginTop">1dp</dimen>
+    <dimen name="spMarginButton">1dp</dimen>
+    <dimen name="spMarginLeft">1dp</dimen>
+    <dimen name="spMarginRight">1dp</dimen>
+    <dimen name="spPadding">1dp</dimen>
+    <dimen name="spPaddingTop">1dp</dimen>
+    <dimen name="spPaddingButton">1dp</dimen>
+    <dimen name="spPaddingLeft">1dp</dimen>
+    <dimen name="spPaddingRight">1dp</dimen>
+
+
+    <dimen name="btnContinuarFormUnoWidth">350dp</dimen>
+    <dimen name="btnContinuarFormUnoHeight">50dp</dimen>
+    <dimen name="btnContinuarFormUnoMargin">1dp</dimen>
+    <dimen name="btnContinuarFormUnoMarginTop">1dp</dimen>
+    <dimen name="btnContinuarFormUnoMarginButton">1dp</dimen>
+    <dimen name="btnContinuarFormUnoMarginLeft">1dp</dimen>
+    <dimen name="btnContinuarFormUnoMarginRight">1dp</dimen>
+    <dimen name="btnContinuarFormUnoPadding">1dp</dimen>
+    <dimen name="btnContinuarFormUnoPaddingTop">1dp</dimen>
+    <dimen name="btnContinuarFormUnoPaddingButton">1dp</dimen>
+    <dimen name="btnContinuarFormUnoPaddingLeft">1dp</dimen>
+    <dimen name="btnContinuarFormUnoPaddingRight">1dp</dimen>
+    <!--Tamaños para el txtView de la descripcion-->
+    <dimen name="txtvwDescripcionFormDosWidth">80dp</dimen>
+    <dimen name="txtvwDescripcionFormDosHeight">20dp</dimen>
+    <dimen name="txtvwDescripcionFormDosMargin">1dp</dimen>
+    <dimen name="txtvwDescripcionFormDosMarginTop">1dp</dimen>
+    <dimen name="txtvwDescripcionFormDosMarginButton">1dp</dimen>
+    <dimen name="txtvwDescripcionFormDosMarginLeft">1dp</dimen>
+    <dimen name="txtvwDescripcionFormDosMarginRight">1dp</dimen>
+    <dimen name="txtvwDescripcionFormDosPadding">1dp</dimen>
+    <dimen name="txtvwDescripcionFormDosPaddingTop">1dp</dimen>
+    <dimen name="txtvwDescripcionFormDosPaddingButton">1dp</dimen>
+    <dimen name="txtvwDescripcionFormDosPaddingLeft">1dp</dimen>
+    <dimen name="txtvwDescripcionFormDosPaddingRight">1dp</dimen>
+    <!--Tamaños elementos EditText para la descricion -->
+    <dimen name="edTxtDescripcionFormDosWidth">320dp</dimen>
+    <dimen name="edTxtDescripcionFormDosHeight">100dp</dimen>
+    <dimen name="edTxtDescripcionFormDosMargin">1dp</dimen>
+    <dimen name="edTxtDescripcionFormDosMarginTop">1dp</dimen>
+    <dimen name="edTxtDescripcionFormDosMarginButton">1dp</dimen>
+    <dimen name="edTxtDescripcionFormDosMarginLeft">1dp</dimen>
+    <dimen name="edTxtDescripcionFormDosMarginRight">1dp</dimen>
+    <dimen name="edTxtDescripcionFormDosPadding">1dp</dimen>
+    <dimen name="edTxtDescripcionFormDosPaddingTop">1dp</dimen>
+    <dimen name="edTxtDescripcionFormDosPaddingButton">1dp</dimen>
+    <dimen name="edTxtDescripcionFormDosPaddingLeft">1dp</dimen>
+    <dimen name="edTxtDescripcionFormDosPaddingRight">1dp</dimen>
+
+    <!--Tamaño de boton ara agregar una evidencia foto o archivo-->
+    <dimen name="btnAgregarEvidenciaWidth">150dp</dimen>
+    <dimen name="btnAgregarEvidenciaHeight">60dp</dimen>
+    <dimen name="btnAgregarEvidenciaMargin">1dp</dimen>
+    <dimen name="btnAgregarEvidenciaMarginTop">1dp</dimen>
+    <dimen name="btnAgregarEvidenciaMarginButton">1dp</dimen>
+    <dimen name="btnAgregarEvidenciaMarginLeft">1dp</dimen>
+    <dimen name="btnAgregarEvidenciaMarginRight">1dp</dimen>
+    <dimen name="btnAgregarEvidenciaPadding">1dp</dimen>
+    <dimen name="btnAgregarEvidenciaPaddingTop">1dp</dimen>
+    <dimen name="btnAgregarEvidenciaPaddingButton">1dp</dimen>
+    <dimen name="btnAgregarEvidenciaPaddingLeft">1dp</dimen>
+    <dimen name="btnAgregarEvidenciaPaddingRight">1dp</dimen>
+    <!--Tamaños elementos buscar PQRS-->
+    <dimen name="btnBuscarPQRSWidth">320dp</dimen>
+    <dimen name="btnBuscarPQRSHeight">60dp</dimen>
+    <dimen name="btnBuscarPQRSMargin">1dp</dimen>
+    <dimen name="btnBuscarPQRSMarginTop">1dp</dimen>
+    <dimen name="btnBuscarPQRSMarginButton">1dp</dimen>
+    <dimen name="btnBuscarPQRSMarginLeft">1dp</dimen>
+    <dimen name="btnBuscarPQRSMarginRight">1dp</dimen>
+    <dimen name="btnBuscarPQRSPadding">1dp</dimen>
+    <dimen name="btnBuscarPQRSPaddingTop">1dp</dimen>
+    <dimen name="btnBuscarPQRSPaddingButton">1dp</dimen>
+    <dimen name="btnBuscarPQRSPaddingLeft">1dp</dimen>
+    <dimen name="btnBuscarPQRSPaddingRight">1dp</dimen>
+    <!--Tamaños eleemntos resultados-->
+    <dimen name="btnAtrasResultadoWidth">320dp</dimen>
+    <dimen name="btnAtrasResultadoHeight">60dp</dimen>
+    <dimen name="btnAtrasResultadoMargin">1dp</dimen>
+    <dimen name="btnAtrasResultadoMarginTop">1dp</dimen>
+    <dimen name="btnAtrasResultadoMarginButton">1dp</dimen>
+    <dimen name="btnAtrasResultadoMarginLeft">1dp</dimen>
+    <dimen name="btnAtrasResultadoMarginRight">1dp</dimen>
+    <dimen name="btnAtrasResultadoPadding">1dp</dimen>
+    <dimen name="btnAtrasResultadoPaddingTop">1dp</dimen>
+    <dimen name="btnAtrasResultadoPaddingButton">1dp</dimen>
+    <dimen name="btnAtrasResultadoPaddingLeft">1dp</dimen>
+    <dimen name="btnAtrasResultadoPaddingRight">1dp</dimen>
+</resources>
