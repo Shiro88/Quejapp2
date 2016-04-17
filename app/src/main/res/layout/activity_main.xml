@@ -35,28 +35,7 @@
             android:paddingStart="@dimen/imgLogoMarginStart"
             android:layout_gravity="center">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtvwTituloPqrs"
-                android:textSize="48sp"
-                android:typeface="serif"
-                android:textColor="@color/PrimaryColorQuejapp"
-                android:textStyle="italic|bold"
-                android:layout_gravity="center"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtvwSbtituloPqrs"
-                android:textSize="10sp"
-                android:typeface="serif"
-                android:textColor="@color/PrimaryColorQuejapp"
-                android:textStyle="italic|bold"
-                android:paddingStart="@dimen/edTxtLogInPaddingStart"
-                android:layout_gravity="center"
-                android:gravity="center"
-                />
+
         </LinearLayout>
 
         <ImageView
