@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="spnRegionalValues">
+        <item>Regional</item>
+        <item>Distrito Capital</item>
+        <item>Cundinamarca</item>
+    </array>
+</resources>

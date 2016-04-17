@@ -39,4 +39,7 @@
     <string name="imgLogoSenaDescription">Logotipo_Quejapp</string>
     imgLogoSenaDescription
     <string name="FontFamilyQuejapp">Verdana</string>
+    <string name="txtvwTituloPqrs">PQRS</string>
+    <string name="txtvwSbtituloPqrs">Peticiones, Quejas, Reclamos, Sugerencias</string>
+
 </resources>

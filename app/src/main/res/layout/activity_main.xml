@@ -38,7 +38,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PQRS"
+                android:text="@string/txtvwTituloPqrs"
                 android:textSize="48sp"
                 android:typeface="serif"
                 android:textColor="@color/PrimaryColorQuejapp"
@@ -48,7 +48,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Peticiones, Quejas, Reclamos, Sugerencias"
+                android:text="@string/txtvwSbtituloPqrs"
                 android:textSize="10sp"
                 android:typeface="serif"
                 android:textColor="@color/PrimaryColorQuejapp"
@@ -148,7 +148,8 @@
         android:gravity="center"
         android:text="@string/btnLogin"
         android:textColor="@color/SecondaryColorQuejapp"
-        android:shadowColor="@color/PrimaryColorDarkQuejapp" />
+        android:shadowColor="@color/PrimaryColorDarkQuejapp"
+        android:id="@+id/btnIngresar"/>
 
 
 </LinearLayout>
