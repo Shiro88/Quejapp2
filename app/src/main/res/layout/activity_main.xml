@@ -84,6 +84,14 @@
     <Button
         android:layout_width="@dimen/btnLogInWidth"
         android:layout_height="@dimen/btnLogInHeight"
+        android:layout_marginBottom="@dimen/btnLogInMarginButton"
+        android:layout_marginRight="@dimen/btnLogInMarginRight"
+        android:layout_marginStart="@dimen/btnLogInMarginStart"
+        android:layout_marginEnd="@dimen/btnLogInMarginEnd"
+        android:paddingStart="@dimen/btnLogInPaddingStart"
+        android:paddingEnd="@dimen/btnLogInPaddingEnd"
+        android:layout_gravity="center"
+        android:gravity="center"
         />
 
 

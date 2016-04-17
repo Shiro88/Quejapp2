@@ -51,6 +51,10 @@
     <dimen name="btnLogInMarginButton">1dp</dimen>
     <dimen name="btnLogInMarginLeft">1dp</dimen>
     <dimen name="btnLogInMarginRight">1dp</dimen>
+    <dimen name="btnLogInMarginStart">1dp</dimen>
+    <dimen name="btnLogInMarginEnd">1dp</dimen>
+    <dimen name="btnLogInPaddingStart">1dp</dimen>
+    <dimen name="btnLogInPaddingEnd">1dp</dimen>
     <!--Padding del boton Login-->
     <dimen name="btnLogInPadding">1dp</dimen>
     <dimen name="btnLogInPaddingTop">1dp</dimen>
