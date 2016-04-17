@@ -152,4 +152,13 @@
         <item>Centro Agropecuario y de Servicios Ambientales Jirijirimo</item>
         <item>Centro de Producción y Transformación Agroindustrial de la Orinoquía</item>
     </array>
+    <array name="spSedeValues">
+        <item>Sede</item>
+    </array>
+    <array name="spTipoPqrsValues">
+        <item>Tipo PQRS</item>
+    </array>
+    <array name="spCategoriaPqrsValues">
+        <item>Categoria PQRS</item>
+    </array>
 </resources>
