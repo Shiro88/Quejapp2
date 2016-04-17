@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".registrar_pqrs">
+    <item android:id="@+id/mi_item_menu_uno"
+        android:title="unoA"
+        android:orderInCategory="1"
+        app:showAsAction="never"></item>
+    <item android:id="@+id/mi_item_menu_dos"
+        android:title="dosB"
+        android:orderInCategory="1"
+        app:showAsAction="never"></item>
+</menu>
