@@ -85,6 +85,7 @@
     <!--Tamaños titulos grandes -->
     <dimen name="txtvwTitulosGrandesWidth">300dp</dimen>
     <dimen name="txtvwTitulosGrandesHeight">40dp</dimen>
+    <dimen name="txvwTitulosGrandesFontSize">30sp</dimen>
     <!--Margen titulos grandes -->
     <dimen name="txtvwTitulosGrandesMargin">1dp</dimen>
     <dimen name="txtvwTitulosGrandesMarginTop">1dp</dimen>
