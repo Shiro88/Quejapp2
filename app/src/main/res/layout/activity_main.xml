@@ -17,6 +17,8 @@
         android:layout_gravity="center"
         android:contentDescription="@string/imgv_logo_quejapp"
         android:layout_marginBottom="@dimen/imgLogoMarginButton"
+        android:layout_marginLeft="@dimen/imgLogoMarginLeft"
+        android:layout_marginRight="@dimen/imgLogoMarginRight"
         />
 
 </LinearLayout>
