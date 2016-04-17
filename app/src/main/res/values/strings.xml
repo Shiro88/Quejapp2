@@ -1,4 +1,37 @@
 <resources>
-    <string name="app_name">Quejapp</string>
-    <string name="imgv_logo_quejapp">logoquejapp</string>
+    <string name="app_name">QuejaApp</string>
+    <string name="btnLogin">Ingresar</string>
+    <string name="btnNuevaPQRS">Nueva PQRS</string>
+    <string name="btnBuscarPQRS">Buscar</string>
+    <string name="btnSalir">Salir</string>
+    <string name="btnAtras">Atras</string>
+    <string name="btnCancelar">X</string>
+    <string name="btContinuar">Continuar</string>
+    <string name="btnAgregarFoto">Añadir Foto</string>
+    <string name="btnAgregarArchivo">Añadir Archivo</string>
+    <string name="btnEnviar">Enviar</string>
+    <string name="btnBuscarPQRSDos">Buscar</string>
+    <!--Strings para los text view -->
+    <string name="txtvwNombreUsuario">Usuario</string>
+    <string name="txtvwClaveUsuario">Contraseña</string>
+    <string name="txtvwCrearPQRS">Registrar PQRS</string>
+    <string name="txtvwDatosBasicos">Datos Usuario</string>
+    <string name="txtvwNombreCompleto">Nombre completo</string>
+    <string name="txtvwApellidos">Apellidos</string>
+    <string name="txtvwTipoDocumento">Tipo Documento</string>
+    <string name="txtvwNumeroDocumento">Numero documento</string>
+    <string name="txtvwRegional">Regional</string>
+    <string name="txtvwCentro">Centro</string>
+    <string name="txtvwSede">Sede</string>
+    <string name="txtvwNumeroFicha">NumeroFicha</string>
+    <string name="txtvwTipoPQRS">Tipo PQRS</string>
+    <string name="txtvwTipoCategoriaPQRS">Categoria PQRS</string>
+    <string name="txtvwTemaPQRS">Tema PQRS</string>
+    <string name="txtvwDescripcion">Descripcion</string>
+    <string name="txtvwBuscarPQRS">Buscar</string>
+    <string name="txtvwSolicitudNumero">Numero solicitud</string>
+    <string name="txtvwEstado">Estado de la PQRS</string>
+    <string name="txtvwAreasEncargadas">Area encargada</string>
+    <string name="txtFechaRespuesta">Fecha de respuesta</string>
+    <string name="txtvwComentarios">Comentarios</string>
 </resources>
