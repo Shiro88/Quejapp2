@@ -173,11 +173,16 @@
     <dimen name="spMarginButton">1dp</dimen>
     <dimen name="spMarginLeft">1dp</dimen>
     <dimen name="spMarginRight">1dp</dimen>
+    <dimen name="spMarginStart">1dp</dimen>
+    <dimen name="spMarginEnd">1dp</dimen>
     <dimen name="spPadding">1dp</dimen>
     <dimen name="spPaddingTop">1dp</dimen>
     <dimen name="spPaddingButton">1dp</dimen>
     <dimen name="spPaddingLeft">1dp</dimen>
     <dimen name="spPaddingRight">1dp</dimen>
+    <dimen name="spPaddingStart">1dp</dimen>
+    <dimen name="spPaddingEnd">1dp</dimen>
+
 
 
     <dimen name="btnContinuarFormUnoWidth">350dp</dimen>
@@ -258,4 +263,11 @@
     <dimen name="btnAtrasResultadoPaddingButton">1dp</dimen>
     <dimen name="btnAtrasResultadoPaddingLeft">1dp</dimen>
     <dimen name="btnAtrasResultadoPaddingRight">1dp</dimen>
+
+    <!--Tamaños de la fuente en los Textos-->
+    <dimen name="txvwFontSizeTitulosGrandes">36sp</dimen>
+    <dimen name="txvwFontSizeTitulosMedianos">20sp</dimen>
+    <dimen name="txvwFontSizeTitulosPequeños">15sp</dimen>
+
+
 </resources>

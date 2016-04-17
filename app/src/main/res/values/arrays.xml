@@ -2,7 +2,155 @@
 <resources>
     <array name="spnRegionalValues">
         <item>Regional</item>
-        <item>Distrito Capital</item>
-        <item>Cundinamarca</item>
+        <item>Regional Amazonas</item>
+        <item>Regional Antioquia</item>
+        <item>Regional Arauca</item>
+        <item>Regional Atlántico</item>
+        <item>Regional Bolívar</item>
+        <item>Regional Boyacá</item>
+        <item>Regional Caldas</item>
+        <item>Regional Caquetá</item>
+        <item>Regional Casanare</item>
+        <item>Regional Cauca</item>
+        <item>Regional Cesar</item>
+        <item>Regional Chocó</item>
+        <item>Regional Córdoba</item>
+        <item>Regional Cundinamarca</item>
+        <item>Regional Distrito Capital</item>
+        <item>Regional Guainía</item>
+        <item>Regional Guajira</item>
+        <item>Regional Guaviare</item>
+        <item>Regional Huila</item>
+        <item>Regional Magdalena</item>
+        <item>Regional Meta</item>
+        <item>Regional Nariño</item>
+        <item>Regional Norte de Santander</item>
+        <item>Regional Putumayo</item>
+        <item>Regional Quindío</item>
+        <item>Regional Risaralda</item>
+        <item>Regional San Andrés</item>
+        <item>Regional Santander</item>
+        <item>Regional Sucre</item>
+        <item>Regional Tolima</item>
+        <item>Regional Valle</item>
+        <item>Regional Vaupés</item>
+        <item>Regional Vichada</item>
+
+    </array>
+    <array name="spCentrosValues">
+        <item>Centro</item>
+        <item>Centro para la Biodiversidad y el Turismo del Amazonas</item>
+        <item>Centro de los Recursos Naturales Renovables La Salada</item>
+        <item>Centro de Diseño y Manufactura del Cuero</item>
+        <item>Centro de Formación en Diseño, Confección y Moda</item>
+        <item>Centro para el Desarrollo del Hábitat y la Construcción</item>
+        <item>Centro de Tecnología de la Manufactura Avanzada</item>
+        <item>Centro Tecnológico del Mobiliario</item>
+        <item>Centro Tecnológico de Gestión Industrial</item>
+        <item>Centro de Comercio</item>
+        <item>Centro de Servicios de Salud</item>
+        <item>Centro de Servicios y Gestión Empresarial</item>
+        <item>Centro de la Innovación, la Agroindustria y el Turismo</item>
+        <item>Centro de Gestión y Desarrollo Agroindustrial de Arauca</item>
+        <item>Centro para el Desarrollo Agroecológico y Agroindustrial</item>
+        <item>Centro Nacional Colombo Alemán</item>
+        <item>Centro Industrial y de Aviación</item>
+        <item>Centro de Comercio y Servicios</item>
+        <item>Centro Agroempresarial y Minero</item>
+        <item>Centro Internacional Náutico Fluvial y Portuario </item>
+        <item>Centro para la Industria Petroquímica</item>
+        <item>Centro de Comercio y Servicios</item>
+        <item>Centro de Desarrollo Agropecuario y Agroindustrial</item>
+        <item>Centro Minero</item>
+        <item>Centro de Gestión Administrativa y Fortalecimiento Empresarial</item>
+        <item>Centro Industrial de Mantenimiento y Manufactura</item>
+        <item>Centro para la Formación Cafetera</item>
+        <item>Centro de Automatización Industrial</item>
+        <item>Centro de Procesos Industriales</item>
+        <item>Centro Pecuario y Agroempresarial</item>
+        <item>Centro de Comercio y Servicios</item>
+        <item>Centro Tecnológico de la Amazonía</item>
+        <item>Centro Agroindustrial y Fortalecimiento Empresarial de Casanare</item>
+        <item>Centro Agropecuario</item>
+        <item>Centro de Teleinformática y Producción Industrial</item>
+        <item>Centro de Comercio y Servicios</item>
+        <item>Centro Biotecnológico del Caribe</item>
+        <item>Centro Agroempresarial</item>
+        <item>Centro de Operación y Mantenimiento Minero</item>
+        <item>Centro de Recursos Naturales y Biodiversidad</item>
+        <item>Centro Agropecuario y de Biotecnología El Porvenir</item>
+        <item>Centro de Comercio, Industria y Turismo de Córdoba</item>
+        <item>Centro de Desarrollo Agroindustrial y Empresarial</item>
+        <item>Centro Agroecológico y Empresarial</item>
+        <item>Centro de la Tecnología del Diseño y la Productividad Empresarial</item>
+        <item>Centro de Biotecnología Agropecuaria</item>
+        <item>Centro de Desarrollo Agroempresarial</item>
+        <item>Centro Industrial y Desarrollo Empresarial de Soacha</item>
+        <item>Centro de Tecnologías para la Construcción y la Madera</item>
+        <item>Centro de Electricidad, Electrónica y Telecomunicaciones</item>
+        <item>Centro de Gestión Industrial</item>
+        <item>Centro de Manufacturas en Textiles y Cuero</item>
+        <item>Centro de Tecnologías del Transporte</item>
+        <item>Centro Metalmecánico</item>
+        <item>Centro de Materiales y Ensayos</item>
+        <item>Centro de Diseño y Metrología</item>
+        <item>Centro para la Industria de la Comunicación Gráfica</item>
+        <item>Centro de Gestión de Mercados, Logística y Tecnologías de la Información</item>
+        <item>Centro de Formación de Talento Humano en Salud</item>
+        <item>Centro de Gestión Administrativa</item>
+        <item>Centro de Servicios Financieros</item>
+        <item>Centro Nacional de Hotelería, Turismo y Alimentos</item>
+        <item>Centro de Formación en Actividad Física y Cultura.</item>
+        <item>Centro Ambiental y Ecoturístico del Nororiente Amazónico</item>
+        <item>Centro Industrial y de Energías Alternativas</item>
+        <item>Centro Agroempresarial y Acuícola</item>
+        <item>Centro de Desarrollo Agroindustrial, Turístico y Tecnológico del Guaviare</item>
+        <item>Centro de Formación Agroindustrial</item>
+        <item>Centro Agroempresarial y Desarrollo Pecuario del Huila</item>
+        <item>Centro de Desarrollo Agroempresarial y Turístico del Huila</item>
+        <item>Centro de la Industria, la Empresa y los Servicios</item>
+        <item>Centro de Gestión y Desarrollo Sostenible Surcolombiano</item>
+        <item>Centro Acuícola y Agroindustrial de Gaira</item>
+        <item>Centro de Logística y Promoción Ecoturística del Magdalena</item>
+        <item>Centro Agroindustrial del Meta</item>
+        <item>Centro de Industria y Servicios del Meta</item>
+        <item>Centro Surcolombiano de Logística Internacional</item>
+        <item>Centro Agroindustrial y Pesquero de la Costa Pacífica</item>
+        <item>Centro Internacional de Producción Limpia - Lope</item>
+        <item>Centro de Atención al Sector Agropecuario</item>
+        <item>Centro de la Industria, la Empresa y los Servicios</item>
+        <item>Centro Agroforestal y Acuícola Arapaima</item>
+        <item>Centro Agroindustrial</item>
+        <item>Centro para el Desarrollo Tecnológico de la Construcción</item>
+        <item>Centro de Comercio, Industria y Turismo</item>
+        <item>Centro de Atención al Sector Agropecuario</item>
+        <item>Centro de Diseño e Innovación Tecnológica Industrial</item>
+        <item>Centro de Comercio y Servicios</item>
+        <item>Centro de Formación Turística, Gente de Mar y de Servicios</item>
+        <item>Centro de Atención al Sector Agropecuario</item>
+        <item>Centro Industrial de Mantenimiento Integral</item>
+        <item>Centro Industrial del Diseño y la Manufactura</item>
+        <item>Centro de Servicios Empresariales y Turísticos</item>
+        <item>Centro Industrial y del Desarrollo Tecnológico</item>
+        <item>Centro Agroturístico</item>
+        <item>Centro Agroempresarial y Turístico de los Andes</item>
+        <item>Centro de Gestión Agroempresarial del Oriente</item>
+        <item>Centro de la Innovación, la Tecnología y los Servicios</item>
+        <item>Centro Agropecuario La Granja</item>
+        <item>Centro de Industria y de la Construcción</item>
+        <item>Centro de Comercio y Servicios</item>
+        <item>Centro Agropecuario de Buga</item>
+        <item>Centro Latinoamericano de Especies Menores</item>
+        <item>Centro Náutico Pesquero de Buenaventura</item>
+        <item>Centro de Electricidad y Automatización Industrial</item>
+        <item>Centro de la Construcción</item>
+        <item>Centro de Diseño Tecnológico Industrial</item>
+        <item>Centro Nacional de Asistencia Técnica  a la Industria - Astin</item>
+        <item>Centro de Gestión Tecnológica de Servicios</item>
+        <item>Centro de Tecnologías Agroindustriales</item>
+        <item>Centro de Biotecnología Industrial</item>
+        <item>Centro Agropecuario y de Servicios Ambientales Jirijirimo</item>
+        <item>Centro de Producción y Transformación Agroindustrial de la Orinoquía</item>
+
     </array>
 </resources>
