@@ -17,7 +17,8 @@
         <ImageView
             android:layout_width="@dimen/imgLogoWidth"
             android:layout_height="@dimen/imgLogoHeight"
-            android:src="@drawable/logoquejapp"/>
+            android:src="@drawable/logoquejapp"
+            android:contentDescription="@string/imgLogoDescription" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -29,6 +30,19 @@
             android:gravity="center"/>
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingStart="@dimen/lyPaddingStart"
+        android:paddingEnd="@dimen/lyPaddingEnd"
+        android:layout_marginStart="@dimen/lyMarginStart"
+        android:layout_marginEnd="@dimen/lyMarginEnd"
+        android:layout_marginTop="@dimen/lyMarginTop"
+        android:layout_marginBottom="@dimen/lyMarginBottom"
+
+        >
    <TextView
        android:layout_width="@dimen/txtvwTitulosMedianosWidth"
        android:layout_height="@dimen/txtvwTitulosMedianosHeight"
@@ -49,6 +63,6 @@
         android:layout_width="@dimen/edTxtWidth"
         android:layout_height="@dimen/edTxtHeight"
         android:layout_gravity="center"/>
-
+    </LinearLayout>
 
 </LinearLayout>

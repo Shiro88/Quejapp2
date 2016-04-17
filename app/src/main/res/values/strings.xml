@@ -37,12 +37,13 @@
     <string name="txtvwComentarios">Comentarios</string>
     <!--Strings para el logotipo-->
     <string name="imgLogoDescription">Logotipo_Quejapp</string>
-    <string name="imgLogoSenaDescription">Logotipo_Quejapp</string>
+    <string name="imgLogoSenaDescription">Logotipo_Sena</string>
 
     <string name="FontFamilyQuejapp">Verdana</string>
     <string name="txtvwTituloPqrs">PQRS</string>
     <string name="txtvwTituloCrearPqrs">Registrar PQRS</string>
     <string name="txtvwSbtituloPqrs">Peticiones, Quejas, Reclamos, Sugerencias</string>
     <string name="cbxAnonimo">Anonimo</string>
+    <string name="imgLogoQuejapp">imgLogoQuejapp</string>
 
 </resources>

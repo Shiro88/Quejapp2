@@ -268,5 +268,15 @@
     <dimen name="txvwFontSizeTitulosMedianos">20sp</dimen>
     <dimen name="txvwFontSizeTitulosPequeños">15sp</dimen>
 
+    <!--Padding Layouts-->
+    <dimen name="lyPaddingStart">5dp</dimen>
+    <dimen name="lyPaddingEnd">5dp</dimen>
+    <dimen name="lyPaddingTop">5dp</dimen>
+    <dimen name="lyPaddingBottom">5dp</dimen>
 
+    <!--Margin Layouts-->
+    <dimen name="lyMarginStart">5dp</dimen>
+    <dimen name="lyMarginEnd">5dp</dimen>
+    <dimen name="lyMarginTop">5dp</dimen>
+    <dimen name="lyMarginBottom">5dp</dimen>
 </resources>
