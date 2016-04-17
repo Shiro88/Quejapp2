@@ -184,7 +184,6 @@
     <dimen name="spPaddingEnd">1dp</dimen>
 
 
-
     <dimen name="btnContinuarFormUnoWidth">350dp</dimen>
     <dimen name="btnContinuarFormUnoHeight">50dp</dimen>
     <dimen name="btnContinuarFormUnoMargin">1dp</dimen>

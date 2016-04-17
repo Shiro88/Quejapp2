@@ -42,5 +42,6 @@
     <string name="txtvwTituloPqrs">PQRS</string>
     <string name="txtvwTituloCrearPqrs">Registrar PQRS</string>
     <string name="txtvwSbtituloPqrs">Peticiones, Quejas, Reclamos, Sugerencias</string>
+    <string name="cbxAnonimo">Anonimo</string>
 
 </resources>

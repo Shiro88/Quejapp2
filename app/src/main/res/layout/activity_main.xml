@@ -27,16 +27,7 @@
             android:layout_weight="1"
             />
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="5"
-            android:paddingStart="@dimen/imgLogoMarginStart"
-            android:layout_gravity="center">
 
-
-        </LinearLayout>
 
         <ImageView
             android:layout_width="@dimen/imgLogoHeight"
