@@ -133,13 +133,15 @@
                     android:layout_width="@dimen/txtvwDescripcionFormDosWidth"
                     android:layout_height="@dimen/txtvwDescripcionFormDosHeight"
                     android:text="@string/txtvwDescripcion"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    />
 
             </LinearLayout>
             <EditText
                 android:layout_width="@dimen/edTxtDescripcionFormDosWidth"
                 android:layout_height="@dimen/edTxtDescripcionFormDosHeight"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:textAlignment="textStart" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
