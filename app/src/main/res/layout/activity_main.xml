@@ -26,11 +26,38 @@
             android:contentDescription="@string/imgLogoDescription"
             android:layout_weight="1"
             />
-        <TextView
+
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="PQRS"
-            android:textSize="48sp" />
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:paddingStart="@dimen/imgLogoMarginStart"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PQRS"
+                android:textSize="48sp"
+                android:typeface="serif"
+                android:textColor="@color/PrimaryColorQuejapp"
+                android:textStyle="italic|bold"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peticiones, Quejas, Reclamos, Sugerencias"
+                android:textSize="10sp"
+                android:typeface="serif"
+                android:textColor="@color/PrimaryColorQuejapp"
+                android:textStyle="italic|bold"
+                android:paddingStart="@dimen/edTxtLogInPaddingStart"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+        </LinearLayout>
 
         <ImageView
             android:layout_width="@dimen/imgLogoHeight"

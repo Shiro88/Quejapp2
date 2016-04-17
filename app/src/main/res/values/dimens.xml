@@ -36,7 +36,7 @@
     <dimen name="imgLogoSenaPadding">1dp</dimen>
     <dimen name="imgLogoSenaPaddingTop">1dp</dimen>
     <dimen name="imgLogoSenaPaddingButton">1dp</dimen>
-    <dimen name="imgLogoSenaPaddingLeft">140dp</dimen>
+    <dimen name="imgLogoSenaPaddingLeft">1dp</dimen>
     <dimen name="imgLogoSenaPaddingRight">1dp</dimen>
 
     <!--Tamaño del EditText Login-->
