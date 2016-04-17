@@ -1,6 +1,7 @@
 package com.pqrs.sena.quejapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -16,19 +17,26 @@ public class registrar_pqrs extends AppCompatActivity {
     }
     @Override
     public boolean onCreateOptionsMenu(Menu m){
-        getMenuInflater().inflate(R.menu.mi_menu_uno, m);
+        getMenuInflater().inflate(R.menu.mi_menu_registrar, m);
         return true;
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem mItem){
         switch(mItem.getItemId()){
-            case R.id.mi_item_menu_uno:
+            case R.id.mi_item_menu_login:
                 enviarMensajeToast("uno",Toast.LENGTH_SHORT);
+                cambiarActividad(MainActivity.class);
                 break;
-            case R.id.mi_item_menu_dos:
-                enviarMensajeToast("dos",Toast.LENGTH_SHORT);
+            case R.id.mi_item_menu_registrar:
+                enviarMensajeToast("Ya estas aqui", Toast.LENGTH_SHORT);
+
+                break;
+            case R.id.mi_item_menu_buscar:
+                enviarMensajeToast("tres",Toast.LENGTH_SHORT);
+                cambiarActividad(activity_buscar_pqrs.class);
                 break;
             default:
+                enviarMensajeToast("No es un item valido ",Toast.LENGTH_SHORT);
                 break;
         }
         return true;
@@ -36,6 +44,10 @@ public class registrar_pqrs extends AppCompatActivity {
     /*Funcion para enviar mensajes de tipoToast*/
     public void enviarMensajeToast(String msn,int tiempoDuracion){
         Toast.makeText(getApplicationContext(),msn,tiempoDuracion).show();
+    }
+    /*Funcion para enviar a otra actividad*/
+    public void cambiarActividad(Class<?> clDestino){
+        startActivity(new Intent(getApplicationContext(),clDestino));
     }
 
 
