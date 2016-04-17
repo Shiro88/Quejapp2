@@ -10,4 +10,13 @@
     tools:context="com.pqrs.sena.quejapp.activity_buscar_pqrs"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_width="@dimen/txtvwTitulosGrandesWidth"
+        android:layout_height="@dimen/txtvwTitulosGrandesHeight"
+        android:layout_gravity="center"
+        android:text="@string/txtvwTituloBuscarPQRS"
+        android:textSize="@dimen/txvwTitulosGrandesFontSize"
+        android:textAlignment="center"
+        android:textColor="@color/PrimaryColorQuejapp"/>
+
 </LinearLayout>

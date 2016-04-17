@@ -29,6 +29,7 @@
     <string name="txtvwTemaPQRS">Tema PQRS</string>
     <string name="txtvwDescripcion">Descripcion</string>
     <string name="txtvwBuscarPQRS">Buscar</string>
+    <string name="txtvwTituloBuscarPQRS">Buscar PQRS</string>
     <string name="txtvwSolicitudNumero">Numero solicitud</string>
     <string name="txtvwEstado">Estado de la PQRS</string>
     <string name="txtvwAreasEncargadas">Area encargada</string>
