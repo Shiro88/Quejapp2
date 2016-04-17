@@ -9,14 +9,46 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.pqrs.sena.quejapp.activity_buscar_pqrs"
     android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="@dimen/imgLogoWidth"
+            android:layout_height="@dimen/imgLogoHeight"
+            android:src="@drawable/logoquejapp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/txtvwTituloBuscarPQRS"
+            android:textSize="@dimen/txvwTitulosGrandesFontSize"
+            android:textAlignment="center"
+            android:textColor="@color/PrimaryColorQuejapp"
+            android:gravity="center"/>
 
+    </LinearLayout>
+   <TextView
+       android:layout_width="@dimen/txtvwTitulosMedianosWidth"
+       android:layout_height="@dimen/txtvwTitulosMedianosHeight"
+       android:layout_gravity="center"
+       android:text="@string/txtvwSolicitudNumero"
+       />
+    <EditText
+        android:layout_width="@dimen/edTxtWidth"
+        android:layout_height="@dimen/edTxtHeight"
+        android:layout_gravity="center"/>
     <TextView
-        android:layout_width="@dimen/txtvwTitulosGrandesWidth"
-        android:layout_height="@dimen/txtvwTitulosGrandesHeight"
+        android:layout_width="@dimen/txtvwTitulosMedianosWidth"
+        android:layout_height="@dimen/txtvwTitulosMedianosHeight"
         android:layout_gravity="center"
-        android:text="@string/txtvwTituloBuscarPQRS"
-        android:textSize="@dimen/txvwTitulosGrandesFontSize"
-        android:textAlignment="center"
-        android:textColor="@color/PrimaryColorQuejapp"/>
+        android:text="@string/txtvwNumeroDocumento"
+        />
+    <EditText
+        android:layout_width="@dimen/edTxtWidth"
+        android:layout_height="@dimen/edTxtHeight"
+        android:layout_gravity="center"/>
+
 
 </LinearLayout>
