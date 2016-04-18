@@ -64,5 +64,15 @@
         android:layout_height="@dimen/edTxtHeight"
         android:layout_gravity="center"/>
     </LinearLayout>
-
+<Button
+    android:layout_width="@dimen/btnBuscarPQRSWidth"
+    android:layout_height="@dimen/btnBuscarPQRSHeight"
+    android:layout_gravity="center"
+    android:text="@string/btnBuscarPQRS"
+    android:paddingStart="@dimen/btnLogInPaddingStart"
+    android:paddingEnd="@dimen/btnBuscarPQRSPaddingEnd"
+    android:layout_marginLeft="@dimen/btnBuscarPQRSMarginLeft"
+    android:layout_marginRight="@dimen/btnBuscarPQRSMarginRight"
+    android:layout_marginBottom="@dimen/btnBuscarPQRSMarginButton"
+    android:layout_marginTop="@dimen/btnBuscarPQRSMarginTop"/>
 </LinearLayout>

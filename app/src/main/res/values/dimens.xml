@@ -249,6 +249,8 @@
     <dimen name="btnBuscarPQRSPaddingButton">1dp</dimen>
     <dimen name="btnBuscarPQRSPaddingLeft">1dp</dimen>
     <dimen name="btnBuscarPQRSPaddingRight">1dp</dimen>
+    <dimen name="btnBuscarPQRSPaddingEnd">1dp</dimen>
+
     <!--Tamaños eleemntos resultados-->
     <dimen name="btnAtrasResultadoWidth">320dp</dimen>
     <dimen name="btnAtrasResultadoHeight">60dp</dimen>
