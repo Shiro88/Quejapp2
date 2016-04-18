@@ -4,15 +4,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".registrar_pqrs">
     <item android:id="@+id/mi_item_menu_login"
-        android:title="@string/item_login"
+        android:title="@string/itmMenuVolver"
         android:orderInCategory="1"
         app:showAsAction="never"></item>
     <item android:id="@+id/mi_item_menu_registrar"
-        android:title="@string/item_registrar"
+        android:title="@string/itmMenuCrear"
         android:orderInCategory="1"
         app:showAsAction="never"></item>
     <item android:id="@+id/mi_item_menu_buscar"
-        android:title="@string/item_buscar"
+        android:title="@string/itmMenuBuscar"
         android:orderInCategory="1"
         app:showAsAction="never"></item>
 </menu>
