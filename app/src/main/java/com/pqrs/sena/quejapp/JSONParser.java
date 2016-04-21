@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.Menu;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,8 +20,44 @@ public class JSONParser extends AppCompatActivity implements View.OnClickListene
     Button btnRegistrar;
     EditText edtNombreCompleto;
     EditText edtApellidos;
-    EditText 
+    Spinner spnTipoDocumento;
+    EditText edtNumeroDocumento;
+    EditText edtNombreUsuario;
+    EditText edtContraseña;
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_registro_usuario);
+        btnRegistrar= (Button) findViewById(R.id.btnRegistrarse);
+        edtNombreCompleto = (EditText) findViewById(R.id.edt_nombre_completo);
+        edtApellidos = (EditText) findViewById(R.id.edt_apellidos);
+        edtNumeroDocumento = (EditText) findViewById(R.id.edtnumero_documento);
+        spnTipoDocumento = (Spinner) findViewById(R.id.spntipodocumento);
+        edtNombreUsuario =(EditText) findViewById(R.id.edt_nombreusuario);
+        edtContraseña =(EditText) findViewById(R.id.edt_contraseña);
+
+    }
+
+    public void salvar(View view){
+        enviarDatos(edt_identificacion.getText().toString(), edt_nombre.getText().toString(), edt_url.getText().toString());
+    }
+
+
+    private void enviarDatos(String Identificacion, String Nombre, String ip) {
+        AsyncHttpClient client = new AsyncHttpClient();
+        String url="http://"+ip+"/insert.php?";
+        String parametros="&identificacion="+Identificacion+"&nombre="+Nombre;
+        client.put(url + parametros, new AsyncHttpResponseHandler() {
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+                if (statusCode==200){
+                    String resultado=new String(responseBody);
+                    Toast.makeText(MainActivity.this,"Comunicacion correcta:"+resultado,Toast.LENGTH_LONG).show();
+                    txv_cath_error.setText(resultado);
+                }
+            }
     @Override
+
+
     public void onClick(View v) {
 
     }

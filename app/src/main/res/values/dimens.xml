@@ -284,6 +284,9 @@
     <dimen name="txvNumRadicadoPaddingLeft">1dp</dimen>
     <dimen name="txvNumRadicadoPaddingRigth">1dp</dimen>
     <dimen name="txvNumRadicadoPaddingButton">1dp</dimen>
+    <dimen name="lyMarginBottom">5dp</dimen>
+    <dimen name="lyPaddingTop">5dp</dimen>
+    <dimen name="lyMarginTop">5dp</dimen>
 
 
     <!--FIN Tamaños para el layout que presenta las quejas en la lista -->

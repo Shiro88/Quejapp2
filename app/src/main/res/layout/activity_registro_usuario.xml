@@ -86,7 +86,8 @@
             android:layout_height="wrap_content"
             android:entries="@array/spTipoDocumento"
             android:layout_gravity="right"
-            android:gravity="right">
+            android:gravity="right"
+            android:id="@+id/spntipodocumento">
 
         </Spinner>
         <EditText
@@ -95,7 +96,8 @@
             android:layout_gravity="left"
             android:paddingBottom="@dimen/edTxtPaddingButton"
             android:paddingTop="@dimen/edTxtPaddingTop"
-            android:layout_marginLeft="@dimen/edTxtMarginLeft"/>
+            android:layout_marginLeft="@dimen/edTxtMarginLeft"
+            android:id="@+id/edtnumero_documento"/>
     </LinearLayout>
 
     <LinearLayout
@@ -144,5 +146,6 @@
     <Button
         android:layout_width="@dimen/btnContinuarFormUnoWidth"
         android:layout_height="@dimen/btnContinuarFormUnoHeight"
-        android:text="Registrarse"/>
+        android:text="Registrarse"
+        android:id="@+id/btnRegistrarse"/>
 </LinearLayout>

@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".registrar_pqrs" />
-        <activity android:name=".activity_buscar_pqrs"></activity>
+        <activity android:name=".activity_buscar_pqrs" />
+        <activity android:name=".registro_usuario"></activity>
     </application>
 
 </manifest>

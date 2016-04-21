@@ -30,11 +30,14 @@
     <string name="txtvwDescripcion">Descripcion</string>
     <string name="txtvwBuscarPQRS">Buscar</string>
     <string name="txtvwTituloBuscarPQRS">Buscar PQRS</string>
+    <string name="txtvwTituloRegistroUsuario">Registrarse</string>
     <string name="txtvwSolicitudNumero">Numero solicitud</string>
     <string name="txtvwEstado">Estado de la PQRS</string>
     <string name="txtvwAreasEncargadas">Area encargada</string>
     <string name="txtFechaRespuesta">Fecha de respuesta</string>
     <string name="txtvwComentarios">Comentarios</string>
+
+
     <!--Strings para el logotipo-->
     <string name="imgLogoDescription">Logotipo_Quejapp</string>
     <string name="imgLogoSenaDescription">Logotipo_Quejapp</string>
