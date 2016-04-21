@@ -22,6 +22,6 @@ Button btnIngresar;
 
     @Override
     public void onClick(View v) {
-        startActivity(new Intent(MainActivity.this,registrar_pqrs.class));
+        startActivity(new Intent(MainActivity.this,Mis_pqrs.class));
     }
 }

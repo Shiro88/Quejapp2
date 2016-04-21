@@ -44,10 +44,9 @@
     <string name="txtvwTituloCrearPqrs">Registrar PQRS</string>
     <string name="txtvwSbtituloPqrs">Peticiones, Quejas, Reclamos, Sugerencias</string>
     <string name="cbxAnonimo">Anonimo</string>
-
-    <!--Strings de los elementos del Menu -->
-    <string name="itmMenuBuscar">Buscar PQRS</string>
-    <string name="itmMenuCrear">Crear PQRS</string>
-    <string name="itmMenuVolver">Volver PQRS</string>
+    <!--Strings para los items del action bar-->
+    <string name="item_login">Login</string>
+    <string name="item_registrar">Registrar PQRS</string>
+    <string name="item_buscar">Buscar PQRS</string>
 
 </resources>
