@@ -16,9 +16,13 @@ import cz.msebera.android.httpclient.Header;
  * Created by ColsutecR on 20/04/2016.
  */
 public class JSONParser extends AppCompatActivity implements View.OnClickListener {
+    Button btnRegistrar;
+    EditText edtNombreCompleto;
+    EditText edtApellidos;
+    EditText 
     @Override
     public void onClick(View v) {
 
     }
 }
-}
+
