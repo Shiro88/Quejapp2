@@ -38,13 +38,13 @@ public class JSONParser extends AppCompatActivity implements View.OnClickListene
     }
 
     public void salvar(View view){
-        enviarDatos(edt_identificacion.getText().toString(), edt_nombre.getText().toString(), edt_url.getText().toString());
+        enviarDatos(edtNombreCompleto.getText().toString(), edtApellidos.getText().toString(), spnTipoDocumento.getSelectedItem().toString(), edtNumeroDocumento.getText().toString(), edtNombreUsuario.getText().toString(), edtContraseña.getText().toString());
     }
 
 
-    private void enviarDatos(String Identificacion, String Nombre, String ip) {
+    private void enviarDatos(String Nombres, String Apellidos, String TipoDocumento, String NumeroDocumento, String NombreUsuario, String Contraseña) {
         AsyncHttpClient client = new AsyncHttpClient();
-        String url="http://"+ip+"/insert.php?";
+        String url="http://www.movilessena.com/Quejapp/insert.php?";
         String parametros="&identificacion="+Identificacion+"&nombre="+Nombre;
         client.put(url + parametros, new AsyncHttpResponseHandler() {
             @Override
@@ -55,7 +55,13 @@ public class JSONParser extends AppCompatActivity implements View.OnClickListene
                     txv_cath_error.setText(resultado);
                 }
             }
-    @Override
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+
+            }
+
+            @Override
 
 
     public void onClick(View v) {
