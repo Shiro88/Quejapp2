@@ -44,28 +44,34 @@ public class JSONParser extends AppCompatActivity implements View.OnClickListene
 
     private void enviarDatos(String Nombres, String Apellidos, String TipoDocumento, String NumeroDocumento, String NombreUsuario, String Contraseña) {
         AsyncHttpClient client = new AsyncHttpClient();
-        String url="http://www.movilessena.com/Quejapp/insert.php?";
-        String parametros="&identificacion="+Identificacion+"&nombre="+Nombre;
+        String url="http://www.movilessena.com/Quejapp/Insert.php?";
+        String parametros="&nombres="+Nombres+"&apellidos="+Apellidos+"&identificacion"+NumeroDocumento+"&tipodocumento"+TipoDocumento+"&nombreusuario"+NombreUsuario+"&contraseña"+Contraseña;
         client.put(url + parametros, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                if (statusCode==200){
-                    String resultado=new String(responseBody);
-                    Toast.makeText(MainActivity.this,"Comunicacion correcta:"+resultado,Toast.LENGTH_LONG).show();
-                    txv_cath_error.setText(resultado);
+                if (statusCode == 200) {
+                    String resultado = new String(responseBody);
+                    Toast.makeText(JSONParser.this, "Comunicacion correcta:" + resultado, Toast.LENGTH_LONG).show();
+                    //txv_cath_error.setText(resultado);
                 }
             }
 
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+                //Toast.makeText(MainActivity.this,error.getMessage().toString(),Toast.LENGTH_LONG).show();
+               // txv_cath_error.setText(error.getMessage().toString());
 
             }
-
-            @Override
-
-
-    public void onClick(View v) {
+        });
 
     }
+
+
+    @Override
+    public void onClick(View v) {
+        salvar(v);
+    }
 }
+
+
 
