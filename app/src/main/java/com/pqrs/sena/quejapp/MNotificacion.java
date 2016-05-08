@@ -9,8 +9,22 @@ public class MNotificacion {
     public static final String CLAVE_ID_MEDIO_NOTIFICACION="IdMNotificacion";
     public static final String CLAVE_DESCRIPCION="Descripcion";
 
-    public int IdMNOtificacion;
-    public String Descripcion;
+    public int intIdMNOtificacion;
+    public String strDescripcion;
 
+    public int getIntIdMNOtificacion() {
+        return intIdMNOtificacion;
+    }
 
+    public void setIntIdMNOtificacion(int intIdMNOtificacion) {
+        this.intIdMNOtificacion = intIdMNOtificacion;
+    }
+
+    public String getStrDescripcion() {
+        return strDescripcion;
+    }
+
+    public void setStrDescripcion(String strDescripcion) {
+        this.strDescripcion = strDescripcion;
+    }
 }

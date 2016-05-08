@@ -9,7 +9,7 @@ public class Asunto {
     public static final String CLAVE_DESCRIPCION="DescripcionAsunto";
 
     public int idAsunto;
-    public String DescripcionAsunto;
+    public String strDescripcionAsunto;
 
     public int getIdAsunto() {
         return idAsunto;
@@ -20,11 +20,11 @@ public class Asunto {
     }
 
     public String getDescripcionAsunto() {
-        return DescripcionAsunto;
+        return strDescripcionAsunto;
     }
 
-    public void setDescripcionAsunto(String descripcionAsunto) {
-        DescripcionAsunto = descripcionAsunto;
+    public void setDescripcionAsunto(String strdescripcionAsunto) {
+        strDescripcionAsunto = strdescripcionAsunto;
     }
 
 
