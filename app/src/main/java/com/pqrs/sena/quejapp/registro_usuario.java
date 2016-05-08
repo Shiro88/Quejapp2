@@ -10,6 +10,9 @@ import android.widget.Toast;
 
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.RequestParams;
+
+import java.util.HashMap;
 
 import cz.msebera.android.httpclient.Header;
 
@@ -35,14 +38,45 @@ public class registro_usuario extends AppCompatActivity implements View.OnClickL
 
     }
     public void salvar(View view){
-        enviarDatos(edtNombreCompleto.getText().toString(), edtApellidos.getText().toString(), spnTipoDocumento.getSelectedItem().toString(), edtNumeroDocumento.getText().toString(), edtNombreUsuario.getText().toString(), edtContraseña.getText().toString());
+       // enviarDatos(edtNombreCompleto.getText().toString(), edtApellidos.getText().toString(), spnTipoDocumento.getSelectedItem().toString(), edtNumeroDocumento.getText().toString(), edtNombreUsuario.getText().toString(), edtContraseña.getText().toString());
+
+        HashMap<String,String> miHash= new HashMap<>();
+        miHash.put("nombre",edtNombreCompleto.getText().toString());
+        miHash.put("apellido",edtApellidos.getText().toString());
+        miHash.put("tipoDocumento",spnTipoDocumento.getSelectedItem().toString());
+        miHash.put("numeroDocumento",edtNumeroDocumento.getText().toString());
+        miHash.put("nombreUsuario",edtNombreUsuario.getText().toString());
+        miHash.put("clave",edtContraseña.getText().toString());
+        enviarDatos("usuario",miHash);
+        
+    }
+
+    public void enviarDatos(String clave,Object value){
+        AsyncHttpClient cliente= new AsyncHttpClient();
+        String url="http://www.movilessena.com/Quejapp/Insert.php";
+        //String url="http://www.movilessena.com/Quejapp/Insert.php?";
+        RequestParams rpMisParametos=new RequestParams();
+        rpMisParametos.put(clave,value);
+        cliente.post(url, rpMisParametos, new AsyncHttpResponseHandler() {
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+                String resultado = new String(responseBody);
+                Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+                Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
 
-    private void enviarDatos(String nombrecompleto, String Apellidos,  String NumeroDocumento,String TipoDocumento ,String NombreUsuario, String Contraseña) {
+
+    private void enviarDatos(String nombrecompleto, String Apellidos,  String NumeroDocumento,String TipoDocumento ,String NombreUsuario, String Contrasenia) {
         AsyncHttpClient client = new AsyncHttpClient();
         String url="http://www.movilessena.com/Quejapp/Insert.php?";
-        String parametros="&nombres="+nombrecompleto+"&apellidos="+Apellidos+"&identificacion="+NumeroDocumento+"&tipodocumento="+TipoDocumento+"&nombreusuario="+NombreUsuario+"&contrasenia="+Contraseña;
+        String parametros="&nombres="+nombrecompleto+"&apellidos="+Apellidos+"&identificacion="+NumeroDocumento+"&tipodocumento="+TipoDocumento+"&nombreusuario="+NombreUsuario+"&contrasenia="+Contrasenia;
         client.post(url + parametros, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
@@ -59,7 +93,7 @@ public class registro_usuario extends AppCompatActivity implements View.OnClickL
 
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                Toast.makeText(registro_usuario.this,statusCode + error.getMessage().toString(),Toast.LENGTH_LONG).show();
+                Toast.makeText(registro_usuario.this,statusCode + error.getMessage(),Toast.LENGTH_LONG).show();
                 // txv_cath_error.setText(error.getMessage().toString());
 
             }
