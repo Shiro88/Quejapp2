@@ -84,8 +84,8 @@
         android:layout_marginTop="@dimen/lyMarginTop">
 
         <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="134dp"
+            android:layout_height="35dp"
             android:entries="@array/spTipoDocumento"
             android:layout_gravity="right"
             android:gravity="right"
