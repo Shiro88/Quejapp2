@@ -162,6 +162,7 @@
         <item>Categoria PQRS</item>
     </array>
     <array name="spTipoDocumento">
+        <item>Tipo Documento</item>
         <item>CC</item>
         <item>TI</item>
         <item>CE</item>
