@@ -19,13 +19,7 @@
         android:paddingTop="@dimen/lyPaddingTop"
         android:layout_marginTop="@dimen/lyMarginTop">
 
-        <TextView
-            android:layout_width="@dimen/txtvwTitulosMedianosWidth"
-            android:layout_height="@dimen/txtvwTitulosMedianosHeight"
-            android:layout_gravity="center"
-            android:text="@string/txtvwNombreCompleto"
 
-            />
         <EditText
             android:layout_width="@dimen/edTxtWidth"
             android:layout_height="@dimen/edTxtHeight"
@@ -33,15 +27,9 @@
             android:paddingTop="@dimen/edTxtPaddingTop"
             android:layout_marginLeft="@dimen/edTxtMarginLeft"
             android:id="@+id/edt_nombre_completo"
-            android:text="Prueba"
+            android:hint="@string/txtvwNombreCompleto"
             />
-        <TextView
-            android:layout_width="@dimen/txtvwTitulosMedianosWidth"
-            android:layout_height="@dimen/txtvwTitulosMedianosHeight"
-            android:layout_gravity="center"
-            android:text="@string/txtvwApellidos"
 
-            />
         <EditText
             android:layout_width="@dimen/edTxtWidth"
             android:layout_height="@dimen/edTxtHeight"
@@ -49,49 +37,21 @@
             android:paddingTop="@dimen/edTxtPaddingTop"
             android:layout_marginLeft="@dimen/edTxtMarginLeft"
             android:id="@+id/edt_apellidos"
-            android:text="Prueba"
+            android:hint="@string/txtvwApellidos"
 
             />
 
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:paddingBottom="@dimen/lyMarginBottom"
-        android:paddingTop="@dimen/lyPaddingTop"
-        android:layout_marginTop="@dimen/lyMarginTop">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/txtvwTipoDocumento"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/txtvwNumeroDocumento"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:paddingBottom="@dimen/lyMarginBottom"
-        android:paddingTop="@dimen/lyPaddingTop"
-        android:layout_marginTop="@dimen/lyMarginTop">
-
         <Spinner
-            android:layout_width="134dp"
-            android:layout_height="35dp"
+            android:layout_width="@dimen/spWidth"
+            android:layout_height="@dimen/spHeight"
             android:entries="@array/spTipoDocumento"
-            android:layout_gravity="right"
-            android:gravity="right"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:id="@+id/spntipodocumento">
 
         </Spinner>
+
+
         <EditText
             android:layout_width="@dimen/edTxtWidth"
             android:layout_height="@dimen/edTxtHeight"
@@ -100,25 +60,7 @@
             android:paddingTop="@dimen/edTxtPaddingTop"
             android:layout_marginLeft="@dimen/edTxtMarginLeft"
             android:id="@+id/edtnumero_documento"
-            android:text="Prueba"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:paddingBottom="@dimen/lyMarginBottom"
-        android:paddingTop="@dimen/lyPaddingTop"
-        android:layout_marginTop="@dimen/lyMarginTop">
-
-        <TextView
-            android:layout_width="@dimen/txtvwTitulosMedianosWidth"
-            android:layout_height="@dimen/txtvwTitulosMedianosHeight"
-            android:layout_gravity="center"
-            android:text="@string/txtvwNombreUsuario"
-
-            />
+            android:hint="@string/txtvwNumeroDocumento"/>
         <EditText
             android:layout_width="@dimen/edTxtWidth"
             android:layout_height="@dimen/edTxtHeight"
@@ -126,15 +68,9 @@
             android:paddingTop="@dimen/edTxtPaddingTop"
             android:layout_marginLeft="@dimen/edTxtMarginLeft"
             android:id="@+id/edt_nombreusuario"
-            android:text="Prueba"
+            android:hint="@string/txtvwNombreUsuario"
             />
-        <TextView
-            android:layout_width="@dimen/txtvwTitulosMedianosWidth"
-            android:layout_height="@dimen/txtvwTitulosMedianosHeight"
-            android:layout_gravity="center"
-            android:text="@string/txtvwClaveUsuario"
 
-            />
         <EditText
             android:layout_width="@dimen/edTxtWidth"
             android:layout_height="@dimen/edTxtHeight"
@@ -142,7 +78,8 @@
             android:paddingTop="@dimen/edTxtPaddingTop"
             android:layout_marginLeft="@dimen/edTxtMarginLeft"
             android:id="@+id/edt_contraseña"
-            android:text="Prueba"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
 
             />
 
