@@ -52,5 +52,6 @@
     <string name="item_registrar">Registrar PQRS</string>
     <string name="item_buscar">Buscar PQRS</string>
     <string name="item_registro">Registro de Usuario</string>
+    <string name="edtNumeroFicha">Nùmero de Ficha</string>
 
 </resources>
