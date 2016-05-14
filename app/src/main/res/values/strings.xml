@@ -53,5 +53,8 @@
     <string name="item_buscar">Buscar PQRS</string>
     <string name="item_registro">Registro de Usuario</string>
     <string name="edtNumeroFicha">Nùmero de Ficha</string>
+    <string name="edtContraseña">Contraseña</string>
+    <string name="btnRegistrarse">Registrarse</string>
+    <string name="imgLogoUsuario">imLogoUser</string>
 
 </resources>
