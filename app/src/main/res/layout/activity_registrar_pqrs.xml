@@ -58,9 +58,7 @@
                 android:paddingRight="@dimen/spPaddingRight"
                 android:spinnerMode="dialog"
                 android:layout_gravity="center"
-
                 android:textAlignment="center"
-
                 />
             <Spinner
                 android:layout_width="@dimen/spWidth"
@@ -75,8 +73,7 @@
                 android:paddingRight="@dimen/spPaddingRight"
                 android:entries="@array/spCentrosValues"
                 android:spinnerMode="dialog"
-                android:textAlignment="center"
-                android:layout_gravity="center"/>
+                android:textAlignment="center" />
 
             <Spinner
                 android:layout_width="@dimen/spWidth"
@@ -107,16 +104,23 @@
                 android:textAlignment="center"
                 android:layout_gravity="center"
                 android:entries="@array/spTipoPqrsValues"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtvwNumeroFicha"
-                android:layout_gravity="center"/>
+
             <EditText
-                android:layout_width="@dimen/edTxtWidth"
-                android:layout_height="@dimen/edTxtHeight"
+                android:layout_width="@dimen/spWidth"
+                android:layout_height="@dimen/spHeight"
+                android:layout_marginStart="@dimen/spMarginStart"
+                android:layout_marginEnd="@dimen/spMarginEnd"
+                android:paddingStart="@dimen/spPaddingStart"
+                android:paddingEnd="@dimen/spPaddingEnd"
+                android:layout_marginLeft="@dimen/spMarginLeft"
+                android:layout_marginRight="@dimen/spMarginRight"
+                android:paddingLeft="@dimen/spPaddingLeft"
+                android:paddingRight="@dimen/spPaddingRight"
+                android:textAlignment="center"
                 android:layout_gravity="center"
-                android:inputType="number" />
+                android:inputType="number"
+                android:hint="@string/edtNumeroFicha"
+                android:id="@+id/txvNumeroFicha"/>
 
             <Spinner
                 android:layout_width="@dimen/spWidth"
@@ -136,8 +140,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_gravity="center"
-                android:gravity="center">
+                android:layout_gravity="left"
+                android:gravity="left">
                 <TextView
                     android:layout_width="@dimen/txtvwDescripcionFormDosWidth"
                     android:layout_height="@dimen/txtvwDescripcionFormDosHeight"
