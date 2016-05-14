@@ -41,13 +41,14 @@ public class registro_usuario extends AppCompatActivity implements View.OnClickL
        // enviarDatos(edtNombreCompleto.getText().toString(), edtApellidos.getText().toString(), spnTipoDocumento.getSelectedItem().toString(), edtNumeroDocumento.getText().toString(), edtNombreUsuario.getText().toString(), edtContraseña.getText().toString());
 
         HashMap<String,String> miHash= new HashMap<>();
+        miHash.put("tabla","usuario");
         miHash.put("nombre",edtNombreCompleto.getText().toString());
         miHash.put("apellido",edtApellidos.getText().toString());
         miHash.put("tipoDocumento",spnTipoDocumento.getSelectedItem().toString());
         miHash.put("numeroDocumento",edtNumeroDocumento.getText().toString());
         miHash.put("nombreUsuario",edtNombreUsuario.getText().toString());
         miHash.put("clave",edtContraseña.getText().toString());
-        enviarDatos("usuario",miHash);
+        enviarDatos("objeto",miHash);
         
     }
 

@@ -47,7 +47,7 @@
             <Spinner
                 android:layout_width="@dimen/spWidth"
                 android:layout_height="@dimen/spHeight"
-                android:entries="@array/spnRegionalValues"
+
                 android:layout_marginStart="@dimen/spMarginStart"
                 android:layout_marginEnd="@dimen/spMarginEnd"
                 android:paddingStart="@dimen/spPaddingStart"

@@ -1,12 +1,16 @@
 package com.pqrs.sena.quejapp;
 
-import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
 
 public class registrar_pqrs extends AppCompatActivity {
 
@@ -14,6 +18,16 @@ public class registrar_pqrs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrar_pqrs);
+        WebServiceManager WebService = new WebServiceManager();
+        HashMap miHashRegional = new HashMap<String,String>();
+        miHashRegional.put("tabla", "regional");
+        miHashRegional.put("campos", "*");
+        JSONObject miJsonRegional=WebService.ConsultarDatos(miHashRegional);
+        try {
+            Toast.makeText(getApplicationContext(),miJsonRegional.get("mensaje").toString(),Toast.LENGTH_LONG).show();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
     @Override
     public boolean onCreateOptionsMenu(Menu m){
