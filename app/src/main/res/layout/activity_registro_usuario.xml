@@ -21,11 +21,19 @@
         android:weightSum="1">
 
 
-        <FrameLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="5.45"
-            >
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:layout_width="53dp"
+                android:layout_height="45dp"
+                android:id="@+id/imageView"
+                android:layout_gravity="left|center_vertical"
+                android:contentDescription="@string/imgLogoUsuario"
+                android:src="@drawable/ic_user"
+                android:layout_weight="0.18" />
 
             <EditText
                 android:layout_width="@dimen/edTxtWidth"
@@ -35,16 +43,10 @@
                 android:layout_marginLeft="@dimen/edTxtMarginLeft"
                 android:id="@+id/edt_nombre_completo"
                 android:hint="@string/txtvwNombreCompleto"
-                android:layout_gravity="center_vertical|right" />
+                android:layout_gravity="center_vertical|right"
+                android:layout_weight="0.9" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView"
-                android:layout_gravity="left|center_vertical"
-                android:contentDescription="@string/imgLogoUsuario"
-                android:src="@drawable/ic_user"/>
-        </FrameLayout>
+        </LinearLayout>
 
         <EditText
             android:layout_width="@dimen/edTxtWidth"
@@ -63,7 +65,8 @@
             android:entries="@array/spTipoDocumento"
             android:layout_gravity="center"
             android:gravity="center"
-            android:id="@+id/spntipodocumento">
+            android:id="@+id/spntipodocumento"
+            >
 
         </Spinner>
 
