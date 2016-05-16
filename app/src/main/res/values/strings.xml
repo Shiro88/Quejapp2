@@ -16,10 +16,10 @@
     <string name="txtvwClaveUsuario">Contraseña</string>
     <string name="txtvwCrearPQRS">Registrar PQRS</string>
     <string name="txtvwDatosBasicos">Datos Usuario</string>
-    <string name="txtvwNombreCompleto">Nombre completo</string>
-    <string name="txtvwApellidos">Apellidos</string>
+    <string name="txtvwNombreCompleto">Escribe aquítu nombre</string>
+    <string name="txtvwApellidos">Escribe tus apellidos</string>
     <string name="txtvwTipoDocumento">Tipo Documento</string>
-    <string name="txtvwNumeroDocumento">Numero documento</string>
+    <string name="txtvwNumeroDocumento">Digita tu numero de documento</string>
     <string name="txtvwRegional">Regional</string>
     <string name="txtvwCentro">Centro</string>
     <string name="txtvwSede">Sede</string>
@@ -36,6 +36,7 @@
     <string name="txtvwAreasEncargadas">Area encargada</string>
     <string name="txtFechaRespuesta">Fecha de respuesta</string>
     <string name="txtvwComentarios">Comentarios</string>
+    <string name="txvwRegistrarse">Registrarse</string>
 
 
     <!--Strings para el logotipo-->
@@ -47,6 +48,7 @@
     <string name="txtvwTituloCrearPqrs">Registrar PQRS</string>
     <string name="txtvwSbtituloPqrs">Peticiones, Quejas, Reclamos, Sugerencias</string>
     <string name="cbxAnonimo">Anonimo</string>
+    <string name="txvTituloRegistro">Registrarse en QuejApp</string>
     <!--Strings para los items del action bar-->
     <string name="item_login">Login</string>
     <string name="item_registrar">Registrar PQRS</string>

@@ -9,6 +9,29 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.pqrs.sena.quejapp.registro_usuario"
     android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txvTituloRegistro"
+        android:textSize="@dimen/txvwFontSizeTitulosMedianos"
+        android:typeface="serif"
+        android:textColor="@color/PrimaryColorQuejapp"
+        android:textStyle="italic|bold"
+        android:layout_gravity="center"
+        style="@style/AppTheme"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="10sp"
+        android:typeface="serif"
+        android:textColor="@color/PrimaryColorQuejapp"
+        android:textStyle="italic|bold"
+        android:paddingStart="@dimen/edTxtLogInPaddingStart"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -33,7 +56,7 @@
                 android:layout_gravity="left|center_vertical"
                 android:contentDescription="@string/imgLogoUsuario"
                 android:src="@drawable/ic_user"
-                android:layout_weight="0.18" />
+                />
 
             <EditText
                 android:layout_width="@dimen/edTxtWidth"
@@ -44,70 +67,162 @@
                 android:id="@+id/edt_nombre_completo"
                 android:hint="@string/txtvwNombreCompleto"
                 android:layout_gravity="center_vertical|right"
-                android:layout_weight="0.9" />
+
+                style="@style/EditTextStyle"
+                />
 
         </LinearLayout>
 
-        <EditText
-            android:layout_width="@dimen/edTxtWidth"
-            android:layout_height="@dimen/edTxtHeight"
-            android:paddingBottom="@dimen/edTxtPaddingButton"
-            android:paddingTop="@dimen/edTxtPaddingTop"
-            android:layout_marginLeft="@dimen/edTxtMarginLeft"
-            android:id="@+id/edt_apellidos"
-            android:hint="@string/txtvwApellidos"
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.5"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="53dp"
+        android:layout_height="45dp"
+        android:id="@+id/imgApeIcon"
+        android:layout_gravity="left|center_vertical"
+        android:contentDescription="@string/imgLogoUsuario"
+        android:src="@drawable/ic_user"
+        android:layout_weight="0.18"
+        />
 
-            />
+    <EditText
+        android:layout_width="@dimen/edTxtWidth"
+        android:layout_height="@dimen/edTxtHeight"
+        android:paddingBottom="@dimen/edTxtPaddingButton"
+        android:paddingTop="@dimen/edTxtPaddingTop"
+        android:layout_marginLeft="@dimen/edTxtMarginLeft"
+        android:id="@+id/edt_apellidos"
+        android:hint="@string/txtvwApellidos"
+        android:layout_gravity="center"
 
-        <Spinner
-            android:layout_width="@dimen/spWidth"
-            android:layout_height="@dimen/spHeight"
-            android:entries="@array/spTipoDocumento"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:id="@+id/spntipodocumento"
-            >
+        style="@style/EditTextStyle"
+        />
 
-        </Spinner>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="53dp"
+        android:layout_height="45dp"
+        android:id="@+id/imgTDIcon"
+        android:layout_gravity="left|center_vertical"
+        android:contentDescription="@string/imgLogoUsuario"
+        android:src="@drawable/ic_user"
+
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spHeight"
+        android:entries="@array/spTipoDocumento"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/spntipodocumento"
+        style="@style/EditTextStyle"
+        >
+
+    </Spinner>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="53dp"
+        android:layout_height="45dp"
+        android:id="@+id/imgIdentificacionIcon"
+        android:layout_gravity="left|center_vertical"
+        android:contentDescription="@string/imgLogoUsuario"
+        android:src="@drawable/ic_user"
+        android:layout_weight="0.18"
+        />
+    <EditText
+        android:layout_width="@dimen/edTxtWidth"
+        android:layout_height="@dimen/edTxtHeight"
+        android:layout_gravity="left"
+        android:paddingBottom="@dimen/edTxtPaddingButton"
+        android:paddingTop="@dimen/edTxtPaddingTop"
+        android:layout_marginLeft="@dimen/edTxtMarginLeft"
+        android:id="@+id/edtnumero_documento"
+        android:hint="@string/txtvwNumeroDocumento"
+        style="@style/EditTextStyle"/>
+
+</LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <ImageView
+               android:layout_width="53dp"
+               android:layout_height="45dp"
+               android:id="@+id/imgUserIcon"
+               android:layout_gravity="left|center_vertical"
+               android:contentDescription="@string/imgLogoUsuario"
+               android:src="@drawable/ic_user"
+               android:layout_weight="0.18"
+               />
+           <EditText
+               android:layout_width="@dimen/edTxtWidth"
+               android:layout_height="@dimen/edTxtHeight"
+               android:paddingBottom="@dimen/edTxtPaddingButton"
+               android:paddingTop="@dimen/edTxtPaddingTop"
+               android:layout_marginLeft="@dimen/edTxtMarginLeft"
+               android:id="@+id/edt_nombreusuario"
+               android:hint="@string/txtvwNombreUsuario"
+               style="@style/EditTextStyle"
+               />
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="53dp"
+                android:layout_height="45dp"
+                android:id="@+id/imgPassIcon"
+                android:layout_gravity="left|center_vertical"
+                android:contentDescription="@string/imgLogoUsuario"
+                android:src="@drawable/ic_lock_black_24dp"
+                android:layout_weight="0.18"
+                />
+            <EditText
+                android:layout_width="@dimen/edTxtWidth"
+                android:layout_height="@dimen/edTxtHeight"
+                android:paddingBottom="@dimen/edTxtPaddingButton"
+                android:paddingTop="@dimen/edTxtPaddingTop"
+                android:layout_marginLeft="@dimen/edTxtMarginLeft"
+                android:id="@+id/edt_contraseña"
+                android:hint="@string/edtContraseña"
+                android:inputType="textPassword"
+                style="@style/EditTextStyle"
+                />
+        </LinearLayout>
 
 
-        <EditText
-            android:layout_width="@dimen/edTxtWidth"
-            android:layout_height="@dimen/edTxtHeight"
-            android:layout_gravity="left"
-            android:paddingBottom="@dimen/edTxtPaddingButton"
-            android:paddingTop="@dimen/edTxtPaddingTop"
-            android:layout_marginLeft="@dimen/edTxtMarginLeft"
-            android:id="@+id/edtnumero_documento"
-            android:hint="@string/txtvwNumeroDocumento"/>
-        <EditText
-            android:layout_width="@dimen/edTxtWidth"
-            android:layout_height="@dimen/edTxtHeight"
-            android:paddingBottom="@dimen/edTxtPaddingButton"
-            android:paddingTop="@dimen/edTxtPaddingTop"
-            android:layout_marginLeft="@dimen/edTxtMarginLeft"
-            android:id="@+id/edt_nombreusuario"
-            android:hint="@string/txtvwNombreUsuario"
-            />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnContinuarFormUnoHeight"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/btnRegistrarse"
+                android:id="@+id/btnRegistrarse"
+                android:onClick="salvar"
+                style="@style/ButtonStyle"
+                />
 
-        <EditText
-            android:layout_width="@dimen/edTxtWidth"
-            android:layout_height="@dimen/edTxtHeight"
-            android:paddingBottom="@dimen/edTxtPaddingButton"
-            android:paddingTop="@dimen/edTxtPaddingTop"
-            android:layout_marginLeft="@dimen/edTxtMarginLeft"
-            android:id="@+id/edt_contraseña"
-            android:hint="@string/edtContraseña"
-            android:inputType="textPassword"
-
-            />
 
 
     </LinearLayout>
-    <Button
-        android:layout_width="@dimen/btnContinuarFormUnoWidth"
-        android:layout_height="@dimen/btnContinuarFormUnoHeight"
-        android:text="@string/btnRegistrarse"
-        android:id="@+id/btnRegistrarse"
-        android:onClick="salvar"/>
+
+
+
 </LinearLayout>
