@@ -113,7 +113,7 @@
         android:id="@+id/imgTDIcon"
         android:layout_gravity="left|center_vertical"
         android:contentDescription="@string/imgLogoUsuario"
-        android:src="@drawable/ic_user"
+        android:src="@drawable/identification"
 
         />
     <Spinner
@@ -166,7 +166,7 @@
                android:id="@+id/imgUserIcon"
                android:layout_gravity="left|center_vertical"
                android:contentDescription="@string/imgLogoUsuario"
-               android:src="@drawable/ic_user"
+               android:src="@drawable/usuario"
                android:layout_weight="0.18"
                />
            <EditText
