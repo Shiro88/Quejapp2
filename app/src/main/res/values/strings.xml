@@ -16,7 +16,7 @@
     <string name="txtvwClaveUsuario">Contraseña</string>
     <string name="txtvwCrearPQRS">Registrar PQRS</string>
     <string name="txtvwDatosBasicos">Datos Usuario</string>
-    <string name="txtvwNombreCompleto">Escribe aquítu nombre</string>
+    <string name="txtvwNombreCompleto">Escribe tu nombre</string>
     <string name="txtvwApellidos">Escribe tus apellidos</string>
     <string name="txtvwTipoDocumento">Tipo Documento</string>
     <string name="txtvwNumeroDocumento">Digita tu numero de documento</string>

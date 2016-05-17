@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin_toolbar"
     android:paddingRight="@dimen/activity_horizontal_margin_toolbar"
     android:paddingTop="@dimen/activity_vertical_margin_toolbar"
-    tools:context=".registrar_pqrs"
+    tools:context=".registro_usuario"
     android:orientation="vertical">
     <!--Agregar una barra de herramientas -->
 
@@ -35,10 +35,10 @@
         android:gravity="center"
         />
 
-<ScrollView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -59,6 +59,7 @@
                 android:spinnerMode="dialog"
                 android:layout_gravity="center"
                 android:textAlignment="center"
+                style="@style/SpinnerStyle"
                 />
             <Spinner
                 android:layout_width="@dimen/spWidth"
@@ -73,7 +74,8 @@
                 android:paddingRight="@dimen/spPaddingRight"
                 android:entries="@array/spCentrosValues"
                 android:spinnerMode="dialog"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                style="@style/SpinnerStyle"/>
 
             <Spinner
                 android:layout_width="@dimen/spWidth"
@@ -88,7 +90,8 @@
                 android:paddingRight="@dimen/spPaddingRight"
                 android:textAlignment="center"
                 android:layout_gravity="center"
-                android:entries="@array/spSedeValues"/>
+                android:entries="@array/spSedeValues"
+                style="@style/SpinnerStyle"/>
 
             <Spinner
                 android:layout_width="@dimen/spWidth"
@@ -103,7 +106,8 @@
                 android:paddingRight="@dimen/spPaddingRight"
                 android:textAlignment="center"
                 android:layout_gravity="center"
-                android:entries="@array/spTipoPqrsValues"/>
+                android:entries="@array/spTipoPqrsValues"
+                style="@style/SpinnerStyle"/>
 
             <EditText
                 android:layout_width="@dimen/spWidth"
@@ -120,7 +124,8 @@
                 android:layout_gravity="center"
                 android:inputType="number"
                 android:hint="@string/edtNumeroFicha"
-                android:id="@+id/txvNumeroFicha"/>
+                android:id="@+id/txvNumeroFicha"
+                style="@style/EditTextStyle"/>
 
             <Spinner
                 android:layout_width="@dimen/spWidth"
@@ -135,7 +140,8 @@
                 android:paddingRight="@dimen/spPaddingRight"
                 android:textAlignment="center"
                 android:layout_gravity="center"
-                android:entries="@array/spCategoriaPqrsValues"/>
+                android:entries="@array/spCategoriaPqrsValues"
+                style="@style/SpinnerStyle"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -147,6 +153,7 @@
                     android:layout_height="@dimen/txtvwDescripcionFormDosHeight"
                     android:text="@string/txtvwDescripcion"
                     android:layout_gravity="center"
+
                     />
 
             </LinearLayout>
@@ -155,7 +162,8 @@
                 android:layout_height="@dimen/edTxtDescripcionFormDosHeight"
                 android:layout_gravity="center"
                 android:textAlignment="textStart"
-                android:inputType="textMultiLine" />
+                android:inputType="textMultiLine"
+                style="@style/SpinnerStyle"/>
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -165,12 +173,13 @@
                 android:layout_gravity="left"
                 android:paddingStart="1dp"/>
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="@dimen/btnAgregarEvidenciaHeight"
                 android:text="@string/btnEnviar"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                style="@style/ButtonStyle"/>
 
         </LinearLayout>
 
-</ScrollView>
+    </ScrollView>
 </LinearLayout>

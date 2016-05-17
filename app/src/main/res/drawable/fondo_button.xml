@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:top="1dp" android:bottom="1dp">
         <shape
@@ -8,8 +7,8 @@
 
             <stroke
                 android:width="3dp"
-                android:color="@color/SecondaryColorQuejapp" />
-            <solid android:color="#FFFFFF" />
+                android:color="@color/PrimaryColorDarkQuejapp" />
+            <solid android:color="@color/PrimaryColorDarkQuejapp" />
 
             <corners
                 android:radius="10dp"/>

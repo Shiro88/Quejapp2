@@ -140,7 +140,7 @@
     <dimen name="txtvwMedianosPaddingLeft">1dp</dimen>
     <dimen name="txtvwMedianosPaddingRight">1dp</dimen>
 
-    <dimen name="edTxtWidth">190dp</dimen>
+    <dimen name="edTxtWidth">250dp</dimen>
     <dimen name="edTxtHeight">35dp</dimen>
     <dimen name="edTxtMargin">1dp</dimen>
     <dimen name="edTxtMarginTop">1dp</dimen>
@@ -166,7 +166,7 @@
     <dimen name="spTDPaddingLeft">1dp</dimen>
     <dimen name="spTDPaddingRight">1dp</dimen>
 
-    <dimen name="spWidth">320dp</dimen>
+    <dimen name="spWidth">300dp</dimen>
     <dimen name="spHeight">40dp</dimen>
     <dimen name="spMargin">1dp</dimen>
     <dimen name="spMarginTop">1dp</dimen>
@@ -185,7 +185,7 @@
 
 
     <dimen name="btnContinuarFormUnoWidth">350dp</dimen>
-    <dimen name="btnContinuarFormUnoHeight">50dp</dimen>
+    <dimen name="btnContinuarFormUnoHeight">40dp</dimen>
     <dimen name="btnContinuarFormUnoMargin">1dp</dimen>
     <dimen name="btnContinuarFormUnoMarginTop">1dp</dimen>
     <dimen name="btnContinuarFormUnoMarginButton">1dp</dimen>
@@ -290,5 +290,10 @@
 
 
     <!--FIN Tamaños para el layout que presenta las quejas en la lista -->
+
+    <!--Tamaño de los iconos que acompañan los Editext del layout Registro de usuario-->
+
+    <dimen name="icEdtRegistroUsuarioHeight">45dp</dimen>
+    <dimen name="icEdtRegistroUsuarioWidht">45dp</dimen>
 
 </resources>
