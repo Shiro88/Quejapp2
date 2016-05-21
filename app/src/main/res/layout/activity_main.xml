@@ -44,71 +44,52 @@
             />
 
     </LinearLayout>
-
-    <TextView
-        android:layout_width="@dimen/txtvwTitulosGrandesWidth"
-        android:layout_height="@dimen/txtvwTitulosGrandesHeight"
-        android:text="@string/txtvwNombreUsuario"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textSize="@dimen/txvwTitulosGrandesFontSize"
-        android:layout_marginBottom="@dimen/txtvwTitulosGrandesMarginButton"
-        android:layout_marginLeft="@dimen/txtvwTitulosGrandesMarginLeft"
-        android:layout_marginRight="@dimen/txtvwTitulosGrandesMarginRight"
-        android:paddingBottom="@dimen/txtvwTitulosGrandesPaddingButton"
-        android:paddingRight="@dimen/txtvwTitulosGrandesPaddingRight"
-        android:paddingLeft="@dimen/txtvwTitulosGrandesPaddingLeft"
-        android:paddingEnd="@dimen/edTxtLogInPaddingEnd"
-        android:paddingStart="@dimen/edTxtLogInPaddingStart"
-        android:layout_marginEnd="@dimen/edTxtLogInMarginEnd"
-        android:layout_marginStart="@dimen/edTxtLogInMarginStart"
-        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    style="@style/LayoutStyleFields">
     <EditText
-        android:layout_width="@dimen/edTxtLogInWidth"
-        android:layout_height="@dimen/edTxtLogInHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
         android:layout_marginBottom="@dimen/edTxtLogInMarginButton"
         android:layout_marginLeft="@dimen/edTxtLogInMarginLeft"
         android:layout_marginRight="@dimen/edTxtLogInMarginRight"
         android:layout_marginEnd="@dimen/edTxtLogInMarginTop"
-        android:backgroundTint="@color/ComplementaryColorQuejapp"
-        android:height="@dimen/edTxtLogInHeight"
+        android:hint="@string/txtvwNombreUsuario"
         android:layout_marginStart="@dimen/edTxtLogInMarginStart"
-        android:inputType="textEmailAddress"/>
+        android:inputType="textEmailAddress"
+        style="@style/EditTextStyle"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/LayoutStyleFields">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/edTxtLogInMarginButton"
+            android:layout_marginLeft="@dimen/edTxtLogInMarginLeft"
+            android:layout_marginRight="@dimen/edTxtLogInMarginRight"
+            android:inputType="textPassword"
+            android:paddingEnd="@dimen/edTxtLogInPaddingEnd"
+            android:paddingStart="@dimen/edTxtLogInPaddingStart"
+            android:layout_marginEnd="@dimen/edTxtLogInMarginEnd"
+            android:layout_marginStart="@dimen/edTxtLogInMarginStart"
+            android:paddingRight="@dimen/edTxtLogInPaddingRight"
+            android:paddingLeft="@dimen/edTxtLogInPaddingLeft"
+            style="@style/EditTextStyle"
+            android:hint="@string/edtContraseña"/>
 
-    <TextView
-        android:layout_width="@dimen/txtvwTitulosGrandesWidth"
-        android:layout_height="@dimen/txtvwTitulosGrandesHeight"
-        android:text="@string/txtvwClaveUsuario"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textSize="@dimen/txvwTitulosGrandesFontSize"
-        android:layout_marginBottom="@dimen/txtvwTitulosGrandesMarginButton"
-        android:layout_marginLeft="@dimen/txtvwTitulosGrandesMarginLeft"
-        android:layout_marginRight="@dimen/txtvwTitulosGrandesMarginRight"
-        android:paddingEnd="@dimen/edTxtLogInPaddingEnd"
-        android:paddingStart="@dimen/edTxtLogInPaddingStart"
-        android:layout_marginEnd="@dimen/edTxtLogInMarginEnd"
-        android:layout_marginStart="@dimen/edTxtLogInMarginStart"
-        android:paddingRight="@dimen/edTxtLogInPaddingRight"
-        android:paddingLeft="@dimen/edTxtLogInPaddingLeft" />
-    <EditText
-        android:layout_width="@dimen/edTxtLogInWidth"
-        android:layout_height="@dimen/edTxtLogInHeight"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_marginBottom="@dimen/edTxtLogInMarginButton"
-        android:layout_marginLeft="@dimen/edTxtLogInMarginLeft"
-        android:layout_marginRight="@dimen/edTxtLogInMarginRight"
-        android:inputType="textPassword"
-        android:paddingEnd="@dimen/edTxtLogInPaddingEnd"
-        android:paddingStart="@dimen/edTxtLogInPaddingStart"
-        android:layout_marginEnd="@dimen/edTxtLogInMarginEnd"
-        android:layout_marginStart="@dimen/edTxtLogInMarginStart"
-        android:backgroundTint="@color/ComplementaryColorQuejapp"
-        android:paddingRight="@dimen/edTxtLogInPaddingRight"
-        android:paddingLeft="@dimen/edTxtLogInPaddingLeft" />
+</LinearLayout>
+
+
     <!--Para que no se genere conflicto con los atributos de padding y margin
     se deben crear padding y margin left y rigth y end y start
     -->
@@ -126,10 +107,9 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:text="@string/btnLogin"
-        android:textColor="@color/SecondaryColorQuejapp"
-        android:shadowColor="@color/PrimaryColorDarkQuejapp"
         android:id="@+id/btnIngresar"
-        android:layout_marginLeft="@dimen/btnLogInMarginLeft" />
+        android:layout_marginLeft="@dimen/btnLogInMarginLeft"
+        style="@style/ButtonStyle"/>
 
 
 </LinearLayout>

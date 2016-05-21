@@ -7,8 +7,8 @@
 
             <stroke
                 android:width="3dp"
-                android:color="@color/PrimaryColorDarkQuejapp" />
-            <solid android:color="@color/PrimaryColorDarkQuejapp" />
+                android:color="@color/PrimaryColorQuejapp" />
+            <solid android:color="@color/PrimaryColorQuejapp" />
 
             <corners
                 android:radius="10dp"/>

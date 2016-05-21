@@ -75,6 +75,7 @@
                 android:entries="@array/spCentrosValues"
                 android:spinnerMode="dialog"
                 android:textAlignment="center"
+                android:layout_gravity="center"
                 style="@style/SpinnerStyle"/>
 
             <Spinner

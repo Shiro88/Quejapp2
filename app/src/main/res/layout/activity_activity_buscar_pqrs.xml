@@ -8,45 +8,65 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".activity_buscar_pqrs"
-    android:orientation="vertical">
-    <TextView
-        android:layout_width="@dimen/txtvwTitulosGrandesWidth"
-        android:layout_height="@dimen/txtvwTitulosGrandesHeight"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/txtvwBuscarPQRS"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/txtvwMedianosMarginTop"
-        android:layout_marginBottom="@dimen/txtvwMedianosMarginButton"/>
-    <TextView
-        android:layout_width="@dimen/txtvwTitulosMedianosWidth"
-        android:layout_height="@dimen/txtvwTitulosMedianosHeight"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/txtvwNumeroFicha"
-        android:layout_gravity="left"
-        android:layout_marginBottom="@dimen/txtvwMedianosMarginButton"/>
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtvwTituloBuscarPQRS"
+            android:textSize="@dimen/txvwFontSizeTitulosMedianos"
+            android:typeface="serif"
+            android:textColor="@color/PrimaryColorQuejapp"
+            android:textStyle="italic|bold"
+            android:layout_gravity="center"
+            style="@style/AppTheme"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/LayoutStyleFields">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:ems="10"
+                android:layout_marginBottom="@dimen/txtvwMedianosMarginButton"
+                style="@style/EditTextStyle"
+                android:hint="@string/txtvwNumeroDocumento"
+                />
+
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/LayoutStyleFields">
     <EditText
-        android:layout_width="@dimen/edTxtWidth"
-        android:layout_height="@dimen/edTxtHeight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:inputType="number"
         android:ems="10"
         android:layout_marginBottom="@dimen/txtvwMedianosMarginButton"/>
-    <TextView
-        android:layout_width="@dimen/txtvwTitulosMedianosWidth"
-        android:layout_height="@dimen/txtvwTitulosMedianosHeight"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/txtvwNumeroDocumento"
-        android:layout_gravity="left"
-        android:layout_marginBottom="@dimen/txtvwMedianosMarginButton"
-        />
-    <EditText
-        android:layout_width="@dimen/edTxtWidth"
-        android:layout_height="@dimen/edTxtHeight"
-        android:inputType="number"
-        android:ems="10"
-        android:layout_marginBottom="@dimen/txtvwMedianosMarginButton"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
     <Button
         android:id="@+id/btnBuscar"
-        android:layout_width="@dimen/btnBuscarPQRSWidth"
-        android:layout_height="@dimen/btnBuscarPQRSHeight"
-        android:text="@string/btnBuscarPQRSDos"/>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/btnBuscarPQRSDos"
+        style="@style/ButtonStyle"/>
 </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -8,7 +8,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.pqrs.sena.quejapp.registro_usuario"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,7 +35,7 @@
         />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center"
@@ -86,7 +87,7 @@
         android:id="@+id/imgApeIcon"
         android:layout_gravity="left|center_vertical"
         android:contentDescription="@string/imgLogoUsuario"
-        android:src="@drawable/apellidos"
+        android:src="@drawable/ic_user"
 
         />
 
@@ -200,7 +201,7 @@
                 android:id="@+id/imgPassIcon"
                 android:layout_gravity="left|center_vertical"
                 android:contentDescription="@string/imgLogoUsuario"
-                android:src="@drawable/ic_lock_black_24dp" />
+                android:src="@drawable/password" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -227,6 +228,8 @@
         android:id="@+id/btnRegistrarse"
         android:onClick="salvar"
         style="@style/ButtonStyle"
+
+
         />
 
 

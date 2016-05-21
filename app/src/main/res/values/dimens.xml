@@ -57,7 +57,7 @@
     <dimen name="edTxtLogInPaddingLeft">1dp</dimen>
     <dimen name="edTxtLogInPaddingRight">1dp</dimen>
     <dimen name="edTxtLogInPaddingEnd">1dp</dimen>
-    <dimen name="edTxtLogInPaddingStart">1dp</dimen>
+    <dimen name="edTxtLogInPaddingStart">10dp</dimen>
     <!--Tamaño del boton Login-->
     <dimen name="btnLogInWidth">220dp</dimen>
     <dimen name="btnLogInHeight">40dp</dimen>
@@ -264,7 +264,7 @@
     <dimen name="btnAtrasResultadoPaddingRight">1dp</dimen>
 
     <!--Tamaños de la fuente en los Textos-->
-    <dimen name="txvwFontSizeTitulosGrandes">36sp</dimen>
+    <dimen name="txvwFontSizeTitulosGrandes">24sp</dimen>
     <dimen name="txvwFontSizeTitulosMedianos">20sp</dimen>
     <dimen name="txvwFontSizeTitulosPequeños">15sp</dimen>
 

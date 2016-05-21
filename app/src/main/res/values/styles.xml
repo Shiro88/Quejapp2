@@ -15,9 +15,10 @@
     <style name="EditTextStyle" parent="@android:style/Widget.Holo.Light.EditText">
 
         <item name="android:padding">5dp</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/TextColorQuejapp</item>
         <item name="android:background">@drawable/fondo_editext</item>
+
 
 
     </style>
@@ -56,7 +57,11 @@
     <item name="android:layout_margin">3dp</item>
     <item name="android:elevation" tools:targetApi="lollipop">1dp</item>
     <item name="android:translationZ" tools:targetApi="lollipop">1dp</item>
-    <item name="android:background">@drawable/fondo_button</item>
+        <item name="android:background">@drawable/efecto_boton</item>
+        <item name="android:shadowColor">@color/ComplementaryColorQuejapp</item>
+
+    <!--item name="android:background">@drawable/fondo_button</item>-->
+
 
 </style>
 </resources>
