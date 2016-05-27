@@ -20,13 +20,12 @@
         <item name="android:background">@drawable/fondo_editext</item>
 
 
-
     </style>
 
     <style name="SpinnerStyle" parent="@android:style/Widget.Holo.Light.EditText">
 
         <item name="android:padding">5dp</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/TextColorQuejapp</item>
         <item name="android:background">@drawable/rectangle</item>
 
@@ -40,6 +39,7 @@
 
 
     </style>
+
     <style name="LayoutStyleButton" parent="@android:style/Widget.Holo.Light.EditText">
         <item name="android:background">@drawable/rectangle</item>
         <item name="android:padding">0dp</item>
@@ -50,18 +50,27 @@
 
 
     <style name="ButtonStyle">
-    <item name="android:textColor">#FFFFFF</item>
-    <item name="android:padding">0dp</item>
-    <item name="android:minWidth">88dp</item>
-    <item name="android:minHeight">36dp</item>
-    <item name="android:layout_margin">3dp</item>
-    <item name="android:elevation" tools:targetApi="lollipop">1dp</item>
-    <item name="android:translationZ" tools:targetApi="lollipop">1dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:minWidth">88dp</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:elevation" tools:targetApi="lollipop">1dp</item>
+        <item name="android:translationZ" tools:targetApi="lollipop">1dp</item>
         <item name="android:background">@drawable/efecto_boton</item>
         <item name="android:shadowColor">@color/ComplementaryColorQuejapp</item>
 
-    <!--item name="android:background">@drawable/fondo_button</item>-->
+        <!--item name="android:background">@drawable/fondo_button</item>-->
 
 
-</style>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

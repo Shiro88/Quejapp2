@@ -15,8 +15,5 @@
     android:title="@string/item_buscar"
     android:orderInCategory="1"
     app:showAsAction="never"></item>
-    <item android:id="@+id/mi_item_menu_registro"
-        android:title="@string/item_registro"
-        android:orderInCategory="1"
-        app:showAsAction="never"></item>
+
 </menu>

@@ -49,10 +49,10 @@ public class registrar_pqrs extends AppCompatActivity {
                 enviarMensajeToast("tres",Toast.LENGTH_SHORT);
                 cambiarActividad(activity_buscar_pqrs.class);
                 break;
-            case R.id.mi_item_menu_registro:
+            /*case R.id.mi_item_menu_registro:
                 enviarMensajeToast("tres",Toast.LENGTH_SHORT);
                 cambiarActividad(registro_usuario.class);
-                break;
+                break;*/
             default:
                 enviarMensajeToast("No es un item valido ",Toast.LENGTH_SHORT);
                 break;
