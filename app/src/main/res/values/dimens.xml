@@ -45,7 +45,7 @@
     <!--Margen del EditText Login-->
     <dimen name="edTxtLogInMargin">1dp</dimen>
     <dimen name="edTxtLogInMarginTop">1dp</dimen>
-    <dimen name="edTxtLogInMarginButton">20dp</dimen>
+    <dimen name="edTxtLogInMarginButton">5dp</dimen>
     <dimen name="edTxtLogInMarginLeft">1dp</dimen>
     <dimen name="edTxtLogInMarginRight">1dp</dimen>
     <dimen name="edTxtLogInMarginStart">1dp</dimen>
@@ -171,7 +171,7 @@
 
 
     <dimen name="spWidthLand">200dp</dimen>
-    <dimen name="spHeightLand">40dp</dimen>
+    <dimen name="spHeightLand">30dp</dimen>
     <dimen name="spMarginLand">1dp</dimen>
     <dimen name="spMarginTopLand">1dp</dimen>
     <dimen name="spMarginButtonLand">1dp</dimen>
@@ -323,10 +323,6 @@
     <dimen name="txvwFontSizeTitulosPequeños">15sp</dimen>
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 96c9f18f9305059db90128c8fb79522b622790b7
     <!--Tamaños para el layout que presenta las quejas en la lista -->
     <!--Numero de radicado-->
     <dimen name="txvNumRadicadoWidth">1dp</dimen>
@@ -342,22 +338,17 @@
     <dimen name="txvNumRadicadoPaddingRigth">1dp</dimen>
     <dimen name="txvNumRadicadoPaddingButton">1dp</dimen>
     <dimen name="lyMarginBottom">5dp</dimen>
-<<<<<<< HEAD
-    <dimen name="lyPaddingTop">10dp</dimen>
-    <dimen name="lyMarginTop">5dp</dimen>
+
+    <dimen name="lyPaddingTop">3dp</dimen>
+    <dimen name="lyMarginTop">3dp</dimen>
     <dimen name="lyWidth">300dp</dimen>
     <dimen name="lyHeigth">50dp</dimen>
 
 
-=======
-    <dimen name="lyPaddingTop">5dp</dimen>
-    <dimen name="lyMarginTop">5dp</dimen>
->>>>>>> 96c9f18f9305059db90128c8fb79522b622790b7
 
 
     <!--FIN Tamaños para el layout que presenta las quejas en la lista -->
 
-<<<<<<< HEAD
     <!--Tamaño de los iconos que acompañan los Editext del layout Registro de usuario-->
 
     <dimen name="icEdtRegistroUsuarioHeight">45dp</dimen>
@@ -368,6 +359,4 @@
     <dimen name="fab_margin">16dp</dimen>
 
 
-=======
->>>>>>> 96c9f18f9305059db90128c8fb79522b622790b7
 </resources>

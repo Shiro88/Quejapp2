@@ -1,0 +1,260 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pqrs.sena.quejapp.registro_usuario_fragment"
+    android:id="@+id/registro_fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txvTituloRegistro"
+                android:textSize="@dimen/txvwFontSizeTitulosMedianos"
+                android:typeface="serif"
+                android:textColor="@color/PrimaryColorQuejapp"
+                android:textStyle="italic|bold"
+                android:layout_gravity="center"
+                style="@style/AppTheme"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="10sp"
+                android:typeface="serif"
+                android:textColor="@color/PrimaryColorQuejapp"
+                android:textStyle="italic|bold"
+                android:paddingStart="@dimen/edTxtLogInPaddingStart"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/lyMarginBottom"
+                android:paddingTop="@dimen/lyPaddingTop"
+                android:layout_marginTop="@dimen/lyMarginTop"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/LayoutStyleFields">
+
+                    <ImageView
+                        android:layout_width="@dimen/icEdtRegistroUsuarioWidht"
+                        android:layout_height="@dimen/icEdtRegistroUsuarioHeight"
+                        android:id="@+id/imageView"
+                        android:layout_gravity="left|center_vertical"
+                        android:contentDescription="@string/imgLogoUsuario"
+                        android:src="@drawable/ic_user"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="@dimen/edTxtPaddingButton"
+                        android:paddingTop="@dimen/edTxtPaddingTop"
+                        android:layout_marginLeft="@dimen/edTxtMarginLeft"
+                        android:id="@+id/edt_nombre_completo"
+                        android:hint="@string/txtvwNombreCompleto"
+                        android:layout_gravity="center_vertical|right"
+                        style="@style/EditTextStyle"
+
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    style="@style/LayoutStyleFields">
+                    <ImageView
+                        android:layout_width="@dimen/icEdtRegistroUsuarioWidht"
+                        android:layout_height="@dimen/icEdtRegistroUsuarioHeight"
+                        android:id="@+id/imgApeIcon"
+                        android:layout_gravity="left|center_vertical"
+                        android:contentDescription="@string/imgLogoUsuario"
+                        android:src="@drawable/ic_user"
+
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="@dimen/edTxtPaddingButton"
+                        android:paddingTop="@dimen/edTxtPaddingTop"
+                        android:layout_marginLeft="@dimen/edTxtMarginLeft"
+                        android:id="@+id/edt_apellidos"
+                        android:hint="@string/txtvwApellidos"
+                        android:layout_gravity="center"
+                        style="@style/EditTextStyle"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    style="@style/LayoutStyleFields">
+                    <ImageView
+                        android:layout_width="@dimen/icEdtRegistroUsuarioWidht"
+                        android:layout_height="@dimen/icEdtRegistroUsuarioHeight"
+                        android:id="@+id/imgTDIcon"
+                        android:layout_gravity="left|center_vertical"
+                        android:contentDescription="@string/imgLogoUsuario"
+                        android:src="@drawable/identification"
+
+                        />
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:entries="@array/spTipoDocumento"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/spntipodocumento"
+                        style="@style/EditTextStyle"
+                        >
+
+                    </Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    style="@style/LayoutStyleFields">
+                    <ImageView
+                        android:layout_width="@dimen/icEdtRegistroUsuarioWidht"
+                        android:layout_height="@dimen/icEdtRegistroUsuarioHeight"
+                        android:id="@+id/imgIdentificacionIcon"
+                        android:layout_gravity="left|center_vertical"
+                        android:contentDescription="@string/imgLogoUsuario"
+                        android:src="@drawable/numidentificacion"
+
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:paddingBottom="@dimen/edTxtPaddingButton"
+                        android:paddingTop="@dimen/edTxtPaddingTop"
+                        android:layout_marginLeft="@dimen/edTxtMarginLeft"
+                        android:id="@+id/edtnumero_documento"
+                        android:hint="@string/txtvwNumeroDocumento"
+                        android:inputType="number"
+                        style="@style/EditTextStyle"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    style="@style/LayoutStyleFields">
+                    <ImageView
+                        android:layout_width="@dimen/icEdtRegistroUsuarioWidht"
+                        android:layout_height="@dimen/icEdtRegistroUsuarioHeight"
+                        android:id="@+id/imgUserIcon"
+                        android:layout_gravity="left|center_vertical"
+                        android:contentDescription="@string/imgLogoUsuario"
+                        android:src="@drawable/usuario"
+
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="@dimen/edTxtPaddingButton"
+                        android:paddingTop="@dimen/edTxtPaddingTop"
+                        android:layout_marginLeft="@dimen/edTxtMarginLeft"
+                        android:id="@+id/edt_nombreusuario"
+                        android:hint="@string/txtvwNombreUsuario"
+                        android:layout_gravity="right"
+                        android:inputType="textEmailAddress"
+                        style="@style/EditTextStyle"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    style="@style/LayoutStyleFields">
+                    <ImageView
+                        android:layout_width="@dimen/icEdtRegistroUsuarioWidht"
+                        android:layout_height="@dimen/icEdtRegistroUsuarioHeight"
+                        android:id="@+id/imgPassIcon"
+                        android:layout_gravity="left|center_vertical"
+                        android:contentDescription="@string/imgLogoUsuario"
+                        android:src="@drawable/password" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="@dimen/edTxtPaddingButton"
+                        android:paddingTop="@dimen/edTxtPaddingTop"
+                        android:layout_marginLeft="@dimen/edTxtMarginLeft"
+                        android:id="@+id/edt_contraseña"
+                        android:hint="@string/edtContraseña"
+                        android:inputType="textPassword"
+                        style="@style/EditTextStyle"
+
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/LayoutStyleButton">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/btnRegistrarse"
+                        android:id="@+id/btnRegistrarse"
+                        android:onClick="salvar"
+                        style="@style/ButtonStyle"
+
+
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>
