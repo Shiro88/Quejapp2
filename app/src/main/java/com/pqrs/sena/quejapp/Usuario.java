@@ -246,5 +246,6 @@ public class Usuario extends Persona implements IRequestParams{
         mih.put("VALOR_CONTRASENIA",this.getStrContrasenia());
         mih.put("VALOR_CORREO", this.getStrCorreo());
         return    mih;
+
     }
 }

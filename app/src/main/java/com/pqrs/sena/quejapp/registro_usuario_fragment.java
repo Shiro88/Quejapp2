@@ -1,8 +1,11 @@
 package com.pqrs.sena.quejapp;
 
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -12,14 +15,15 @@ import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.util.HashMap;
 
 import cz.msebera.android.httpclient.Header;
 
-public class registro_usuario extends AppCompatActivity implements View.OnClickListener  {
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class registro_usuario_fragment extends Fragment implements View.OnClickListener {
     Button btnRegistrar;
     EditText edtNombreCompleto;
     EditText edtApellidos;
@@ -27,69 +31,40 @@ public class registro_usuario extends AppCompatActivity implements View.OnClickL
     EditText edtNumeroDocumento;
     EditText edtNombreUsuario;
     EditText edtContraseña;
+
+    public registro_usuario_fragment() {
+
+        // Required empty public constructor
+    }
+
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registro_usuario);
-        btnRegistrar= (Button) findViewById(R.id.btnRegistrarse);
-        edtNombreCompleto = (EditText) findViewById(R.id.edt_nombre_completo);
-        edtApellidos = (EditText) findViewById(R.id.edt_apellidos);
-        edtNumeroDocumento = (EditText) findViewById(R.id.edtnumero_documento);
-        spnTipoDocumento = (Spinner) findViewById(R.id.spntipodocumento);
-        edtNombreUsuario =(EditText) findViewById(R.id.edt_nombreusuario);
-        edtContraseña =(EditText) findViewById(R.id.edt_contraseña);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View view= inflater.inflate(R.layout.fragment_registro_usuario_fragment, container, false);
+        btnRegistrar= (Button) view.findViewById(R.id.btnRegistrarse);
+        edtNombreCompleto = (EditText) view.findViewById(R.id.edt_nombre_completo);
+        edtApellidos = (EditText) view.findViewById(R.id.edt_apellidos);
+        edtNumeroDocumento = (EditText) view.findViewById(R.id.edtnumero_documento);
+        spnTipoDocumento = (Spinner) view.findViewById(R.id.spntipodocumento);
+        edtNombreUsuario =(EditText) view.findViewById(R.id.edt_nombreusuario);
+        edtContraseña =(EditText) view.findViewById(R.id.edt_contraseña);
         btnRegistrar.setOnClickListener(this);
-
+        return view;
     }
-
-    public void onClick(View v) {
-        //salvar(v);
-        enviarDatosServidor();
-    }
-
-    private void enviarDatosServidor() {
-        Usuario usuario= new Usuario();
-        usuario.setStrNombres(edtNombreCompleto.getText().toString());
-        usuario.setStrApellidos(edtApellidos.getText().toString());
-        usuario.setStrTipoIdentificacion(spnTipoDocumento.getSelectedItem().toString());
-        usuario.setStrIdentificacion(edtNumeroDocumento.getText().toString());
-        usuario.setStrCorreo(edtNombreUsuario.getText().toString());
-        //usuario.setStrGenero();
-        usuario.setStrContrasenia(edtContraseña.getText().toString());
-        WebService i_u = new WebService();
-        i_u.crear_registro(usuario.getRequestParamsInsertar(), new AsyncHttpResponseHandler() {
-            @Override
-            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                //aqui manejo la respuesta del servidor
-                String str= new String(responseBody);
-                try {
-                    JSONObject jobj=new JSONObject(str);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-                    Toast.makeText(getApplicationContext(),str,Toast.LENGTH_SHORT).show();
-                Toast.makeText(getApplicationContext(),Integer.toString(statusCode).toString(),Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-
-            }
-        });
-
-    }
-
     public void salvar(View view){
         // enviarDatos(edtNombreCompleto.getText().toString(), edtApellidos.getText().toString(), spnTipoDocumento.getSelectedItem().toString(), edtNumeroDocumento.getText().toString(), edtNombreUsuario.getText().toString(), edtContraseña.getText().toString());
 
         HashMap<String,String> miHash= new HashMap<>();
+        miHash.put("tabla","usuario");
         miHash.put("nombre",edtNombreCompleto.getText().toString());
         miHash.put("apellido",edtApellidos.getText().toString());
         miHash.put("tipoDocumento",spnTipoDocumento.getSelectedItem().toString());
         miHash.put("numeroDocumento",edtNumeroDocumento.getText().toString());
         miHash.put("nombreUsuario",edtNombreUsuario.getText().toString());
         miHash.put("clave",edtContraseña.getText().toString());
-        enviarDatos("usuario", miHash);
+        enviarDatos("objeto",miHash);
 
     }
 
@@ -103,12 +78,12 @@ public class registro_usuario extends AppCompatActivity implements View.OnClickL
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                 String resultado = new String(responseBody);
-                Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), resultado, Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -124,17 +99,18 @@ public class registro_usuario extends AppCompatActivity implements View.OnClickL
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                 if (statusCode == 200) {
                     String resultado = new String(responseBody);
-                    Toast.makeText(registro_usuario.this, "Comunicacion correcta:" + resultado, Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity(), "Comunicacion correcta:" + resultado, Toast.LENGTH_LONG).show();
 
                     //txv_cath_error.setText(resultado);
-                } else {
-                    Toast.makeText(getApplicationContext(), "Status Code" + statusCode, Toast.LENGTH_LONG).show();
+                }
+                else{
+                    Toast.makeText(getContext(),"Status Code" + statusCode,Toast.LENGTH_LONG).show();
                 }
             }
 
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                Toast.makeText(registro_usuario.this, statusCode + error.getMessage(), Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(),statusCode + error.getMessage(),Toast.LENGTH_LONG).show();
                 // txv_cath_error.setText(error.getMessage().toString());
 
             }
@@ -143,7 +119,9 @@ public class registro_usuario extends AppCompatActivity implements View.OnClickL
     }
 
 
+    public void onClick(View v) {
+        salvar(v);
+    }
 }
-
 
 

@@ -12,30 +12,36 @@
     <string name="btnEnviar">Enviar</string>
     <string name="btnBuscarPQRSDos">Buscar</string>
     <!--Strings para los text view -->
-    <string name="txtvwNombreUsuario">Usuario</string>
+    <string name="txtvwNombreUsuario">Nombre de Usuario o Correo</string>
     <string name="txtvwClaveUsuario">Contraseña</string>
     <string name="txtvwCrearPQRS">Registrar PQRS</string>
     <string name="txtvwDatosBasicos">Datos Usuario</string>
-    <string name="txtvwNombreCompleto">Nombre completo</string>
+    <string name="txtvwNombreCompleto">Nombres</string>
     <string name="txtvwApellidos">Apellidos</string>
     <string name="txtvwTipoDocumento">Tipo Documento</string>
-    <string name="txtvwNumeroDocumento">Numero documento</string>
+    <string name="txtvwNumeroDocumento">Numero de documento</string>
     <string name="txtvwRegional">Regional</string>
     <string name="txtvwCentro">Centro</string>
     <string name="txtvwSede">Sede</string>
-    <string name="txtvwNumeroFicha">NumeroFicha</string>
+    <string name="txtvwNumeroFicha">Número de Ficha</string>
     <string name="txtvwTipoPQRS">Tipo PQRS</string>
     <string name="txtvwTipoCategoriaPQRS">Categoria PQRS</string>
     <string name="txtvwTemaPQRS">Tema PQRS</string>
-    <string name="txtvwDescripcion">Descripcion</string>
+    <string name="txtvwDescripcion">Descripción</string>
     <string name="txtvwBuscarPQRS">Buscar</string>
     <string name="txtvwTituloBuscarPQRS">Buscar PQRS</string>
     <string name="txtvwTituloRegistroUsuario">Registrarse</string>
-    <string name="txtvwSolicitudNumero">Numero solicitud</string>
+
+    <string name="txtvwSolicitudNumero">Número solicitud</string>
+
+
+
     <string name="txtvwEstado">Estado de la PQRS</string>
-    <string name="txtvwAreasEncargadas">Area encargada</string>
+    <string name="txtvwAreasEncargadas">Área encargada</string>
     <string name="txtFechaRespuesta">Fecha de respuesta</string>
     <string name="txtvwComentarios">Comentarios</string>
+
+    <string name="txvwRegistrarse">Registrarse</string>
 
 
     <!--Strings para el logotipo-->
@@ -47,11 +53,27 @@
     <string name="txtvwTituloCrearPqrs">Registrar PQRS</string>
     <string name="txtvwSbtituloPqrs">Peticiones, Quejas, Reclamos, Sugerencias</string>
     <string name="cbxAnonimo">Anonimo</string>
+
+    <string name="txvTituloRegistro">Registrate</string>
+
     <!--Strings para los items del action bar-->
     <string name="item_login">Login</string>
     <string name="item_registrar">Registrar PQRS</string>
     <string name="item_buscar">Buscar PQRS</string>
     <string name="item_registro">Registro de Usuario</string>
     <string name="edtNumeroFicha">Nùmero de Ficha</string>
+
+    <string name="edtContraseña">Contraseña</string>
+    <string name="btnRegistrarse">Registrarse</string>
+    <string name="imgLogoUsuario">imLogoUser</string>
+    <string name="title_activity_menu__principal">Menu_Principal</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
