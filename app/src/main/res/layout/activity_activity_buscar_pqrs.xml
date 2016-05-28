@@ -10,6 +10,7 @@
     tools:context="com.example.chaquen.quejaappsena.BuscarPqrs"
     android:orientation="vertical">
     <TextView
+
         android:layout_width="@dimen/txtvwTitulosGrandesWidth"
         android:layout_height="@dimen/txtvwTitulosGrandesHeight"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -25,6 +26,7 @@
         android:layout_gravity="left"
         android:layout_marginBottom="@dimen/txtvwMedianosMarginButton"/>
     <EditText
+        android:id="@+id/edtBusquedaNumeroFicha"
         android:layout_width="@dimen/edTxtWidth"
         android:layout_height="@dimen/edTxtHeight"
         android:inputType="number"
@@ -39,6 +41,7 @@
         android:layout_marginBottom="@dimen/txtvwMedianosMarginButton"
         />
     <EditText
+        android:id="@+id/edtNumeroDocumento"
         android:layout_width="@dimen/edTxtWidth"
         android:layout_height="@dimen/edTxtHeight"
         android:inputType="number"
