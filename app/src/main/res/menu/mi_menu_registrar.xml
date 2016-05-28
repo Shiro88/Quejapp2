@@ -4,15 +4,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".registrar_pqrs">
     <item android:id="@+id/mi_item_menu_login"
-        android:title="@string/itmMenuVolver"
+        android:title="@string/item_login"
         android:orderInCategory="1"
-        app:showAsAction="never"/>
+        app:showAsAction="never"></item>
     <item android:id="@+id/mi_item_menu_registrar"
-        android:title="@string/itmMenuCrear"
+        android:title="@string/item_registrar"
         android:orderInCategory="1"
-        app:showAsAction="never"/>
+        app:showAsAction="never"></item>
     <item android:id="@+id/mi_item_menu_buscar"
-        android:title="@string/itmMenuBuscar"
+    android:title="@string/item_buscar"
+    android:orderInCategory="1"
+    app:showAsAction="never"></item>
+<<<<<<< HEAD
+
+=======
+    <item android:id="@+id/mi_item_menu_registro"
+        android:title="@string/item_registro"
         android:orderInCategory="1"
-        app:showAsAction="never"/>
+        app:showAsAction="never"></item>
+>>>>>>> 96c9f18f9305059db90128c8fb79522b622790b7
 </menu>

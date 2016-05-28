@@ -57,7 +57,7 @@
     <dimen name="edTxtLogInPaddingLeft">1dp</dimen>
     <dimen name="edTxtLogInPaddingRight">1dp</dimen>
     <dimen name="edTxtLogInPaddingEnd">1dp</dimen>
-    <dimen name="edTxtLogInPaddingStart">1dp</dimen>
+    <dimen name="edTxtLogInPaddingStart">10dp</dimen>
     <!--Tamaño del boton Login-->
     <dimen name="btnLogInWidth">220dp</dimen>
     <dimen name="btnLogInHeight">40dp</dimen>
@@ -140,7 +140,7 @@
     <dimen name="txtvwMedianosPaddingLeft">1dp</dimen>
     <dimen name="txtvwMedianosPaddingRight">1dp</dimen>
 
-    <dimen name="edTxtWidth">190dp</dimen>
+    <dimen name="edTxtWidth">250dp</dimen>
     <dimen name="edTxtHeight">35dp</dimen>
     <dimen name="edTxtMargin">1dp</dimen>
     <dimen name="edTxtMarginTop">1dp</dimen>
@@ -166,7 +166,29 @@
     <dimen name="spTDPaddingLeft">1dp</dimen>
     <dimen name="spTDPaddingRight">1dp</dimen>
 
-    <dimen name="spWidth">320dp</dimen>
+
+    <!--Dimensiones para el layout Land-->
+
+
+    <dimen name="spWidthLand">200dp</dimen>
+    <dimen name="spHeightLand">40dp</dimen>
+    <dimen name="spMarginLand">1dp</dimen>
+    <dimen name="spMarginTopLand">1dp</dimen>
+    <dimen name="spMarginButtonLand">1dp</dimen>
+    <dimen name="spMarginLeftLand">1dp</dimen>
+    <dimen name="spMarginRightLand">1dp</dimen>
+    <dimen name="spMarginStartLand">1dp</dimen>
+    <dimen name="spMarginEndLand">1dp</dimen>
+    <dimen name="spPaddingLand">1dp</dimen>
+    <dimen name="spPaddingTopLand">1dp</dimen>
+    <dimen name="spPaddingButtonLand">1dp</dimen>
+    <dimen name="spPaddingLeftLand">1dp</dimen>
+    <dimen name="spPaddingRightLand">1dp</dimen>
+    <dimen name="spPaddingStartLand">1dp</dimen>
+    <dimen name="spPaddingEndLand">1dp</dimen>
+
+
+    <dimen name="spWidth">300dp</dimen>
     <dimen name="spHeight">40dp</dimen>
     <dimen name="spMargin">1dp</dimen>
     <dimen name="spMarginTop">1dp</dimen>
@@ -185,7 +207,7 @@
 
 
     <dimen name="btnContinuarFormUnoWidth">350dp</dimen>
-    <dimen name="btnContinuarFormUnoHeight">50dp</dimen>
+    <dimen name="btnContinuarFormUnoHeight">40dp</dimen>
     <dimen name="btnContinuarFormUnoMargin">1dp</dimen>
     <dimen name="btnContinuarFormUnoMarginTop">1dp</dimen>
     <dimen name="btnContinuarFormUnoMarginButton">1dp</dimen>
@@ -210,8 +232,9 @@
     <dimen name="txtvwDescripcionFormDosPaddingLeft">1dp</dimen>
     <dimen name="txtvwDescripcionFormDosPaddingRight">1dp</dimen>
     <!--Tamaños elementos EditText para la descricion -->
-    <dimen name="edTxtDescripcionFormDosWidth">320dp</dimen>
+    <dimen name="edTxtDescripcionFormDosWidth">500dp</dimen>
     <dimen name="edTxtDescripcionFormDosHeight">100dp</dimen>
+    <dimen name="edTxtDescripcionFormDosHeightLand">50dp</dimen>
     <dimen name="edTxtDescripcionFormDosMargin">1dp</dimen>
     <dimen name="edTxtDescripcionFormDosMarginTop">1dp</dimen>
     <dimen name="edTxtDescripcionFormDosMarginButton">1dp</dimen>
@@ -223,6 +246,37 @@
     <dimen name="edTxtDescripcionFormDosPaddingLeft">1dp</dimen>
     <dimen name="edTxtDescripcionFormDosPaddingRight">1dp</dimen>
 
+
+    <!--Tamaño de boton para enviar la PQRS en la vista Land-->
+
+    <dimen name="btnEnviarPqrsWidthLand">150dp</dimen>
+    <dimen name="btnEnviarPqrsHeightLand">60dp</dimen>
+    <dimen name="btnEnviarPqrsMarginLand">1dp</dimen>
+    <dimen name="btnEnviarPqrsMarginTopLand">1dp</dimen>
+    <dimen name="btnEnviarPqrsMarginButtonLand">1dp</dimen>
+    <dimen name="btnEnviarPqrsMarginLeftLand">1dp</dimen>
+    <dimen name="btnEnviarPqrsMarginRightLand">1dp</dimen>
+    <dimen name="btnEnviarPqrsPaddingLand">1dp</dimen>
+    <dimen name="btnEnviarPqrsPaddingTopLand">1dp</dimen>
+    <dimen name="btnEnviarPqrsPaddingButtonLand">1dp</dimen>
+    <dimen name="btnEnviarPqrsPaddingLeftLand">1dp</dimen>
+    <dimen name="btnEnviarPqrsPaddingRightLand">1dp</dimen>
+
+
+    <!--Tamaño de boton para enviar la PQRS-->
+
+    <dimen name="btnEnviarPqrsWidth">150dp</dimen>
+    <dimen name="btnEnviarPqrsHeight">30dp</dimen>
+    <dimen name="btnEnviarPqrsMargin">1dp</dimen>
+    <dimen name="btnEnviarPqrsMarginTop">1dp</dimen>
+    <dimen name="btnEnviarPqrsMarginButton">1dp</dimen>
+    <dimen name="btnEnviarPqrsMarginLeft">1dp</dimen>
+    <dimen name="btnEnviarPqrsMarginRight">1dp</dimen>
+    <dimen name="btnEnviarPqrsPadding">1dp</dimen>
+    <dimen name="btnEnviarPqrsPaddingTop">1dp</dimen>
+    <dimen name="btnEnviarPqrsPaddingButton">1dp</dimen>
+    <dimen name="btnEnviarPqrsPaddingLeft">1dp</dimen>
+    <dimen name="btnEnviarPqrsPaddingRight">1dp</dimen>
     <!--Tamaño de boton ara agregar una evidencia foto o archivo-->
     <dimen name="btnAgregarEvidenciaWidth">150dp</dimen>
     <dimen name="btnAgregarEvidenciaHeight">60dp</dimen>
@@ -249,8 +303,6 @@
     <dimen name="btnBuscarPQRSPaddingButton">1dp</dimen>
     <dimen name="btnBuscarPQRSPaddingLeft">1dp</dimen>
     <dimen name="btnBuscarPQRSPaddingRight">1dp</dimen>
-    <dimen name="btnBuscarPQRSPaddingEnd">1dp</dimen>
-
     <!--Tamaños eleemntos resultados-->
     <dimen name="btnAtrasResultadoWidth">320dp</dimen>
     <dimen name="btnAtrasResultadoHeight">60dp</dimen>
@@ -266,19 +318,56 @@
     <dimen name="btnAtrasResultadoPaddingRight">1dp</dimen>
 
     <!--Tamaños de la fuente en los Textos-->
-    <dimen name="txvwFontSizeTitulosGrandes">36sp</dimen>
+    <dimen name="txvwFontSizeTitulosGrandes">24sp</dimen>
     <dimen name="txvwFontSizeTitulosMedianos">20sp</dimen>
     <dimen name="txvwFontSizeTitulosPequeños">15sp</dimen>
 
-    <!--Padding Layouts-->
-    <dimen name="lyPaddingStart">5dp</dimen>
-    <dimen name="lyPaddingEnd">5dp</dimen>
-    <dimen name="lyPaddingTop">5dp</dimen>
-    <dimen name="lyPaddingBottom">5dp</dimen>
 
-    <!--Margin Layouts-->
-    <dimen name="lyMarginStart">5dp</dimen>
-    <dimen name="lyMarginEnd">5dp</dimen>
-    <dimen name="lyMarginTop">5dp</dimen>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 96c9f18f9305059db90128c8fb79522b622790b7
+    <!--Tamaños para el layout que presenta las quejas en la lista -->
+    <!--Numero de radicado-->
+    <dimen name="txvNumRadicadoWidth">1dp</dimen>
+    <dimen name="txvNumRadicadoHeight">1dp</dimen>
+    <dimen name="txvNumRadicadoMargin">10dp</dimen>
+    <dimen name="txvNumRadicadoMarginTop">1dp</dimen>
+    <dimen name="txvNumRadicadoMarginLeft">1dp</dimen>
+    <dimen name="txvNumRadicadoMarginRigth">1dp</dimen>
+    <dimen name="txvNumRadicadoMarginButton">1dp</dimen>
+    <dimen name="txvNumRadicadoPadding">1dp</dimen>
+    <dimen name="txvNumRadicadoPaddingTop">1dp</dimen>
+    <dimen name="txvNumRadicadoPaddingLeft">1dp</dimen>
+    <dimen name="txvNumRadicadoPaddingRigth">1dp</dimen>
+    <dimen name="txvNumRadicadoPaddingButton">1dp</dimen>
     <dimen name="lyMarginBottom">5dp</dimen>
+<<<<<<< HEAD
+    <dimen name="lyPaddingTop">10dp</dimen>
+    <dimen name="lyMarginTop">5dp</dimen>
+    <dimen name="lyWidth">300dp</dimen>
+    <dimen name="lyHeigth">50dp</dimen>
+
+
+=======
+    <dimen name="lyPaddingTop">5dp</dimen>
+    <dimen name="lyMarginTop">5dp</dimen>
+>>>>>>> 96c9f18f9305059db90128c8fb79522b622790b7
+
+
+    <!--FIN Tamaños para el layout que presenta las quejas en la lista -->
+
+<<<<<<< HEAD
+    <!--Tamaño de los iconos que acompañan los Editext del layout Registro de usuario-->
+
+    <dimen name="icEdtRegistroUsuarioHeight">45dp</dimen>
+    <dimen name="icEdtRegistroUsuarioWidht">45dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+=======
+>>>>>>> 96c9f18f9305059db90128c8fb79522b622790b7
 </resources>

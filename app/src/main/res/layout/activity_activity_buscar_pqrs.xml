@@ -7,72 +7,114 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.pqrs.sena.quejapp.activity_buscar_pqrs"
-    android:orientation="vertical">
+<<<<<<< HEAD
+    tools:context=".activity_buscar_pqrs"
+    android:orientation="vertical"
+    >
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
-        <ImageView
-            android:layout_width="@dimen/imgLogoWidth"
-            android:layout_height="@dimen/imgLogoHeight"
-            android:src="@drawable/logoquejapp"
-            android:contentDescription="@string/imgLogoDescription" />
+        android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:text="@string/txtvwTituloBuscarPQRS"
-            android:textSize="@dimen/txvwTitulosGrandesFontSize"
-            android:textAlignment="center"
+            android:textSize="@dimen/txvwFontSizeTitulosMedianos"
+            android:typeface="serif"
             android:textColor="@color/PrimaryColorQuejapp"
-            android:gravity="center"/>
+            android:textStyle="italic|bold"
+            android:layout_gravity="center"
+            style="@style/AppTheme"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/LayoutStyleFields">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:ems="10"
+                android:layout_marginBottom="@dimen/txtvwMedianosMarginButton"
+                style="@style/EditTextStyle"
+                android:hint="@string/txtvwNumeroDocumento"
+                />
+
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/LayoutStyleFields">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginBottom="@dimen/txtvwMedianosMarginButton"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/btnBuscarPQRSDos"
+        style="@style/ButtonStyle"/>
+</LinearLayout>
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:paddingStart="@dimen/lyPaddingStart"
-        android:paddingEnd="@dimen/lyPaddingEnd"
-        android:layout_marginStart="@dimen/lyMarginStart"
-        android:layout_marginEnd="@dimen/lyMarginEnd"
-        android:layout_marginTop="@dimen/lyMarginTop"
-        android:layout_marginBottom="@dimen/lyMarginBottom"
 
-        >
-   <TextView
-       android:layout_width="@dimen/txtvwTitulosMedianosWidth"
-       android:layout_height="@dimen/txtvwTitulosMedianosHeight"
-       android:layout_gravity="center"
-       android:text="@string/txtvwSolicitudNumero"
-       />
-    <EditText
-        android:layout_width="@dimen/edTxtWidth"
-        android:layout_height="@dimen/edTxtHeight"
-        android:layout_gravity="center"/>
+=======
+    tools:context="com.example.chaquen.quejaappsena.BuscarPqrs"
+    android:orientation="vertical">
+    <TextView
+
+        android:layout_width="@dimen/txtvwTitulosGrandesWidth"
+        android:layout_height="@dimen/txtvwTitulosGrandesHeight"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/txtvwBuscarPQRS"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/txtvwMedianosMarginTop"
+        android:layout_marginBottom="@dimen/txtvwMedianosMarginButton"/>
     <TextView
         android:layout_width="@dimen/txtvwTitulosMedianosWidth"
         android:layout_height="@dimen/txtvwTitulosMedianosHeight"
-        android:layout_gravity="center"
-        android:text="@string/txtvwNumeroDocumento"
-        />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/txtvwNumeroFicha"
+        android:layout_gravity="left"
+        android:layout_marginBottom="@dimen/txtvwMedianosMarginButton"/>
     <EditText
+        android:id="@+id/edtBusquedaNumeroFicha"
         android:layout_width="@dimen/edTxtWidth"
         android:layout_height="@dimen/edTxtHeight"
-        android:layout_gravity="center"/>
-    </LinearLayout>
-<Button
-    android:layout_width="@dimen/btnBuscarPQRSWidth"
-    android:layout_height="@dimen/btnBuscarPQRSHeight"
-    android:layout_gravity="center"
-    android:text="@string/btnBuscarPQRS"
-    android:paddingStart="@dimen/btnLogInPaddingStart"
-    android:paddingEnd="@dimen/btnBuscarPQRSPaddingEnd"
-    android:layout_marginLeft="@dimen/btnBuscarPQRSMarginLeft"
-    android:layout_marginRight="@dimen/btnBuscarPQRSMarginRight"
-    android:layout_marginBottom="@dimen/btnBuscarPQRSMarginButton"
-    android:layout_marginTop="@dimen/btnBuscarPQRSMarginTop"/>
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginBottom="@dimen/txtvwMedianosMarginButton"/>
+    <TextView
+        android:layout_width="@dimen/txtvwTitulosMedianosWidth"
+        android:layout_height="@dimen/txtvwTitulosMedianosHeight"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/txtvwNumeroDocumento"
+        android:layout_gravity="left"
+        android:layout_marginBottom="@dimen/txtvwMedianosMarginButton"
+        />
+    <EditText
+        android:id="@+id/edtNumeroDocumento"
+        android:layout_width="@dimen/edTxtWidth"
+        android:layout_height="@dimen/edTxtHeight"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginBottom="@dimen/txtvwMedianosMarginButton"/>
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="@dimen/btnBuscarPQRSWidth"
+        android:layout_height="@dimen/btnBuscarPQRSHeight"
+        android:text="@string/btnBuscarPQRSDos"/>
+>>>>>>> 96c9f18f9305059db90128c8fb79522b622790b7
 </LinearLayout>
+

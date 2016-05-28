@@ -161,4 +161,14 @@
     <array name="spCategoriaPqrsValues">
         <item>Categoria PQRS</item>
     </array>
+    <array name="spTipoDocumento">
+        <item>Tipo Documento</item>
+        <item>CC</item>
+        <item>TI</item>
+        <item>CE</item>
+    </array>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 96c9f18f9305059db90128c8fb79522b622790b7
 </resources>
