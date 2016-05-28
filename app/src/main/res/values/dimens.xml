@@ -166,6 +166,28 @@
     <dimen name="spTDPaddingLeft">1dp</dimen>
     <dimen name="spTDPaddingRight">1dp</dimen>
 
+
+    <!--Dimensiones para el layout Land-->
+
+
+    <dimen name="spWidthLand">200dp</dimen>
+    <dimen name="spHeightLand">40dp</dimen>
+    <dimen name="spMarginLand">1dp</dimen>
+    <dimen name="spMarginTopLand">1dp</dimen>
+    <dimen name="spMarginButtonLand">1dp</dimen>
+    <dimen name="spMarginLeftLand">1dp</dimen>
+    <dimen name="spMarginRightLand">1dp</dimen>
+    <dimen name="spMarginStartLand">1dp</dimen>
+    <dimen name="spMarginEndLand">1dp</dimen>
+    <dimen name="spPaddingLand">1dp</dimen>
+    <dimen name="spPaddingTopLand">1dp</dimen>
+    <dimen name="spPaddingButtonLand">1dp</dimen>
+    <dimen name="spPaddingLeftLand">1dp</dimen>
+    <dimen name="spPaddingRightLand">1dp</dimen>
+    <dimen name="spPaddingStartLand">1dp</dimen>
+    <dimen name="spPaddingEndLand">1dp</dimen>
+
+
     <dimen name="spWidth">300dp</dimen>
     <dimen name="spHeight">40dp</dimen>
     <dimen name="spMargin">1dp</dimen>
@@ -210,8 +232,9 @@
     <dimen name="txtvwDescripcionFormDosPaddingLeft">1dp</dimen>
     <dimen name="txtvwDescripcionFormDosPaddingRight">1dp</dimen>
     <!--Tamaños elementos EditText para la descricion -->
-    <dimen name="edTxtDescripcionFormDosWidth">300dp</dimen>
+    <dimen name="edTxtDescripcionFormDosWidth">500dp</dimen>
     <dimen name="edTxtDescripcionFormDosHeight">100dp</dimen>
+    <dimen name="edTxtDescripcionFormDosHeightLand">50dp</dimen>
     <dimen name="edTxtDescripcionFormDosMargin">1dp</dimen>
     <dimen name="edTxtDescripcionFormDosMarginTop">1dp</dimen>
     <dimen name="edTxtDescripcionFormDosMarginButton">1dp</dimen>
@@ -223,6 +246,37 @@
     <dimen name="edTxtDescripcionFormDosPaddingLeft">1dp</dimen>
     <dimen name="edTxtDescripcionFormDosPaddingRight">1dp</dimen>
 
+
+    <!--Tamaño de boton para enviar la PQRS en la vista Land-->
+
+    <dimen name="btnEnviarPqrsWidthLand">150dp</dimen>
+    <dimen name="btnEnviarPqrsHeightLand">60dp</dimen>
+    <dimen name="btnEnviarPqrsMarginLand">1dp</dimen>
+    <dimen name="btnEnviarPqrsMarginTopLand">1dp</dimen>
+    <dimen name="btnEnviarPqrsMarginButtonLand">1dp</dimen>
+    <dimen name="btnEnviarPqrsMarginLeftLand">1dp</dimen>
+    <dimen name="btnEnviarPqrsMarginRightLand">1dp</dimen>
+    <dimen name="btnEnviarPqrsPaddingLand">1dp</dimen>
+    <dimen name="btnEnviarPqrsPaddingTopLand">1dp</dimen>
+    <dimen name="btnEnviarPqrsPaddingButtonLand">1dp</dimen>
+    <dimen name="btnEnviarPqrsPaddingLeftLand">1dp</dimen>
+    <dimen name="btnEnviarPqrsPaddingRightLand">1dp</dimen>
+
+
+    <!--Tamaño de boton para enviar la PQRS-->
+
+    <dimen name="btnEnviarPqrsWidth">150dp</dimen>
+    <dimen name="btnEnviarPqrsHeight">30dp</dimen>
+    <dimen name="btnEnviarPqrsMargin">1dp</dimen>
+    <dimen name="btnEnviarPqrsMarginTop">1dp</dimen>
+    <dimen name="btnEnviarPqrsMarginButton">1dp</dimen>
+    <dimen name="btnEnviarPqrsMarginLeft">1dp</dimen>
+    <dimen name="btnEnviarPqrsMarginRight">1dp</dimen>
+    <dimen name="btnEnviarPqrsPadding">1dp</dimen>
+    <dimen name="btnEnviarPqrsPaddingTop">1dp</dimen>
+    <dimen name="btnEnviarPqrsPaddingButton">1dp</dimen>
+    <dimen name="btnEnviarPqrsPaddingLeft">1dp</dimen>
+    <dimen name="btnEnviarPqrsPaddingRight">1dp</dimen>
     <!--Tamaño de boton ara agregar una evidencia foto o archivo-->
     <dimen name="btnAgregarEvidenciaWidth">150dp</dimen>
     <dimen name="btnAgregarEvidenciaHeight">60dp</dimen>
@@ -284,9 +338,11 @@
     <dimen name="txvNumRadicadoPaddingRigth">1dp</dimen>
     <dimen name="txvNumRadicadoPaddingButton">1dp</dimen>
     <dimen name="lyMarginBottom">5dp</dimen>
-    <dimen name="lyPaddingTop">5dp</dimen>
+    <dimen name="lyPaddingTop">10dp</dimen>
     <dimen name="lyMarginTop">5dp</dimen>
     <dimen name="lyWidth">300dp</dimen>
+    <dimen name="lyHeigth">50dp</dimen>
+
 
 
 
