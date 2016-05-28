@@ -8,6 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.pqrs.sena.quejapp.registro_usuario"
+<<<<<<< HEAD
     android:orientation="vertical"
     >
     <TextView
@@ -36,11 +37,18 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+=======
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+>>>>>>> 96c9f18f9305059db90128c8fb79522b622790b7
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center"
         android:paddingBottom="@dimen/lyMarginBottom"
         android:paddingTop="@dimen/lyPaddingTop"
+<<<<<<< HEAD
         android:layout_marginTop="@dimen/lyMarginTop"
 
         >
@@ -242,4 +250,80 @@
 
 
 
+=======
+        android:layout_marginTop="@dimen/lyMarginTop">
+
+
+        <EditText
+            android:layout_width="@dimen/edTxtWidth"
+            android:layout_height="@dimen/edTxtHeight"
+            android:paddingBottom="@dimen/edTxtPaddingButton"
+            android:paddingTop="@dimen/edTxtPaddingTop"
+            android:layout_marginLeft="@dimen/edTxtMarginLeft"
+            android:id="@+id/edt_nombre_completo"
+            android:hint="@string/txtvwNombreCompleto"
+            />
+
+        <EditText
+            android:layout_width="@dimen/edTxtWidth"
+            android:layout_height="@dimen/edTxtHeight"
+            android:paddingBottom="@dimen/edTxtPaddingButton"
+            android:paddingTop="@dimen/edTxtPaddingTop"
+            android:layout_marginLeft="@dimen/edTxtMarginLeft"
+            android:id="@+id/edt_apellidos"
+            android:hint="@string/txtvwApellidos"
+
+            />
+
+        <Spinner
+            android:layout_width="@dimen/spWidth"
+            android:layout_height="@dimen/spHeight"
+            android:entries="@array/spTipoDocumento"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/spntipodocumento">
+
+        </Spinner>
+
+
+        <EditText
+            android:layout_width="@dimen/edTxtWidth"
+            android:layout_height="@dimen/edTxtHeight"
+            android:layout_gravity="left"
+            android:paddingBottom="@dimen/edTxtPaddingButton"
+            android:paddingTop="@dimen/edTxtPaddingTop"
+            android:layout_marginLeft="@dimen/edTxtMarginLeft"
+            android:id="@+id/edtnumero_documento"
+            android:hint="@string/txtvwNumeroDocumento"/>
+        <EditText
+            android:layout_width="@dimen/edTxtWidth"
+            android:layout_height="@dimen/edTxtHeight"
+            android:paddingBottom="@dimen/edTxtPaddingButton"
+            android:paddingTop="@dimen/edTxtPaddingTop"
+            android:layout_marginLeft="@dimen/edTxtMarginLeft"
+            android:id="@+id/edt_nombreusuario"
+            android:hint="@string/txtvwNombreUsuario"
+            />
+
+        <EditText
+            android:layout_width="@dimen/edTxtWidth"
+            android:layout_height="@dimen/edTxtHeight"
+            android:paddingBottom="@dimen/edTxtPaddingButton"
+            android:paddingTop="@dimen/edTxtPaddingTop"
+            android:layout_marginLeft="@dimen/edTxtMarginLeft"
+            android:id="@+id/edt_contraseña"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+
+            />
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="@dimen/btnContinuarFormUnoWidth"
+        android:layout_height="@dimen/btnContinuarFormUnoHeight"
+        android:text="Registrarse"
+        android:id="@+id/btnRegistrarse"
+        android:onClick="salvar"/>
+>>>>>>> 96c9f18f9305059db90128c8fb79522b622790b7
 </LinearLayout>

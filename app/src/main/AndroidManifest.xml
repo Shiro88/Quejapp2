@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pqrs.sena.quejapp">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -32,6 +33,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>-->
         </activity>
+<<<<<<< HEAD
+=======
+        <activity android:name=".registrar_pqrs" />
+        <activity android:name=".activity_buscar_pqrs"/>
+        <activity android:name=".registro_usuario"/>
+>>>>>>> 96c9f18f9305059db90128c8fb79522b622790b7
     </application>
 
 </manifest>

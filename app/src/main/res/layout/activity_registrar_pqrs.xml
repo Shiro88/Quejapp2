@@ -61,9 +61,14 @@
                 android:spinnerMode="dialog"
                 android:layout_gravity="center"
                 android:textAlignment="center"
+<<<<<<< HEAD
                 style="@style/SpinnerStyle"
+=======
+                android:id="@+id/spRegional"
+>>>>>>> 96c9f18f9305059db90128c8fb79522b622790b7
                 />
             <Spinner
+                android:id="@+id/spCentro"
                 android:layout_width="@dimen/spWidth"
                 android:layout_height="@dimen/spHeight"
                 android:layout_marginStart="@dimen/spMarginStart"
@@ -76,10 +81,15 @@
                 android:paddingRight="@dimen/spPaddingRight"
                 android:entries="@array/spCentrosValues"
                 android:spinnerMode="dialog"
+<<<<<<< HEAD
                 android:textAlignment="center"
                 style="@style/SpinnerStyle"/>
+=======
+                android:textAlignment="center" />
+>>>>>>> 96c9f18f9305059db90128c8fb79522b622790b7
 
             <Spinner
+                android:id="@+id/spSedes"
                 android:layout_width="@dimen/spWidth"
                 android:layout_height="@dimen/spHeight"
                 android:layout_marginStart="@dimen/spMarginStart"
@@ -96,6 +106,7 @@
                 style="@style/SpinnerStyle"/>
 
             <Spinner
+                android:id="@+id/spTipoPqrs"
                 android:layout_width="@dimen/spWidth"
                 android:layout_height="@dimen/spHeight"
                 android:layout_marginStart="@dimen/spMarginStart"
@@ -109,9 +120,16 @@
                 android:textAlignment="center"
                 android:layout_gravity="center"
                 android:entries="@array/spTipoPqrsValues"
+<<<<<<< HEAD
                 style="@style/SpinnerStyle"/>
 
             <EditText
+=======
+                />
+
+            <EditText
+                android:id="@+id/edtNumeroFicha"
+>>>>>>> 96c9f18f9305059db90128c8fb79522b622790b7
                 android:layout_width="@dimen/spWidth"
                 android:layout_height="@dimen/spHeight"
                 android:layout_marginStart="@dimen/spMarginStart"
@@ -126,10 +144,15 @@
                 android:layout_gravity="center"
                 android:inputType="number"
                 android:hint="@string/edtNumeroFicha"
+<<<<<<< HEAD
                 android:id="@+id/txvNumeroFicha"
                 style="@style/SpinnerStyle"/>
+=======
+                 />
+>>>>>>> 96c9f18f9305059db90128c8fb79522b622790b7
 
             <Spinner
+                android:id="@+id/spCategoriaPqrs"
                 android:layout_width="@dimen/spWidth"
                 android:layout_height="@dimen/spHeight"
                 android:layout_marginStart="@dimen/spMarginStart"
@@ -165,7 +188,11 @@
                 android:layout_gravity="center"
                 android:textAlignment="textStart"
                 android:inputType="textMultiLine"
+<<<<<<< HEAD
                 style="@style/SpinnerStyle"/>
+=======
+                android:id="@+id/edtDescripcion"/>
+>>>>>>> 96c9f18f9305059db90128c8fb79522b622790b7
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -175,7 +202,12 @@
                 android:layout_gravity="left"
                 android:paddingStart="1dp"/>
             <Button
+<<<<<<< HEAD
                 android:layout_width="match_parent"
+=======
+                android:id="@+id/btnRegistrarPQRS"
+                android:layout_width="wrap_content"
+>>>>>>> 96c9f18f9305059db90128c8fb79522b622790b7
                 android:layout_height="@dimen/btnAgregarEvidenciaHeight"
                 android:text="@string/btnEnviar"
                 android:layout_gravity="center"

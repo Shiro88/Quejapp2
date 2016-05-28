@@ -87,9 +87,40 @@
             style="@style/EditTextStyle"
             android:hint="@string/edtContraseña"/>
 
+<<<<<<< HEAD
 </LinearLayout>
 
 
+=======
+    <TextView
+        android:layout_width="@dimen/txtvwTitulosGrandesWidth"
+        android:layout_height="@dimen/txtvwTitulosGrandesHeight"
+        android:text="@string/txtvwClaveUsuario"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/txvwTitulosGrandesFontSize"
+        android:layout_marginBottom="@dimen/txtvwTitulosGrandesMarginButton"
+        android:layout_marginLeft="@dimen/txtvwTitulosGrandesMarginLeft"
+        android:layout_marginRight="@dimen/txtvwTitulosGrandesMarginRight"
+        android:paddingEnd="@dimen/edTxtLogInPaddingEnd"
+        android:paddingStart="@dimen/edTxtLogInPaddingStart"
+        android:layout_marginEnd="@dimen/edTxtLogInMarginEnd"
+        android:layout_marginStart="@dimen/edTxtLogInMarginStart"/>
+    <EditText
+        android:layout_width="@dimen/edTxtLogInWidth"
+        android:layout_height="@dimen/edTxtLogInHeight"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/edTxtLogInMarginButton"
+        android:layout_marginLeft="@dimen/edTxtLogInMarginLeft"
+        android:layout_marginRight="@dimen/edTxtLogInMarginRight"
+        android:inputType="textPassword"
+        android:paddingEnd="@dimen/edTxtLogInPaddingEnd"
+        android:paddingStart="@dimen/edTxtLogInPaddingStart"
+        android:layout_marginEnd="@dimen/edTxtLogInMarginEnd"
+        android:layout_marginStart="@dimen/edTxtLogInMarginStart"
+        android:backgroundTint="@color/ComplementaryColorQuejapp" />
+>>>>>>> 96c9f18f9305059db90128c8fb79522b622790b7
     <!--Para que no se genere conflicto con los atributos de padding y margin
     se deben crear padding y margin left y rigth y end y start
     -->
@@ -107,9 +138,16 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:text="@string/btnLogin"
+<<<<<<< HEAD
         android:id="@+id/btnIngresar"
         android:layout_marginLeft="@dimen/btnLogInMarginLeft"
         style="@style/ButtonStyle"/>
+=======
+        android:textColor="@color/SecondaryColorQuejapp"
+        android:shadowColor="@color/PrimaryColorDarkQuejapp"
+        android:id="@+id/btnIngresar"
+        android:layout_marginLeft="@dimen/btnLogInMarginLeft" />
+>>>>>>> 96c9f18f9305059db90128c8fb79522b622790b7
 
 
 </LinearLayout>

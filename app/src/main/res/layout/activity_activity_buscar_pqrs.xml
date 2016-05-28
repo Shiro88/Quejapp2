@@ -7,6 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+<<<<<<< HEAD
     tools:context=".activity_buscar_pqrs"
     android:orientation="vertical"
     >
@@ -68,5 +69,52 @@
 
     </LinearLayout>
 
+=======
+    tools:context="com.example.chaquen.quejaappsena.BuscarPqrs"
+    android:orientation="vertical">
+    <TextView
+
+        android:layout_width="@dimen/txtvwTitulosGrandesWidth"
+        android:layout_height="@dimen/txtvwTitulosGrandesHeight"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/txtvwBuscarPQRS"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/txtvwMedianosMarginTop"
+        android:layout_marginBottom="@dimen/txtvwMedianosMarginButton"/>
+    <TextView
+        android:layout_width="@dimen/txtvwTitulosMedianosWidth"
+        android:layout_height="@dimen/txtvwTitulosMedianosHeight"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/txtvwNumeroFicha"
+        android:layout_gravity="left"
+        android:layout_marginBottom="@dimen/txtvwMedianosMarginButton"/>
+    <EditText
+        android:id="@+id/edtBusquedaNumeroFicha"
+        android:layout_width="@dimen/edTxtWidth"
+        android:layout_height="@dimen/edTxtHeight"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginBottom="@dimen/txtvwMedianosMarginButton"/>
+    <TextView
+        android:layout_width="@dimen/txtvwTitulosMedianosWidth"
+        android:layout_height="@dimen/txtvwTitulosMedianosHeight"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/txtvwNumeroDocumento"
+        android:layout_gravity="left"
+        android:layout_marginBottom="@dimen/txtvwMedianosMarginButton"
+        />
+    <EditText
+        android:id="@+id/edtNumeroDocumento"
+        android:layout_width="@dimen/edTxtWidth"
+        android:layout_height="@dimen/edTxtHeight"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginBottom="@dimen/txtvwMedianosMarginButton"/>
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="@dimen/btnBuscarPQRSWidth"
+        android:layout_height="@dimen/btnBuscarPQRSHeight"
+        android:text="@string/btnBuscarPQRSDos"/>
+>>>>>>> 96c9f18f9305059db90128c8fb79522b622790b7
 </LinearLayout>
 
