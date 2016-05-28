@@ -105,6 +105,9 @@
         android:layout_marginEnd="@dimen/edTxtLogInMarginEnd"
         android:layout_marginStart="@dimen/edTxtLogInMarginStart"
         android:backgroundTint="@color/ComplementaryColorQuejapp" />
+    <!--Para que no se genere conflicto con los atributos de padding y margin
+    se deben crear padding y margin left y rigth y end y start
+    -->
     <Button
         android:layout_width="@dimen/btnLogInWidth"
         android:layout_height="@dimen/btnLogInHeight"
@@ -114,12 +117,15 @@
         android:layout_marginEnd="@dimen/btnLogInMarginEnd"
         android:paddingStart="@dimen/btnLogInPaddingStart"
         android:paddingEnd="@dimen/btnLogInPaddingEnd"
+        android:paddingLeft="@dimen/btnLogInPaddingLeft"
+        android:paddingRight="@dimen/btnLogInPaddingRight"
         android:layout_gravity="center"
         android:gravity="center"
         android:text="@string/btnLogin"
         android:textColor="@color/SecondaryColorQuejapp"
         android:shadowColor="@color/PrimaryColorDarkQuejapp"
-        android:id="@+id/btnIngresar"/>
+        android:id="@+id/btnIngresar"
+        android:layout_marginLeft="@dimen/btnLogInMarginLeft" />
 
 
 </LinearLayout>

@@ -249,8 +249,6 @@
     <dimen name="btnBuscarPQRSPaddingButton">1dp</dimen>
     <dimen name="btnBuscarPQRSPaddingLeft">1dp</dimen>
     <dimen name="btnBuscarPQRSPaddingRight">1dp</dimen>
-    <dimen name="btnBuscarPQRSPaddingEnd">1dp</dimen>
-
     <!--Tamaños eleemntos resultados-->
     <dimen name="btnAtrasResultadoWidth">320dp</dimen>
     <dimen name="btnAtrasResultadoHeight">60dp</dimen>
@@ -270,15 +268,27 @@
     <dimen name="txvwFontSizeTitulosMedianos">20sp</dimen>
     <dimen name="txvwFontSizeTitulosPequeños">15sp</dimen>
 
-    <!--Padding Layouts-->
-    <dimen name="lyPaddingStart">5dp</dimen>
-    <dimen name="lyPaddingEnd">5dp</dimen>
-    <dimen name="lyPaddingTop">5dp</dimen>
-    <dimen name="lyPaddingBottom">5dp</dimen>
 
-    <!--Margin Layouts-->
-    <dimen name="lyMarginStart">5dp</dimen>
-    <dimen name="lyMarginEnd">5dp</dimen>
-    <dimen name="lyMarginTop">5dp</dimen>
+
+    <!--Tamaños para el layout que presenta las quejas en la lista -->
+    <!--Numero de radicado-->
+    <dimen name="txvNumRadicadoWidth">1dp</dimen>
+    <dimen name="txvNumRadicadoHeight">1dp</dimen>
+    <dimen name="txvNumRadicadoMargin">10dp</dimen>
+    <dimen name="txvNumRadicadoMarginTop">1dp</dimen>
+    <dimen name="txvNumRadicadoMarginLeft">1dp</dimen>
+    <dimen name="txvNumRadicadoMarginRigth">1dp</dimen>
+    <dimen name="txvNumRadicadoMarginButton">1dp</dimen>
+    <dimen name="txvNumRadicadoPadding">1dp</dimen>
+    <dimen name="txvNumRadicadoPaddingTop">1dp</dimen>
+    <dimen name="txvNumRadicadoPaddingLeft">1dp</dimen>
+    <dimen name="txvNumRadicadoPaddingRigth">1dp</dimen>
+    <dimen name="txvNumRadicadoPaddingButton">1dp</dimen>
     <dimen name="lyMarginBottom">5dp</dimen>
+    <dimen name="lyPaddingTop">5dp</dimen>
+    <dimen name="lyMarginTop">5dp</dimen>
+
+
+    <!--FIN Tamaños para el layout que presenta las quejas en la lista -->
+
 </resources>
