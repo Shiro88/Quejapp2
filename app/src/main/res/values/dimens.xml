@@ -130,7 +130,7 @@
     <!--Margen de los titulos Medianos-->
     <dimen name="txtvwMedianosMargin">1dp</dimen>
     <dimen name="txtvwMedianosMarginTop">10dp</dimen>
-    <dimen name="txtvwMedianosMarginButton">20dp</dimen>
+    <dimen name="txtvwMedianosMarginButton">10dp</dimen>
     <dimen name="txtvwMedianosMarginLeft">1dp</dimen>
     <dimen name="txtvwMedianosMarginRight">1dp</dimen>
     <!--Padding de los titulos Medianos-->
