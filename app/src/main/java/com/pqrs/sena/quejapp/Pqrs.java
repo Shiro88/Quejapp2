@@ -1,25 +1,20 @@
 package com.pqrs.sena.quejapp;
 
+import java.util.HashMap;
+
 /**
  * Created by Usaurio on 08/05/2016.
  */
-public class Pqrs {
+public class Pqrs implements  IRequestParams{
     public static final String TABLA="pqrs";
     public static final String CLAVE_ID_PQRS="IdPqrs";
+    public static final String CLAVE_FK_ID_SEDE="Fk_Id_Sede";
+    public static final String CLAVE_FK_ID_TPETICION="Fk_Id_TPeticion";
     public static final String CLAVE_DESCRIPCION="Descripcion";
-    public static final String CLAVE_ID_ASUNTO_FK="Fk_Id_Asunto";
-    public static final String CLAVE_ID_MEDIO_NOTIFICACION="Fk_Id_MNotificacion";
-    public static final String CLAVE_ID_SEDE="Fk_Id_Sede";
-    public static final String CLAVE_ID_TIPO_PETICION="Fk_Id_TPeticion";
+    public static final String CLAVE_FK_ID_USUARIO="Fk_Id_Usuario";
 
-    //Definicion de atributos de la clase PQRS (Peticiones quejas reclamos y sugerencias
-    public int intIdPqrs;
-    public String strDescripcion;
-    public int intFk_Id_Asunto;
-    public int intFk_Id_MNotificacion;
-    public int intFk_Id_Sede;
-    public int intFk_id_TPeticion;
-
+    private int intIdPqrs;
+    private int intSede;
 
     public int getIntIdPqrs() {
         return intIdPqrs;
@@ -27,6 +22,22 @@ public class Pqrs {
 
     public void setIntIdPqrs(int intIdPqrs) {
         this.intIdPqrs = intIdPqrs;
+    }
+
+    public int getIntSede() {
+        return intSede;
+    }
+
+    public void setIntSede(int intSede) {
+        this.intSede = intSede;
+    }
+
+    public int getIntTipoPeticion() {
+        return intTipoPeticion;
+    }
+
+    public void setIntTipoPeticion(int intTipoPeticion) {
+        this.intTipoPeticion = intTipoPeticion;
     }
 
     public String getStrDescripcion() {
@@ -37,39 +48,126 @@ public class Pqrs {
         this.strDescripcion = strDescripcion;
     }
 
-    public int getIntFk_Id_Asunto() {
-        return intFk_Id_Asunto;
+    public int getIntFk_IdUsuario() {
+        return intFk_IdUsuario;
     }
 
-    public void setIntFk_Id_Asunto(int intFk_Id_Asunto) {
-        this.intFk_Id_Asunto = intFk_Id_Asunto;
+    public void setIntFk_IdUsuario(int intFk_IdUsuario) {
+        this.intFk_IdUsuario = intFk_IdUsuario;
     }
 
-    public int getIntFk_Id_MNotificacion() {
-        return intFk_Id_MNotificacion;
+    private int intTipoPeticion;
+    private String strDescripcion;
+    private int intFk_IdUsuario;
+
+
+
+    @Override
+    public HashMap<String, String> getRequestParamsConsultar() {
+        HashMap<String,String> mih= new HashMap<>();
+        mih.put("TABLA",TABLA);
+        mih.put("CLAVE_ID_PQRS",CLAVE_ID_PQRS);
+        mih.put("CLAVE_FK_ID_SEDE",CLAVE_FK_ID_SEDE);
+        mih.put("CLAVE_FK_ID_TPETICION",CLAVE_FK_ID_TPETICION);
+        mih.put("CLAVE_DESCRIPCION",CLAVE_DESCRIPCION);
+        mih.put("CLAVE_FK_ID_USUARIO",CLAVE_FK_ID_USUARIO);
+
+
+
+        mih.put("OPERACION","consultar");
+        return mih;
     }
 
-    public void setIntFk_Id_MNotificacion(int intFk_Id_MNotificacion) {
-        this.intFk_Id_MNotificacion = intFk_Id_MNotificacion;
+    @Override
+    public HashMap<String, String> getRequestParamsConsultar(String where, String campoUno, String comparador, String campoDos, String orden, String grupo, String limite) {
+        HashMap<String,String> mih= new HashMap<>();
+        mih.put("TABLA",TABLA);
+        mih.put("CLAVE_ID_PQRS",CLAVE_ID_PQRS);
+        mih.put("CLAVE_FK_ID_SEDE",CLAVE_FK_ID_SEDE);
+        mih.put("CLAVE_FK_ID_TPETICION",CLAVE_FK_ID_TPETICION);
+        mih.put("CLAVE_DESCRIPCION",CLAVE_DESCRIPCION);
+        mih.put("CLAVE_FK_ID_USUARIO",CLAVE_FK_ID_USUARIO);
+
+        mih.put("VALOR_ID_PQRS", Integer.toString(this.getIntIdPqrs()));
+        mih.put("VALOR_FK_ID_SEDE",Integer.toString(this.getIntSede()));
+        mih.put("VALOR_FK_ID_TPETICION",Integer.toString(this.getIntTipoPeticion()));
+        mih.put("VALOR_DESCRIPCION",this.getStrDescripcion());
+        mih.put("VALOR_FK_ID_USUARIO",Integer.toString(this.getIntFk_IdUsuario()));
+
+        mih.put("OPERACION","consultar");
+
+        if(where!=null){
+            mih.put("WHERE",where);
+        }
+        if(campoUno!=null){
+            mih.put("CAMPOUNO",campoUno);
+        }
+        if(campoDos!=null){
+            mih.put("CAMPODOS",campoDos);
+        }
+        if(comparador!=null){
+            mih.put("COMPARADOR",comparador);
+        }
+
+        if(orden!=null){
+            mih.put("ORDER BY",orden);
+        }
+        if(limite!=null){
+            mih.put("LIMIT",limite);
+        }
+        if(grupo!=null){
+            mih.put("GROUP BY",grupo);
+        }
+
+
+
+        return mih;
+
     }
 
-    public int getIntFk_Id_Sede() {
-        return intFk_Id_Sede;
+    @Override
+    public HashMap<String, String> getRequestParamsInsertar() {
+        HashMap<String,String> mih= new HashMap<>();
+        mih.put("TABLA",TABLA);
+        mih.put("CLAVE_ID_PQRS",CLAVE_ID_PQRS);
+        mih.put("CLAVE_FK_ID_SEDE",CLAVE_FK_ID_SEDE);
+        mih.put("CLAVE_FK_ID_TPETICION",CLAVE_FK_ID_TPETICION);
+        mih.put("CLAVE_DESCRIPCION",CLAVE_DESCRIPCION);
+        mih.put("CLAVE_FK_ID_USUARIO",CLAVE_FK_ID_USUARIO);
+        mih.put("VALOR_FK_ID_SEDE",Integer.toString(this.getIntSede()));
+        mih.put("VALOR_FK_ID_TPETICION",Integer.toString(this.getIntTipoPeticion()));
+        mih.put("VALOR_DESCRIPCION",this.getStrDescripcion());
+        mih.put("VALOR_FK_ID_USUARIO",Integer.toString(this.getIntFk_IdUsuario()));
+
+        return mih;
     }
 
-    public void setIntFk_Id_Sede(int intFk_Id_Sede) {
-        this.intFk_Id_Sede = intFk_Id_Sede;
+    @Override
+    public HashMap<String, String> getRequestParamsActualizar() {
+        HashMap<String,String> mih= new HashMap<>();
+        mih.put("TABLA",TABLA);
+        mih.put("CLAVE_ID_PQRS",CLAVE_ID_PQRS);
+        mih.put("CLAVE_FK_ID_SEDE",CLAVE_FK_ID_SEDE);
+        mih.put("CLAVE_FK_ID_TPETICION",CLAVE_FK_ID_TPETICION);
+        mih.put("CLAVE_DESCRIPCION",CLAVE_DESCRIPCION);
+        mih.put("CLAVE_FK_ID_USUARIO",CLAVE_FK_ID_USUARIO);
+        mih.put("VALOR_ID_PQRS", Integer.toString(this.getIntIdPqrs()));
+        mih.put("VALOR_FK_ID_SEDE",Integer.toString(this.getIntSede()));
+        mih.put("VALOR_FK_ID_TPETICION",Integer.toString(this.getIntTipoPeticion()));
+        mih.put("VALOR_DESCRIPCION",this.getStrDescripcion());
+        mih.put("VALOR_FK_ID_USUARIO",Integer.toString(this.getIntFk_IdUsuario()));
+
+        return mih;
     }
 
-    public int getIntFk_id_TPeticion() {
-        return intFk_id_TPeticion;
+    @Override
+    public HashMap<String, String> getRequestParamsEliminar() {
+        HashMap<String,String> mih= new HashMap<>();
+        mih.put("TABLA",TABLA);
+        mih.put("CLAVE_ID_PQRS",CLAVE_ID_PQRS);
+        mih.put("VALOR_ID_PQRS", Integer.toString(this.getIntIdPqrs()));
+
+
+        return mih;
     }
-
-    public void setIntFk_id_TPeticion(int intFk_id_TPeticion) {
-        this.intFk_id_TPeticion = intFk_id_TPeticion;
-    }
-
-
-
-
 }
