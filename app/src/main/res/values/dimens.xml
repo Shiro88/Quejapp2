@@ -232,7 +232,7 @@
     <dimen name="txtvwDescripcionFormDosPaddingLeft">1dp</dimen>
     <dimen name="txtvwDescripcionFormDosPaddingRight">1dp</dimen>
     <!--Tamaños elementos EditText para la descricion -->
-    <dimen name="edTxtDescripcionFormDosWidth">500dp</dimen>
+    <dimen name="edTxtDescripcionFormDosWidth">300dp</dimen>
     <dimen name="edTxtDescripcionFormDosHeight">100dp</dimen>
     <dimen name="edTxtDescripcionFormDosHeightLand">50dp</dimen>
     <dimen name="edTxtDescripcionFormDosMargin">1dp</dimen>

@@ -35,7 +35,7 @@ public class LoadingTask extends AsyncTask<String,Integer,Integer>{
 
     private void downloadResources() {
         // We are just imitating some process thats takes a bit of time (loading of resources / downloading)
-        int count = 2;
+        int count = 1;
         for (int i = 0; i < count; i++) {
 
             // Update the progress bar after every step

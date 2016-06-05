@@ -16,11 +16,18 @@
         android:src="@drawable/logoquejapp"
         android:contentDescription="@string/imglogosplash"
         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txvCargando"
+        android:layout_gravity="center"
+        android:gravity="center"
+        style="@style/EditTextStyle"/>
     <ProgressBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/prgbInicial"
-        style="@android:style/Widget.ProgressBar.Horizontal"
+        style="@android:style/Widget.ProgressBar.Large"
         />
 
 </LinearLayout>

@@ -2,7 +2,6 @@ package com.pqrs.sena.quejapp;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -16,15 +15,21 @@ import android.widget.FrameLayout;
 
 public class Menu_Principal extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    FrameLayout Frame2;
+    FrameLayout Frame1, Frame2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu__principal);
+        Informacion_Fragment informacion_fragment = new Informacion_Fragment();
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_container,informacion_fragment);
+        fragmentTransaction.commit();
         android.support.v7.widget.Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         Frame2 = (FrameLayout)findViewById(R.id.fragment_container2);
+        Frame1 = (FrameLayout)findViewById(R.id.fragment_container);
 
         /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -87,9 +92,10 @@ public class Menu_Principal extends AppCompatActivity
 
         if (id == R.id.registro_fragment) {
             assert Frame2 != null;
-            Frame2.removeAllViews();
+            Frame1.removeAllViews();
+            assert Frame1!= null;
+            Frame1.removeAllViews();
             registro_usuario_fragment fragment = new registro_usuario_fragment();
-            Fragment fragmento2 = new Fragment();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container,fragment);
             fragmentTransaction.commit();
@@ -97,7 +103,9 @@ public class Menu_Principal extends AppCompatActivity
             // Handle the camera action
         } else if (id == R.id.registro_pqrs) {
             assert Frame2 != null;
-            Frame2.removeAllViews();
+            Frame1.removeAllViews();
+            assert Frame1!= null;
+            Frame1.removeAllViews();
             registrar_pqrs_fragment mifragment = new registrar_pqrs_fragment();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container,mifragment);
@@ -107,12 +115,19 @@ public class Menu_Principal extends AppCompatActivity
 
             assert Frame2 != null;
             Frame2.removeAllViews();
+            assert Frame1!= null;
+            Frame1.removeAllViews();
             login_fragment fragment = new login_fragment();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, fragment);
             fragmentTransaction.commit();
 
         } else if (id == R.id.buscar_pqrs_fragment) {
+            assert Frame2 != null;
+            Frame2.removeAllViews();
+            assert Frame1!= null;
+            Frame1.removeAllViews();
+
             buscar_pqrs_fragment fragment = new buscar_pqrs_fragment();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container,fragment);
