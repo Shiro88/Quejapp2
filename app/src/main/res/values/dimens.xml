@@ -45,7 +45,7 @@
     <!--Margen del EditText Login-->
     <dimen name="edTxtLogInMargin">1dp</dimen>
     <dimen name="edTxtLogInMarginTop">1dp</dimen>
-    <dimen name="edTxtLogInMarginButton">5dp</dimen>
+    <dimen name="edTxtLogInMarginButton">1dp</dimen>
     <dimen name="edTxtLogInMarginLeft">1dp</dimen>
     <dimen name="edTxtLogInMarginRight">1dp</dimen>
     <dimen name="edTxtLogInMarginStart">1dp</dimen>
@@ -343,8 +343,6 @@
     <dimen name="lyMarginTop">3dp</dimen>
     <dimen name="lyWidth">300dp</dimen>
     <dimen name="lyHeigth">50dp</dimen>
-
-
 
 
     <!--FIN Tamaños para el layout que presenta las quejas en la lista -->
