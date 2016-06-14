@@ -76,9 +76,7 @@ public class Usuario extends Persona implements IRequestParams{
         return strTipoIdentificacion;
     }
 
-    public void setStrTipoIdentificacion(String strTipoIdentificacion) {
-        this.strTipoIdentificacion = strTipoIdentificacion;
-    }
+    public void setStrTipoIdentificacion(String strTipoIdentificacion) {this.strTipoIdentificacion = strTipoIdentificacion;   }
 
     public String getStrCorreo() {
         return strCorreo;
@@ -172,8 +170,6 @@ public class Usuario extends Persona implements IRequestParams{
         return mih;
     }
 
-
-
     @Override
     public HashMap<String, String> getRequestParamsInsertar() {
         HashMap<String,String> mih= new HashMap<>();
@@ -199,8 +195,6 @@ public class Usuario extends Persona implements IRequestParams{
         mih.put("OPERACION","insertar");
         return mih;
     }
-
-
 
     @Override
     public HashMap<String, String> getRequestParamsActualizar() {
@@ -238,9 +232,12 @@ public class Usuario extends Persona implements IRequestParams{
         mih.put("OPERACION","eliminar");
         return mih;
     }
-    public HashMap<String,String> getRequestParamsLog(){
+
+
+    public HashMap<String,String> getRequestParamsLogIn(){
         HashMap<String,String> mih= new HashMap<>();
-        mih.put("TABLA","LOGIN");
+        mih.put("TABLA","login");
+        mih.put("OPERACION","consultar");
         mih.put("CLAVE_CORREO",CLAVE_CORREO);
         mih.put("CLAVE_CONTRASENIA",CLAVE_CONTRASENIA);
         mih.put("VALOR_CONTRASENIA",this.getStrContrasenia());

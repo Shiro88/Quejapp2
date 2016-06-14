@@ -10,14 +10,19 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
-
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.HashMap;
+import java.util.concurrent.ExecutionException;
 
 import cz.msebera.android.httpclient.Header;
+
+import static com.pqrs.sena.quejapp.Utilidades.*;
 
 
 /**
@@ -31,7 +36,7 @@ public class registro_usuario_fragment extends Fragment implements View.OnClickL
     EditText edtNumeroDocumento;
     EditText edtNombreUsuario;
     EditText edtContraseña;
-
+    View view;
     public registro_usuario_fragment() {
 
         // Required empty public constructor
@@ -42,86 +47,121 @@ public class registro_usuario_fragment extends Fragment implements View.OnClickL
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.fragment_registro_usuario_fragment, container, false);
+        view= inflater.inflate(R.layout.fragment_registro_usuario_fragment, container, false);
         btnRegistrar= (Button) view.findViewById(R.id.btnRegistrarse);
         edtNombreCompleto = (EditText) view.findViewById(R.id.edt_nombre_completo);
+        edtNombreCompleto.setText("Edgar");
         edtApellidos = (EditText) view.findViewById(R.id.edt_apellidos);
+        edtApellidos.setText("Guzman");
         edtNumeroDocumento = (EditText) view.findViewById(R.id.edtnumero_documento);
+        edtNumeroDocumento.setText("1073684233");
         spnTipoDocumento = (Spinner) view.findViewById(R.id.spntipodocumento);
         edtNombreUsuario =(EditText) view.findViewById(R.id.edt_nombreusuario);
+        edtNombreUsuario.setText("eaguzman332@misena.edu.co");
         edtContraseña =(EditText) view.findViewById(R.id.edt_contraseña);
+        edtContraseña.setText("123");
         btnRegistrar.setOnClickListener(this);
         return view;
-    }
-    public void salvar(View view){
-        // enviarDatos(edtNombreCompleto.getText().toString(), edtApellidos.getText().toString(), spnTipoDocumento.getSelectedItem().toString(), edtNumeroDocumento.getText().toString(), edtNombreUsuario.getText().toString(), edtContraseña.getText().toString());
-
-        HashMap<String,String> miHash= new HashMap<>();
-        miHash.put("tabla","usuario");
-        miHash.put("nombre",edtNombreCompleto.getText().toString());
-        miHash.put("apellido",edtApellidos.getText().toString());
-        miHash.put("tipoDocumento",spnTipoDocumento.getSelectedItem().toString());
-        miHash.put("numeroDocumento",edtNumeroDocumento.getText().toString());
-        miHash.put("nombreUsuario",edtNombreUsuario.getText().toString());
-        miHash.put("clave",edtContraseña.getText().toString());
-        enviarDatos("objeto",miHash);
-
-    }
-
-    public void enviarDatos(String clave,Object value){
-        AsyncHttpClient cliente= new AsyncHttpClient();
-        String url="http://www.movilessena.com/Quejapp/Insert.php";
-        //String url="http://www.movilessena.com/Quejapp/Insert.php?";
-        RequestParams rpMisParametos=new RequestParams();
-        rpMisParametos.put(clave,value);
-        cliente.post(url, rpMisParametos, new AsyncHttpResponseHandler() {
-            @Override
-            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                String resultado = new String(responseBody);
-                Toast.makeText(getContext(), resultado, Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                Toast.makeText(getContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
-
-
-
-    private void enviarDatos(String nombrecompleto, String Apellidos,  String NumeroDocumento,String TipoDocumento ,String NombreUsuario, String Contrasenia) {
-        AsyncHttpClient client = new AsyncHttpClient();
-        String url="http://www.movilessena.com/Quejapp/Insert.php?";
-        String parametros="&nombres="+nombrecompleto+"&apellidos="+Apellidos+"&identificacion="+NumeroDocumento+"&tipodocumento="+TipoDocumento+"&nombreusuario="+NombreUsuario+"&contrasenia="+Contrasenia;
-        client.post(url + parametros, new AsyncHttpResponseHandler() {
-            @Override
-            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                if (statusCode == 200) {
-                    String resultado = new String(responseBody);
-                    Toast.makeText(getActivity(), "Comunicacion correcta:" + resultado, Toast.LENGTH_LONG).show();
-
-                    //txv_cath_error.setText(resultado);
-                }
-                else{
-                    Toast.makeText(getContext(),"Status Code" + statusCode,Toast.LENGTH_LONG).show();
-                }
-            }
-
-            @Override
-            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                Toast.makeText(getActivity(),statusCode + error.getMessage(),Toast.LENGTH_LONG).show();
-                // txv_cath_error.setText(error.getMessage().toString());
-
-            }
-        });
-
     }
 
 
     public void onClick(View v) {
-        salvar(v);
+        try{
+            enviarDatosServidor(v);
+        }catch (Exception exp){
+            enviarMensaje(getContext(),"ESTO ES LO QUE PASA POR NO PROGRAMAR BIEN ☻"+exp.getMessage().toString());
+        }
+
     }
+    private void enviarDatosServidor(View v) {
+
+        Usuario usuario= new Usuario();
+        usuario.setStrNombres(edtNombreCompleto.getText().toString());
+        usuario.setStrApellidos(edtApellidos.getText().toString());
+        usuario.setStrTipoIdentificacion(spnTipoDocumento.getSelectedItem().toString());
+        usuario.setStrIdentificacion(edtNumeroDocumento.getText().toString());
+        usuario.setStrCorreo(edtNombreUsuario.getText().toString());
+        //usuario.setStrGenero();
+        usuario.setStrContrasenia(edtContraseña.getText().toString());
+        /*AsyncHttpClient micliente= new AsyncHttpClient();
+        RequestParams rp=new RequestParams();
+        rp.put("datos",usuario.getRequestParamsInsertar());
+        String url="http://movilessena.com/Quejapp/";
+        micliente.post(url+"v1/index.php", rp, new AsyncHttpResponseHandler() {
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+
+                try {
+
+                    JSONObject jobj=devolverJson(responseBody);
+                    enviarMensaje(jobj.getString("mensaje"));
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    enviarMensaje(e.getMessage().toString());
+                }
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+
+                if(statusCode==302){
+                    enviarMensaje("Hola no tenemos acceso a internet");
+                }else if(statusCode==0){
+                    enviarMensaje("No se ha podido establecer conexion");
+                }else{
+                    enviarMensaje(Integer.toString(statusCode)+""+error.getMessage());
+                }
+
+            }
+        });
+        */
+
+        WebService i_u = new WebService();
+        RequestParams r=new RequestParams();
+        r.put("datos",usuario.getRequestParamsInsertar());
+        /*i_u.miCliente.post(v.getContext(),i_u.getStrUrl(),r, new AsyncHttpResponseHandler() {
+            @Override
+
+            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+
+                //aqui manejo la respuesta del servidor
+                String str= new String(responseBody);
+
+
+                Toast.makeText(getActivity().getApplicationContext(),str,Toast.LENGTH_SHORT).show();
+                //Toast.makeText(view.getContext(),Integer.toString(statusCode).toString(),Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+
+            }
+        });*/
+        i_u.crear_registro(getContext(),usuario.getRequestParamsInsertar(), new AsyncHttpResponseHandler() {
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+                try {
+
+                    JSONObject jobj= Utilidades.devolverJson(responseBody);
+                    Utilidades.enviarMensaje(getContext(),jobj.getString("mensaje"));
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Utilidades.enviarMensaje(getContext(),e.getMessage().toString());
+                }
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+                String s=Utilidades.validarCodigo(statusCode,error);
+                Utilidades.enviarMensaje(getContext(),s);
+            }
+        });
+
+    }
+
+
+
+
 }
 
 
