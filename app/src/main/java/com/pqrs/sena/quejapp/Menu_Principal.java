@@ -85,6 +85,7 @@ public class Menu_Principal extends AppCompatActivity
         if (id == R.id.registro_fragment) {
             assert Frame2 != null;
             Frame2.removeAllViews();
+
             registro_usuario_fragment fragment = new registro_usuario_fragment();
             Fragment fragmento2 = new Fragment();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
@@ -95,7 +96,7 @@ public class Menu_Principal extends AppCompatActivity
         } else if (id == R.id.registro_pqrs) {
             assert Frame2 != null;
             Frame2.removeAllViews();
-            registrar_pqrs_fragment mifragment = new registrar_pqrs_fragment();
+            registrar_pqrs_fragment mifragment =new registrar_pqrs_fragment();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container,mifragment);
             fragmentTransaction.commit();

@@ -37,6 +37,7 @@
                 android:layout_height="wrap_content"
                 style="@style/LayoutStyleFields">
                 <EditText
+                    android:id="@+id/edtBusquedaNumeroDocumento"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:inputType="number"
@@ -53,6 +54,7 @@
                 android:layout_height="wrap_content"
                 style="@style/LayoutStyleFields">
                 <EditText
+                    android:id="@+id/edtNumeroFicha"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:inputType="number"
