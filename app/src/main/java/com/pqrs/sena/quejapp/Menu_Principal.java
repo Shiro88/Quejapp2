@@ -92,9 +92,14 @@ public class Menu_Principal extends AppCompatActivity
 
         if (id == R.id.registro_fragment) {
             assert Frame2 != null;
+<<<<<<< HEAD
             Frame1.removeAllViews();
             assert Frame1!= null;
             Frame1.removeAllViews();
+=======
+            Frame2.removeAllViews();
+
+>>>>>>> 81101af5b8e07e116a352a5b6ed5f5c9ddcb65f0
             registro_usuario_fragment fragment = new registro_usuario_fragment();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container,fragment);
@@ -103,10 +108,15 @@ public class Menu_Principal extends AppCompatActivity
             // Handle the camera action
         } else if (id == R.id.registro_pqrs) {
             assert Frame2 != null;
+<<<<<<< HEAD
             Frame1.removeAllViews();
             assert Frame1!= null;
             Frame1.removeAllViews();
             registrar_pqrs_fragment mifragment = new registrar_pqrs_fragment();
+=======
+            Frame2.removeAllViews();
+            registrar_pqrs_fragment mifragment =new registrar_pqrs_fragment();
+>>>>>>> 81101af5b8e07e116a352a5b6ed5f5c9ddcb65f0
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container,mifragment);
             fragmentTransaction.commit();

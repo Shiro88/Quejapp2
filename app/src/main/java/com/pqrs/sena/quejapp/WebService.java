@@ -19,8 +19,13 @@ import cz.msebera.android.httpclient.Header;
  * Created by Chaquen on 21/05/2016.
  */
 public class WebService {
+    public String getStrUrl() {
+        return strUrl;
+    }
+
     //private String strUrl="http://127.16.179:8082/api.quejapp.com/v1/index.php";
-    private String strUrl="http://mohanpruebas.mohansoft.com/v1/index.php";
+    //private String strUrl="http://mohanpruebas.mohansoft.com/v1/index.php";
+    private String strUrl="http://movilessena.com/Quejapp/v1/index.php";
 
     public AsyncHttpClient miCliente;
 
@@ -28,21 +33,21 @@ public class WebService {
         this.miCliente=new AsyncHttpClient();
     }
 
-    public void consultar_registro(HashMap<String,String> mih,AsyncHttpResponseHandler asyncHttpResponseHandler){
+    public void consultar_registro(Context c,HashMap<String,String> mih,AsyncHttpResponseHandler asyncHttpResponseHandler){
 
         RequestParams rp= new RequestParams();
         rp.put("datos",mih);
-        this.miCliente.post(this.strUrl,rp, asyncHttpResponseHandler);
+        this.miCliente.post(c,this.strUrl,rp, asyncHttpResponseHandler);
     }
     public void consultar_registro_con_parametros(HashMap<String,String> mih,AsyncHttpResponseHandler asyncHttpResponseHandler){
         RequestParams rp= new RequestParams();
         rp.put("datos",mih);
         this.miCliente.post(this.strUrl,rp, asyncHttpResponseHandler);
     }
-    public void crear_registro(HashMap<String,String> mih,AsyncHttpResponseHandler asyncHttpResponseHandler){
+    public void crear_registro(Context c,HashMap<String,String> mih,AsyncHttpResponseHandler asyncHttpResponseHandler){
         RequestParams rp= new RequestParams();
         rp.put("datos",mih);
-        this.miCliente.post(this.strUrl,rp, asyncHttpResponseHandler);
+        this.miCliente.post(c,this.strUrl,rp, asyncHttpResponseHandler);
     }
     public void actualizar_registro(HashMap<String,String> mih,AsyncHttpResponseHandler asyncHttpResponseHandler){
         RequestParams rp= new RequestParams();
