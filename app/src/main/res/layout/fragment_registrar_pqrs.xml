@@ -68,7 +68,7 @@
                     android:layout_gravity="center"
                     android:textAlignment="center"
                     style="@style/SpinnerStyle"
-                    />
+                    android:dropDownWidth="wrap_content" />
                 <Spinner
                     android:id="@+id/spCentro"
                     android:layout_width="@dimen/spWidth"

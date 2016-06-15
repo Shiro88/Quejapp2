@@ -2,8 +2,10 @@ package com.pqrs.sena.quejapp;
 
 
 import android.os.Bundle;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -21,7 +23,7 @@ import cz.msebera.android.httpclient.Header;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class login_fragment extends Fragment implements View.OnClickListener{
+public class login_fragment extends Fragment implements View.OnClickListener, NavigationView.OnNavigationItemSelectedListener{
 
     Button btnIngresar;
     EditText edtUsuario;
@@ -78,5 +80,10 @@ public class login_fragment extends Fragment implements View.OnClickListener{
             }
         });
 
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        return false;
     }
 }

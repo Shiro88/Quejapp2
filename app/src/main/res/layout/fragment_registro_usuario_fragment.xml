@@ -74,6 +74,7 @@
                     android:id="@+id/edt_nombre_completo"
                     android:hint="@string/txtvwNombreCompleto"
                     android:layout_gravity="center_vertical|right"
+
                     style="@style/EditTextStyle"
 
 
@@ -231,7 +232,6 @@
                     android:gravity="center"
                     android:text="@string/btnRegistrarse"
                     android:id="@+id/btnRegistrarse"
-                    android:onClick="salvar"
                     style="@style/ButtonStyle"
 
 
