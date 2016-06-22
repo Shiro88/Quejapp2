@@ -63,12 +63,12 @@ public class fragment_informacion_cardview extends Fragment implements View.OnCl
                 if (View.GONE == ly.getVisibility()) {
                     ExpandAndCollapseViewUtil.expand(ly, DURATION);
                     img.setImageResource(R.mipmap.ic_more_info);
-                    rotate(-ANGLE,img);
+                    rotate(ANGLE,img);
 
                 } else {
                     ExpandAndCollapseViewUtil.collapse(ly, DURATION);
                     img.setImageResource(R.mipmap.ic_more_info);
-                    rotate(ANGLE,img);
+                    rotate(-ANGLE,img);
                 }
             }
             catch(Exception ex){
@@ -80,12 +80,12 @@ public class fragment_informacion_cardview extends Fragment implements View.OnCl
                 if (View.GONE == ly.getVisibility()) {
                     ExpandAndCollapseViewUtil.expand(ly, DURATION);
                     img.setImageResource(R.mipmap.ic_more_info);
-                    rotate(-180.0f,img);
+                    rotate(180.0f,img);
 
                 } else {
                     ExpandAndCollapseViewUtil.collapse(ly, DURATION);
                     img.setImageResource(R.mipmap.ic_more_info);
-                    rotate(180.0f,img);
+                    rotate(-180.0f,img);
                 }
             }
             catch(Exception ex){
