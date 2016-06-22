@@ -121,24 +121,24 @@
                     android:entries="@array/spTipoPqrsValues"
                     style="@style/SpinnerStyle"/>
 
-             <!--   <EditText
-                    android:layout_width="@dimen/spWidth"
-                    android:layout_height="@dimen/spHeight"
-                    android:layout_marginStart="@dimen/spMarginStart"
-                    android:layout_marginEnd="@dimen/spMarginEnd"
-                    android:paddingStart="@dimen/spPaddingStart"
-                    android:paddingEnd="@dimen/spPaddingEnd"
-                    android:layout_marginLeft="@dimen/spMarginLeft"
-                    android:layout_marginRight="@dimen/spMarginRight"
-                    android:paddingLeft="@dimen/spPaddingLeft"
-                    android:paddingRight="@dimen/spPaddingRight"
-                    android:textAlignment="center"
-                    android:layout_gravity="center"
-                    android:inputType="number"
-                    android:hint="@string/edtNumeroFicha"
-                    android:id="@+id/txvNumeroFicha"
-                    style="@style/SpinnerStyle"/>
-                    -->
+                <!-- <EditText
+                     android:layout_width="@dimen/spWidth"
+                     android:layout_height="@dimen/spHeight"
+                     android:layout_marginStart="@dimen/spMarginStart"
+                     android:layout_marginEnd="@dimen/spMarginEnd"
+                     android:paddingStart="@dimen/spPaddingStart"
+                     android:paddingEnd="@dimen/spPaddingEnd"
+                     android:layout_marginLeft="@dimen/spMarginLeft"
+                     android:layout_marginRight="@dimen/spMarginRight"
+                     android:paddingLeft="@dimen/spPaddingLeft"
+                     android:paddingRight="@dimen/spPaddingRight"
+                     android:textAlignment="center"
+                     android:layout_gravity="center"
+                     android:inputType="number"
+                     android:hint="@string/edtNumeroFicha"
+                     android:id="@+id/txvNumeroFicha"
+                     style="@style/SpinnerStyle"/>
+                     -->
                 <Spinner
                     android:id="@+id/spCategoriaPQRS"
                     android:layout_width="@dimen/spWidth"
@@ -162,6 +162,7 @@
                     android:layout_gravity="left"
                     android:gravity="left">
                     <TextView
+
                         android:layout_width="@dimen/txtvwDescripcionFormDosWidth"
                         android:layout_height="@dimen/txtvwDescripcionFormDosHeight"
                         android:text="@string/txtvwDescripcion"

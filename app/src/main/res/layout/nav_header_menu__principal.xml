@@ -4,7 +4,7 @@
     android:layout_height="@dimen/nav_header_height"
     android:background="@drawable/rectangle"
     android:gravity="bottom"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -14,22 +14,37 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="213dp"
-        android:layout_height="66dp"
+        android:layout_width="@dimen/imgLogoWidth"
+        android:layout_height="@dimen/imgLogoHeight"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:src="@drawable/logoquejapp" />
+        android:layout_weight="0.5"
+        android:src="@drawable/logoquejapp"
+        android:layout_gravity="center"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="Quejapp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
-    <TextView
-        android:id="@+id/textView"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="pqrs.sena.edu.co" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="0.5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:text="Quejapp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_gravity="left"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pqrs.sena.edu.co"
+            android:layout_gravity="left"/>
+
+    </LinearLayout>
+
+
 
 </LinearLayout>

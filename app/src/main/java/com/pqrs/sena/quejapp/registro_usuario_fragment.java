@@ -1,6 +1,7 @@
 package com.pqrs.sena.quejapp;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -9,20 +10,16 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.Toast;
-import com.loopj.android.http.AsyncHttpClient;
+
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.HashMap;
-import java.util.concurrent.ExecutionException;
-
 import cz.msebera.android.httpclient.Header;
 
-import static com.pqrs.sena.quejapp.Utilidades.*;
+import static com.pqrs.sena.quejapp.Utilidades.enviarMensaje;
 
 
 /**
@@ -37,6 +34,7 @@ public class registro_usuario_fragment extends Fragment implements View.OnClickL
     EditText edtNombreUsuario;
     EditText edtContraseña;
     View view;
+    String llave="abc";
     public registro_usuario_fragment() {
 
         // Required empty public constructor
@@ -83,67 +81,24 @@ public class registro_usuario_fragment extends Fragment implements View.OnClickL
         usuario.setStrCorreo(edtNombreUsuario.getText().toString());
         //usuario.setStrGenero();
         usuario.setStrContrasenia(edtContraseña.getText().toString());
-        /*AsyncHttpClient micliente= new AsyncHttpClient();
-        RequestParams rp=new RequestParams();
-        rp.put("datos",usuario.getRequestParamsInsertar());
-        String url="http://movilessena.com/Quejapp/";
-        micliente.post(url+"v1/index.php", rp, new AsyncHttpResponseHandler() {
-            @Override
-            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-
-                try {
-
-                    JSONObject jobj=devolverJson(responseBody);
-                    enviarMensaje(jobj.getString("mensaje"));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                    enviarMensaje(e.getMessage().toString());
-                }
-            }
-
-            @Override
-            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-
-                if(statusCode==302){
-                    enviarMensaje("Hola no tenemos acceso a internet");
-                }else if(statusCode==0){
-                    enviarMensaje("No se ha podido establecer conexion");
-                }else{
-                    enviarMensaje(Integer.toString(statusCode)+""+error.getMessage());
-                }
-
-            }
-        });
-        */
 
         WebService i_u = new WebService();
         RequestParams r=new RequestParams();
         r.put("datos",usuario.getRequestParamsInsertar());
-        /*i_u.miCliente.post(v.getContext(),i_u.getStrUrl(),r, new AsyncHttpResponseHandler() {
-            @Override
 
-            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-
-                //aqui manejo la respuesta del servidor
-                String str= new String(responseBody);
-
-
-                Toast.makeText(getActivity().getApplicationContext(),str,Toast.LENGTH_SHORT).show();
-                //Toast.makeText(view.getContext(),Integer.toString(statusCode).toString(),Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-
-            }
-        });*/
         i_u.crear_registro(getContext(),usuario.getRequestParamsInsertar(), new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                 try {
 
                     JSONObject jobj= Utilidades.devolverJson(responseBody);
-                    Utilidades.enviarMensaje(getContext(),jobj.getString("mensaje"));
+                    //Utilidades.enviarMensaje(getContext(),jobj.getString("mensaje"));
+                    Utilidades utilidades=new Utilidades();
+                    utilidades.guardarPreferences(getContext(), jobj.getString("token"), "USER_CODE");
+                    String valor=utilidades.leerPreferences(getContext(),"USER_CODE");
+                    Utilidades.enviarMensaje(getContext(), "Registro Exitoso...");
+                    Intent intent = new Intent(getActivity().getApplication(), Menu_Principal.class);
+                    startActivity(intent);
                 } catch (JSONException e) {
                     e.printStackTrace();
                     Utilidades.enviarMensaje(getContext(),e.getMessage().toString());

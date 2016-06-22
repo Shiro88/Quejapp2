@@ -83,16 +83,23 @@
         Nos comprometemos a atender su solicitud,
         por lo que requerimos tenga en cuenta los siguientes
         puntos antes de registrarla:</string>
+    <string name="txvInfoPeticionTitulo">Peticion</string>
         <string name="txvInfoPeticion">Petición: Son las actuaciones, solicitudes o requerimientos
             que hace por primera vez los grupos de interes externos de la entidad y los cuales son
             dirigidos de forma respetuosa al SENA o a un Colaborador SENA con el proposito de requerir
             su intervencion al respecto.
 </string>
-        <string name="txvInfoQueja">Queja o denuncia: Es la manifestación de No-Conformidad, insatisfacción,
-            desagrado o descontento que un Ciudadano pone en conocimiento del SENA, por conductas irregulares
-            realizadas por sus Colaboradores SENA en cumplimiento de sus funciones o por particulares que tiene
+
+    <string name="txvQuejaTitulo">Queja o Denuncia</string>
+        <string name="txvInfoQueja">
+            Queja o denuncia: Es la manifestación de No-Conformidad, insatisfacción,
+            desagrado o descontento que un Ciudadano pone en conocimiento del SENA,
+            por conductas irregulares realizadas por sus Colaboradores SENA en
+            cumplimiento de sus funciones o por particulares que tiene
             a su cargo la prestación de un servicio público de la entidad.
 </string>
+
+    <string name="txvReclamoTitulo">Reclamo</string>
 
 <string name="txvInfoReclamo">
     Reclamo: Es una exigencia que realiza un Ciudadano
@@ -101,11 +108,17 @@
     obligación incumplida o por la prestación deficiente de una
     función a cargo del SENA.
 </string>
+
+    <string name="txvSugerenciaTitulo">Sugerencia</string>
 <string name="txvInfoSugerencia">
      Sugerencia: Es una proposición, insinuación, indicación o propuesta
-    que se presenta con el objetivo de sugerir una acción para adecuar
-    o mejorar algún servicio, producto o proceso de la Entidad.
+     que se presenta con el objetivo de sugerir una acción para adecuar
+     o mejorar algún servicio, producto o proceso de la Entidad.
 
 </string>
+    <string name="ic_more_info">ic_more_info</string>
+    <string name="txv_info_adicional">Para tramitar una nueva PQRSF haga clic en el boton</string>
+    <string name="ic_menu_ayuda">ic_menu_ayuda</string>
+    <string name="txv_info_adicional2">En la parte superior izquierda de la pantalla</string>
 
 </resources>

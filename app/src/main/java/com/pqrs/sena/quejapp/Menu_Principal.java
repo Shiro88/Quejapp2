@@ -122,6 +122,7 @@ public class Menu_Principal extends AppCompatActivity
             fragmentTransaction.replace(R.id.fragment_container, fragment);
             fragmentTransaction.commit();
 
+
         } else if (id == R.id.buscar_pqrs_fragment) {
             assert Frame2 != null;
             Frame2.removeAllViews();
