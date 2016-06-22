@@ -22,6 +22,7 @@ public class Utilidades {
 
         Toast.makeText(c.getApplicationContext(),msn,Toast.LENGTH_LONG).show();
     }
+
     public static String validarCodigo(int statusCode,Throwable error) {
         String str;
         if(statusCode==302){

@@ -1,5 +1,6 @@
 package com.pqrs.sena.quejapp;
 
+import android.content.ClipData;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentTransaction;
@@ -16,8 +17,7 @@ import android.widget.FrameLayout;
 public class Menu_Principal extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     FrameLayout Frame1, Frame2;
-
-
+Menu m;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +30,6 @@ public class Menu_Principal extends AppCompatActivity
         setSupportActionBar(toolbar);
         Frame2 = (FrameLayout)findViewById(R.id.fragment_container2);
         Frame1 = (FrameLayout)findViewById(R.id.fragment_container);
-
         /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,8 +39,13 @@ public class Menu_Principal extends AppCompatActivity
             }
         });*/
 
+      // m.findItem(R.id.mi_item_menu_registrar).setVisible(false);
+
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+
+
+            ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
@@ -78,6 +82,7 @@ public class Menu_Principal extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Utilidades.enviarMensaje(getApplicationContext(),"Hola ☻");
             return true;
         }
 
@@ -137,10 +142,6 @@ public class Menu_Principal extends AppCompatActivity
             FragmentTransaction fragmentTransaction1 = getSupportFragmentManager().beginTransaction();
             fragmentTransaction1.replace(R.id.fragment_container2,fragment1);
             fragmentTransaction1.commit();
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
 
         }
 

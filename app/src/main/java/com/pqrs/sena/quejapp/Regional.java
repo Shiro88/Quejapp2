@@ -6,14 +6,15 @@ import java.util.HashMap;
  * Created by Chaquen on 16/05/2016.
  */
 public class Regional implements IRequestParams{
-    public String getTABLA() {
-        return TABLA;
-    }
+
 
     public static final String TABLA="regional";
     public static final String CLAVE_FK_ID_EMPRESA="FK_Id_Empresa";
     public static final String CLAVE_NOMBRE_REGIONAL="NombreRegional";
 
+    public String getTABLA() {
+        return TABLA;
+    }
 
     public String getStrIdEmpresa() {
         return strIdEmpresa;
@@ -27,20 +28,18 @@ public class Regional implements IRequestParams{
         return strNombreRegional;
     }
 
-    public void setStrNombreRegional(String strNombreRegional) {
-        this.strNombreRegional = strNombreRegional;
-    }
+    public void setStrNombreRegional(String strNombreRegional) {  this.strNombreRegional = strNombreRegional;   }
 
     public String strIdEmpresa;
     public String strNombreRegional;
 
-    public Regional() {
-    }
+    public Regional() {}
 
     public Regional(String strIdEmpresa, String strNombreRegional) {
         this.strIdEmpresa = strIdEmpresa;
         this.strNombreRegional = strNombreRegional;
     }
+
     public HashMap <String,String> getRequestParamsConsultar(){
         HashMap<String,String> mih= new HashMap<>();
         mih.put("tabla",TABLA);
@@ -84,7 +83,6 @@ public class Regional implements IRequestParams{
         return mih;
     }
 
-
     public HashMap<String,String> getRequestParamsInsertar(){
         HashMap<String,String> mih= new HashMap<>();
         mih.put("TABLA",TABLA);
@@ -95,6 +93,7 @@ public class Regional implements IRequestParams{
         mih.put("OPERACION","insertar");
         return mih;
     }
+
     public HashMap<String,String> getRequestParamsActualizar(){
         HashMap<String,String> mih= new HashMap<>();
         mih.put("TABLA",TABLA);
@@ -105,6 +104,7 @@ public class Regional implements IRequestParams{
         mih.put("OPERACION","actualizar");
         return mih;
     }
+
     public HashMap<String,String> getRequestParamsEliminar(){
         HashMap<String,String> mih= new HashMap<>();
         mih.put("TABLA",TABLA);
