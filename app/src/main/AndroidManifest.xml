@@ -16,7 +16,6 @@
             android:layout_width="match_parent"
             android:minHeight="?attr/actionBarSize"
             app:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
-        <activity android:name=".registrar_pqrs" />
         <!-- <activity android:name=".registro_usuario" /> -->
 
         <activity

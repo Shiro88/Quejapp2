@@ -1,20 +1,39 @@
 package com.pqrs.sena.quejapp;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 
 /**
  * Created by Usaurio on 08/05/2016.
  */
 public class Pqrs implements  IRequestParams{
-    public static final String TABLA="pqrs";
+    public static final String TABLA="pqrs2";
     public static final String CLAVE_ID_PQRS="IdPqrs";
     public static final String CLAVE_FK_ID_SEDE="Fk_Id_Sede";
     public static final String CLAVE_FK_ID_TPETICION="Fk_Id_TPeticion";
+    public static final String CLAVE_FK_ID_TCATEGORIA="Fk_Id_TCategoria";
     public static final String CLAVE_DESCRIPCION="Descripcion";
     public static final String CLAVE_FK_ID_USUARIO="Fk_Id_Usuario";
+    public static final String CLAVE_CODIGO_PQRS="CodigoPQRS";
 
     private int intIdPqrs;
-    private int intSede;
+    private String strSede;
+    private String strTipoPeticion;
+    private String strTipoCategoriaPeticion;
+    private String strCodigoPqrs;
+
+
+
+    public String getStrCodigoPqrs() {
+        return strCodigoPqrs;
+    }
+
+    public void setStrCodigoPqrs(String strCodigoPqrs) {
+        this.strCodigoPqrs = strCodigoPqrs;
+    }
+
+
 
     public int getIntIdPqrs() {
         return intIdPqrs;
@@ -24,20 +43,28 @@ public class Pqrs implements  IRequestParams{
         this.intIdPqrs = intIdPqrs;
     }
 
-    public int getIntSede() {
-        return intSede;
+    public String getStrSede() {
+        return strSede;
     }
 
-    public void setIntSede(int intSede) {
-        this.intSede = intSede;
+    public void setStrSede(String strSede) {
+        this.strSede = strSede;
     }
 
-    public int getIntTipoPeticion() {
-        return intTipoPeticion;
+    public String getStrTipoPeticion() {
+        return strTipoPeticion;
     }
 
-    public void setIntTipoPeticion(int intTipoPeticion) {
-        this.intTipoPeticion = intTipoPeticion;
+    public void setStrTipoPeticion(String strTipoPeticion) {
+        this.strTipoPeticion = strTipoPeticion;
+    }
+
+    public String getStrTipoCategoriaPeticion() {
+        return strTipoCategoriaPeticion;
+    }
+
+    public void setStrTipoCategoriaPeticion(String strTipoCategoriaPeticion) {
+        this.strTipoCategoriaPeticion = strTipoCategoriaPeticion;
     }
 
     public String getStrDescripcion() {
@@ -48,18 +75,16 @@ public class Pqrs implements  IRequestParams{
         this.strDescripcion = strDescripcion;
     }
 
-    public int getIntFk_IdUsuario() {
-        return intFk_IdUsuario;
+    public String getStrFk_IdUsuario() {
+        return strFk_IdUsuario;
     }
 
-    public void setIntFk_IdUsuario(int intFk_IdUsuario) {
-        this.intFk_IdUsuario = intFk_IdUsuario;
+    public void setStrFk_IdUsuario(String strFk_IdUsuario) {
+        this.strFk_IdUsuario = strFk_IdUsuario;
     }
 
-    private int intTipoPeticion;
     private String strDescripcion;
-    private int intFk_IdUsuario;
-
+    private String strFk_IdUsuario;
 
 
     @Override
@@ -71,9 +96,7 @@ public class Pqrs implements  IRequestParams{
         mih.put("CLAVE_FK_ID_TPETICION",CLAVE_FK_ID_TPETICION);
         mih.put("CLAVE_DESCRIPCION",CLAVE_DESCRIPCION);
         mih.put("CLAVE_FK_ID_USUARIO",CLAVE_FK_ID_USUARIO);
-
-
-
+        mih.put("CLAVE_CODIGO_PQRS",CLAVE_CODIGO_PQRS);
         mih.put("OPERACION","consultar");
         return mih;
     }
@@ -85,14 +108,16 @@ public class Pqrs implements  IRequestParams{
         mih.put("CLAVE_ID_PQRS",CLAVE_ID_PQRS);
         mih.put("CLAVE_FK_ID_SEDE",CLAVE_FK_ID_SEDE);
         mih.put("CLAVE_FK_ID_TPETICION",CLAVE_FK_ID_TPETICION);
+        mih.put("CLAVE_FK_ID_TCATEGORIA",CLAVE_FK_ID_TCATEGORIA);
         mih.put("CLAVE_DESCRIPCION",CLAVE_DESCRIPCION);
         mih.put("CLAVE_FK_ID_USUARIO",CLAVE_FK_ID_USUARIO);
 
         mih.put("VALOR_ID_PQRS", Integer.toString(this.getIntIdPqrs()));
-        mih.put("VALOR_FK_ID_SEDE",Integer.toString(this.getIntSede()));
-        mih.put("VALOR_FK_ID_TPETICION",Integer.toString(this.getIntTipoPeticion()));
+        mih.put("VALOR_FK_ID_SEDE",this.getStrSede());
+        mih.put("VALOR_FK_ID_TPETICION",this.getStrTipoPeticion());
+        mih.put("VALOR_FK_ID_TCATEGORIA",this.getStrTipoCategoriaPeticion());
         mih.put("VALOR_DESCRIPCION",this.getStrDescripcion());
-        mih.put("VALOR_FK_ID_USUARIO",Integer.toString(this.getIntFk_IdUsuario()));
+        mih.put("VALOR_FK_ID_USUARIO",this.getStrFk_IdUsuario());
 
         mih.put("OPERACION","consultar");
 
@@ -129,33 +154,42 @@ public class Pqrs implements  IRequestParams{
     public HashMap<String, String> getRequestParamsInsertar() {
         HashMap<String,String> mih= new HashMap<>();
         mih.put("TABLA",TABLA);
-        mih.put("CLAVE_ID_PQRS",CLAVE_ID_PQRS);
+        mih.put("OPERACION","insertar");
         mih.put("CLAVE_FK_ID_SEDE",CLAVE_FK_ID_SEDE);
         mih.put("CLAVE_FK_ID_TPETICION",CLAVE_FK_ID_TPETICION);
         mih.put("CLAVE_DESCRIPCION",CLAVE_DESCRIPCION);
         mih.put("CLAVE_FK_ID_USUARIO",CLAVE_FK_ID_USUARIO);
-        mih.put("VALOR_FK_ID_SEDE",Integer.toString(this.getIntSede()));
-        mih.put("VALOR_FK_ID_TPETICION",Integer.toString(this.getIntTipoPeticion()));
-        mih.put("VALOR_DESCRIPCION",this.getStrDescripcion());
-        mih.put("VALOR_FK_ID_USUARIO",Integer.toString(this.getIntFk_IdUsuario()));
+        mih.put("CLAVE_FK_ID_TCATEGORIA",CLAVE_FK_ID_TCATEGORIA);
 
+        mih.put("VALOR_FK_ID_TCATEGORIA",this.getStrTipoCategoriaPeticion());
+        mih.put("VALOR_FK_ID_SEDE",this.getStrSede());
+        mih.put("VALOR_FK_ID_TPETICION",this.getStrTipoPeticion());
+        mih.put("VALOR_DESCRIPCION",this.getStrDescripcion());
+        mih.put("VALOR_FK_ID_USUARIO",this.getStrFk_IdUsuario());
+        SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        mih.put("VALOR_FECHA_REGISTRO",simpleDateFormat.format(new Date()));
         return mih;
     }
 
     @Override
     public HashMap<String, String> getRequestParamsActualizar() {
         HashMap<String,String> mih= new HashMap<>();
+
         mih.put("TABLA",TABLA);
+        mih.put("OPERACION","actualizar");
         mih.put("CLAVE_ID_PQRS",CLAVE_ID_PQRS);
         mih.put("CLAVE_FK_ID_SEDE",CLAVE_FK_ID_SEDE);
         mih.put("CLAVE_FK_ID_TPETICION",CLAVE_FK_ID_TPETICION);
         mih.put("CLAVE_DESCRIPCION",CLAVE_DESCRIPCION);
         mih.put("CLAVE_FK_ID_USUARIO",CLAVE_FK_ID_USUARIO);
+        mih.put("CLAVE_FK_ID_TCATEGORIA",CLAVE_FK_ID_TCATEGORIA);
+
         mih.put("VALOR_ID_PQRS", Integer.toString(this.getIntIdPqrs()));
-        mih.put("VALOR_FK_ID_SEDE",Integer.toString(this.getIntSede()));
-        mih.put("VALOR_FK_ID_TPETICION",Integer.toString(this.getIntTipoPeticion()));
+        mih.put("VALOR_FK_ID_SEDE",this.getStrSede());
+        mih.put("VALOR_FK_ID_TPETICION",this.getStrTipoPeticion());
         mih.put("VALOR_DESCRIPCION",this.getStrDescripcion());
-        mih.put("VALOR_FK_ID_USUARIO",Integer.toString(this.getIntFk_IdUsuario()));
+        mih.put("VALOR_FK_ID_USUARIO",this.getStrFk_IdUsuario());
+        mih.put("VALOR_FK_ID_TCATEGORIA",this.getStrTipoCategoriaPeticion());
 
         return mih;
     }
@@ -164,6 +198,7 @@ public class Pqrs implements  IRequestParams{
     public HashMap<String, String> getRequestParamsEliminar() {
         HashMap<String,String> mih= new HashMap<>();
         mih.put("TABLA",TABLA);
+        mih.put("OPERACION","eliminar");
         mih.put("CLAVE_ID_PQRS",CLAVE_ID_PQRS);
         mih.put("VALOR_ID_PQRS", Integer.toString(this.getIntIdPqrs()));
 

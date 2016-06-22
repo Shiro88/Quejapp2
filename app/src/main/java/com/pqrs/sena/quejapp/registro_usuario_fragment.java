@@ -144,6 +144,10 @@ public class registro_usuario_fragment extends Fragment implements View.OnClickL
 
                     JSONObject jobj= Utilidades.devolverJson(responseBody);
                     Utilidades.enviarMensaje(getContext(),jobj.getString("mensaje"));
+
+
+
+
                 } catch (JSONException e) {
                     e.printStackTrace();
                     Utilidades.enviarMensaje(getContext(),e.getMessage().toString());

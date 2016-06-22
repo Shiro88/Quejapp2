@@ -12,6 +12,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import cz.msebera.android.httpclient.Header;
 
 
@@ -49,15 +52,35 @@ public class buscar_pqrs_fragment extends android.support.v4.app.Fragment implem
     private void buscarPQRS() {
         Pqrs miPqrs= new Pqrs();
         WebService miws = new WebService();
-        miws.consultar_registro(getContext(),miPqrs.getRequestParamsConsultar(), new AsyncHttpResponseHandler() {
+
+        miws.consultar_registro(getContext(),miPqrs.getRequestParamsConsultar("WHERE","CodigoPQRS","=",edtBusquedaNumeroFicha.getText().toString(),null,null,null), new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                 //AQUI LOGICA PARA LA RESPUESTA DEL SERVIDOR
+
+                try {
+                    JSONObject jobj=Utilidades.devolverJson(responseBody);
+                    Utilidades.enviarMensaje(getContext(),jobj.optString("mensaje"));
+
+
+                    if (jobj.optString("respuesta")=="TRUE") {
+                        /*AQUI LOGICA PARA CREAR UN ADAPTER Y LLENAR ESTOS DATOS A OBJETO DE TIPO VIEW
+                        * */
+
+                    }else{
+                        Utilidades.enviarMensaje(getContext(),"Lo sentimos pero no hay registros con el codigo que buscas");
+                    }
+
+
+
+                }catch (JSONException jexp){
+                    Utilidades.enviarMensaje(getContext(),jexp.getMessage().toString());
+                }
             }
 
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-
+                    Utilidades.enviarMensaje(getContext(),Utilidades.validarCodigo(statusCode,error));
             }
         });
     }
