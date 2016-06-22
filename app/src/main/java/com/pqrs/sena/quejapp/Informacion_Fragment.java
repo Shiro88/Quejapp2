@@ -6,15 +6,18 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toolbar;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Informacion_Fragment extends Fragment {
+public class Informacion_Fragment extends Fragment{
 
 
     public Informacion_Fragment() {
+
+
         // Required empty public constructor
     }
 
@@ -22,8 +25,23 @@ public class Informacion_Fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        View view;
+        view = inflater.inflate(R.layout.fragment_informacion, container, false);
+        Toolbar toolbar = (Toolbar) view.findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+//        Toolbar toolbarCard = (Toolbar) view.findViewById(R.id.toolbarCard);
+  //      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+     //       toolbarCard.setTitle(R.string.txvInfoPeticionTitulo);
+       // }
+
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_informacion, container, false);
+        return view;
+    }
+
+    private void setSupportActionBar(Toolbar toolbar) {
     }
 
 }

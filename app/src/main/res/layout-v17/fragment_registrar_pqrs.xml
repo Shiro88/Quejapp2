@@ -52,6 +52,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <Spinner
+                    android:id="@+id/spRegional"
                     android:layout_width="@dimen/spWidth"
                     android:layout_height="@dimen/spHeight"
 
@@ -69,6 +70,7 @@
                     style="@style/SpinnerStyle"
                     android:dropDownWidth="wrap_content" />
                 <Spinner
+                    android:id="@+id/spCentro"
                     android:layout_width="@dimen/spWidth"
                     android:layout_height="@dimen/spHeight"
                     android:layout_marginStart="@dimen/spMarginStart"
@@ -86,6 +88,7 @@
                     style="@style/SpinnerStyle"/>
 
                 <Spinner
+                    android:id="@+id/spSedes"
                     android:layout_width="@dimen/spWidth"
                     android:layout_height="@dimen/spHeight"
                     android:layout_marginStart="@dimen/spMarginStart"
@@ -102,6 +105,7 @@
                     style="@style/SpinnerStyle"/>
 
                 <Spinner
+                    android:id="@+id/spTipoPqrs"
                     android:layout_width="@dimen/spWidth"
                     android:layout_height="@dimen/spHeight"
                     android:layout_marginStart="@dimen/spMarginStart"
@@ -117,25 +121,26 @@
                     android:entries="@array/spTipoPqrsValues"
                     style="@style/SpinnerStyle"/>
 
-                <EditText
-                    android:layout_width="@dimen/spWidth"
-                    android:layout_height="@dimen/spHeight"
-                    android:layout_marginStart="@dimen/spMarginStart"
-                    android:layout_marginEnd="@dimen/spMarginEnd"
-                    android:paddingStart="@dimen/spPaddingStart"
-                    android:paddingEnd="@dimen/spPaddingEnd"
-                    android:layout_marginLeft="@dimen/spMarginLeft"
-                    android:layout_marginRight="@dimen/spMarginRight"
-                    android:paddingLeft="@dimen/spPaddingLeft"
-                    android:paddingRight="@dimen/spPaddingRight"
-                    android:textAlignment="center"
-                    android:layout_gravity="center"
-                    android:inputType="number"
-                    android:hint="@string/edtNumeroFicha"
-                    android:id="@+id/txvNumeroFicha"
-                    style="@style/SpinnerStyle"/>
-
+                <!-- <EditText
+                     android:layout_width="@dimen/spWidth"
+                     android:layout_height="@dimen/spHeight"
+                     android:layout_marginStart="@dimen/spMarginStart"
+                     android:layout_marginEnd="@dimen/spMarginEnd"
+                     android:paddingStart="@dimen/spPaddingStart"
+                     android:paddingEnd="@dimen/spPaddingEnd"
+                     android:layout_marginLeft="@dimen/spMarginLeft"
+                     android:layout_marginRight="@dimen/spMarginRight"
+                     android:paddingLeft="@dimen/spPaddingLeft"
+                     android:paddingRight="@dimen/spPaddingRight"
+                     android:textAlignment="center"
+                     android:layout_gravity="center"
+                     android:inputType="number"
+                     android:hint="@string/edtNumeroFicha"
+                     android:id="@+id/txvNumeroFicha"
+                     style="@style/SpinnerStyle"/>
+                     -->
                 <Spinner
+                    android:id="@+id/spCategoriaPQRS"
                     android:layout_width="@dimen/spWidth"
                     android:layout_height="@dimen/spHeight"
                     android:layout_marginStart="@dimen/spMarginStart"
@@ -157,6 +162,7 @@
                     android:layout_gravity="left"
                     android:gravity="left">
                     <TextView
+
                         android:layout_width="@dimen/txtvwDescripcionFormDosWidth"
                         android:layout_height="@dimen/txtvwDescripcionFormDosHeight"
                         android:text="@string/txtvwDescripcion"
@@ -171,7 +177,7 @@
                     android:layout_gravity="center"
                     android:textAlignment="textStart"
                     android:inputType="textMultiLine"
-
+                    android:id="@+id/edtDescripcion"
                     style="@style/SpinnerStyle"/>
                 <CheckBox
                     android:layout_width="wrap_content"
@@ -182,6 +188,7 @@
                     android:layout_gravity="left"
                     android:paddingStart="1dp"/>
                 <Button
+                    android:id="@+id/btnRegistrarPqrs"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/btnAgregarEvidenciaHeight"
                     android:text="@string/btnEnviar"
