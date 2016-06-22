@@ -1,6 +1,5 @@
 package com.pqrs.sena.quejapp;
 
-import android.content.ClipData;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentTransaction;
@@ -17,19 +16,28 @@ import android.widget.FrameLayout;
 public class Menu_Principal extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     FrameLayout Frame1, Frame2;
+    Utilidades utilidades=new Utilidades();
 Menu m;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu__principal);
-        Informacion_Fragment informacion_fragment = new Informacion_Fragment();
+        if(utilidades.leerPreferences(getApplicationContext(),"USER_CODE").equals("NO")) {
+            setContentView(R.layout.activity_menu__principal);
+        }
+        else {
+            setContentView(R.layout.activity_menu_principal1);
+        }
+        //Informacion_Fragment informacion_fragment = new Informacion_Fragment();
+        fragment_informacion_cardview informacion_cardview = new fragment_informacion_cardview();
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container,informacion_fragment);
+        fragmentTransaction.replace(R.id.fragment_container,informacion_cardview);
+        //fragmentTransaction.replace(R.id.fragment_container,informacion_fragment);
         fragmentTransaction.commit();
         android.support.v7.widget.Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         Frame2 = (FrameLayout)findViewById(R.id.fragment_container2);
         Frame1 = (FrameLayout)findViewById(R.id.fragment_container);
+
         /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
