@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <array name="spnRegionalValues">
+    <array name="spnRegionalValuesOld">
         <item>Regional</item>
         <item>Regional Amazonas</item>
         <item>Regional Antioquia</item>
@@ -35,9 +35,8 @@
         <item>Regional Valle</item>
         <item>Regional Vaupés</item>
         <item>Regional Vichada</item>
-
     </array>
-    <array name="spCentrosValues">
+    <array name="spCentrosValuesOld">
         <item>Centro</item>
         <item>Centro para la Biodiversidad
             y el Turismo del Amazonas</item>
@@ -155,14 +154,38 @@
         <item>Centro Agropecuario y de Servicios Ambientales Jirijirimo</item>
         <item>Centro de Producción y Transformación Agroindustrial de la Orinoquía</item>
     </array>
-    <array name="spSedeValues">
+    <array name="spSedeValuesOld">
         <item>Sede</item>
     </array>
     <array name="spTipoPqrsValues">
         <item>Tipo PQRS</item>
+        <item>Peticion</item>
+        <item>Queja</item>
+        <item>Reclamo</item>
+        <item>Suegerencia</item>
     </array>
-    <array name="spCategoriaPqrsValues">
+    <array name="spCategoriaPeticion">
         <item>Categoria PQRS</item>
+        <item>De consulta</item>
+        <item>De documentacion</item>
+        <item>De informacion</item>
+        <item>De servicio</item>
+    </array>
+    <array name="spCategoriaQueja">
+        <item>Categoria PQRS</item>
+        <item>De entidad</item>
+        <item>De servidor publico</item>
+    </array>
+    <array name="spCategoriaReclamo">
+        <item>Categoria PQRS</item>
+        <item>Peticion sin responder</item>
+    </array>
+    <array name="spCategoriaSugerencia">
+        <item>Categoria PQRS</item>
+        <item>De dependencias</item>
+        <item>De entidad</item>
+        <item>De servicios sena</item>
+        <item>De servidor publico</item>
     </array>
     <array name="spTipoDocumento">
         <item>Tipo Documento</item>
@@ -170,5 +193,57 @@
         <item>TI</item>
         <item>CE</item>
     </array>
+    <!--Nombre de todas las regionales-->
+    <array name="regionales">
+        <item>Regional</item>
+        <item>Bogota</item>
+        <item>Cundinamarca</item>
+    </array>
+    <!--Nombre de los centros y sedes de la regional A-->
+    <array name="r1c">
+        <item>Centro </item>
+        <item>CEET</item>
+        <item>Direccion general</item>
+    </array>
+    <array name="r1c1s">
+        <item>Sede </item>
+        <item>colsutect ricurte</item>
+        <item>colsutect restrepo</item>
+        <item>sede principal CEET</item>
+    </array>
+    <array name="r1c2s">
+        <item>sede principal</item>
+    </array>
+    <array name="r2c">
+        <item>Centro </item>
+        <item>CID</item>
+        <item>Tecno Parque Soacha</item>
+    </array>
+    <array name="r2c1s">
+        <item>Sede </item>
+        <item>Sede principal CID</item>
+    </array>
+    <array name="r2c2s">
+        <item>Sede </item>
+        <item>Sede principal tecno parque</item>
+    </array>
 
+
+
+
+
+    <!--Nombre de los centros de la regional B-->
+
+    <!--Nombre de las sedes del centro 1 regional 1-->
+
+    <!--Nombre de las sedes del centro -->
+    <array name="sc2">
+        <item>Sede </item>
+        <item>sede principal</item>
+    </array>
+    <!--Nombre de las sedes del centro 1-->
+    <array name="sc3">
+        <item>Sede </item>
+        <item>sede principal</item>
+    </array>
 </resources>
